@@ -166,21 +166,17 @@ def load_and_split_event_files(directory_path, record_type):
 def merge_event_and_entries(df_events, df_entries):
     """Merge event and entry data using the unique event identifier."""
     
-    # Check for duplicates before merge
-    print("\nDuplicate Analysis:")
-    print("Events with duplicate unique_event_id:", 
-          df_events.duplicated(['unique_event_id']).sum())
-    print("Entries with duplicate unique_event_id:", 
-          df_entries.duplicated(['unique_event_id']).sum())
+    # Remove events with no entries or missing record times
+    df_events = df_events.dropna(subset=['record_time_sec'])
     
-    # Remove duplicate events by keeping the first occurrence
-    df_events = df_events.drop_duplicates(subset=['unique_event_id'], keep='first')
-    
-    # Group entries by unique event identifier
+    # Group and aggregate entries, dropping NaN values
     df_entries_agg = df_entries.groupby(['unique_event_id']).agg({
         'seed_time_sec': ['count', 'mean', 'min', 'std'],
         'final_time_sec': ['mean', 'min', 'std']
     }).reset_index()
+    
+    # Drop events with missing entry data
+    df_entries_agg = df_entries_agg.dropna()
     
     # Flatten column names
     df_entries_agg.columns = [
@@ -188,7 +184,7 @@ def merge_event_and_entries(df_events, df_entries):
         for col in df_entries_agg.columns
     ]
     
-    # Merge aggregated entries with deduplicated events
+    # Merge and print summary
     df_merged = pd.merge(
         df_events,
         df_entries_agg,
@@ -197,9 +193,8 @@ def merge_event_and_entries(df_events, df_entries):
     )
     
     print("\nMerged Dataset Info:")
-    print(f"Total events: {len(df_merged)}")
-    print(f"Unique meets: {df_merged['meet_id'].nunique()}")
-    print(f"Unique event IDs: {df_merged['event_id'].nunique()}")
+    print(f"Total valid events: {len(df_merged)}")
+    print(f"Events dropped due to missing data: {len(df_events) - len(df_merged)}")
     
     return df_merged
 
