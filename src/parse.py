@@ -12,6 +12,7 @@ import requests
 import config
 import utils
 
+
 class MeetDataPipeline:
     def __init__(self, output_base: Path):
         self.output_base = output_base
@@ -36,7 +37,7 @@ class MeetDataPipeline:
         
         soup = self.fetch_page(index_url)
         tabs = soup.select(".usas-content-leftrailnavigationoption2-tab a")
-        
+    
         slugs = []
         for a in tabs:
             href = a["data-usas-href"]
