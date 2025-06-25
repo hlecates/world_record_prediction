@@ -1,5 +1,3 @@
-# src/utils.py
-
 import os
 import logging
 import time
@@ -9,7 +7,6 @@ from typing import Optional, Dict
 import config
 
 def setup_logging():
-    """Configure root logger based on config.LOG_LEVEL."""
     logging.basicConfig(
         level=getattr(logging, config.LOG_LEVEL),
         format="%(asctime)s [%(levelname)s] %(message)s",
@@ -17,22 +14,18 @@ def setup_logging():
     )
 
 def read_csv(path):
-    """Read a CSV file into a pandas DataFrame."""
     import pandas as pd
     return pd.read_csv(path)
 
 def write_csv(df, path):
-    """Write a pandas DataFrame to CSV."""
     os.makedirs(os.path.dirname(path), exist_ok=True)
     df.to_csv(path, index=False)
 
 def read_parquet(path):
-    """Read a Parquet file into a pandas DataFrame."""
     import pandas as pd
     return pd.read_parquet(path)
 
 def write_parquet(df, path):
-    """Write a pandas DataFrame to Parquet."""
     os.makedirs(os.path.dirname(path), exist_ok=True)
     df.to_parquet(path, index=False)
 
@@ -41,18 +34,6 @@ def http_get_with_retries(
     max_retries: int = 3, 
     headers: Optional[Dict[str, str]] = None
 ) -> requests.Response:
-    """
-    Make HTTP GET request with retries and exponential backoff.
-    
-    Args:
-        url: URL to fetch
-        max_retries: Maximum number of retry attempts
-        headers: Optional request headers
-    Returns:
-        requests.Response object
-    Raises:
-        Exception if all retries fail
-    """
     default_headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
     }

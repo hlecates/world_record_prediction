@@ -76,6 +76,10 @@ class MeetDataPipeline:
                     # Get filename and output path
                     fname = pdf_url.split("/")[-1]
                     out_path = meet_dir / fname
+
+                    if fname == "OG2020-_SWM_B99_SWM-------------------------------.pdf":
+                        logging.info(f"Hard skipping file")
+                        continue
                     
                     if out_path.exists():
                         logging.info(f"Already have {fname}")
@@ -285,7 +289,7 @@ class MeetDataPipeline:
     
     def save_processed_data(self, df: pd.DataFrame) -> Path:
         if df.empty:
-            logging.warning("No data to save!")
+            logging.warning("No data exists")
             return None
         
         output_path = self.processed_dir / "all_meets_parsed.csv"
@@ -305,7 +309,7 @@ class MeetDataPipeline:
         pdf_paths = self.download_meet_pdfs(slugs)
         
         if not pdf_paths:
-            logging.error("No PDFs were downloaded!")
+            logging.error("No PDFs downloaded")
             return None
         
         # Step 2: Parse PDFs
