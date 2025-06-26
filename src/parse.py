@@ -5,9 +5,11 @@ import re
 import pandas as pd
 import pdfplumber
 from pathlib import Path
-from typing import List, Dict
+from typing import List, Dict, Tuple, Set
 from bs4 import BeautifulSoup
 import requests
+import ast
+
 
 import config
 import utils
@@ -17,20 +19,24 @@ class MeetDataPipeline:
     def __init__(self, output_base: Path):
         self.output_base = output_base
         self.raw_pdf_dir = output_base / "raw" / "meet_pdfs"
-        self.processed_dir = output_base / "processed" / "parsed_results"
+        self.processed_dir = output_base / "processed" / "parsed"
+        self.clean_dir = output_base / "processed" / "clean"
         
         # Create directories
         self.raw_pdf_dir.mkdir(parents=True, exist_ok=True)
         self.processed_dir.mkdir(parents=True, exist_ok=True)
+        self.clean_dir.mkdir(parents=True, exist_ok=True)
         
         # Setup logging
         utils.setup_logging()
     
+
     def fetch_page(self, url: str, pause: float = 1.0) -> BeautifulSoup:
         resp = utils.http_get_with_retries(url, headers={"User-Agent": config.USER_AGENT})
         time.sleep(pause)
         return BeautifulSoup(resp.text, "html.parser")
     
+
     def fetch_all_meet_slugs(self) -> List[str]:
         index_url = f"{config.USA_SWIMMING_BASE}/times/data-hub/meet-results"
         logging.info(f"Fetching meet slugs from: {index_url}")
@@ -47,6 +53,7 @@ class MeetDataPipeline:
         logging.info(f"Found {len(slugs)} meet categories")
         return slugs
     
+
     def download_meet_pdfs(self, slugs: List[str]) -> List[Path]:
         downloaded_pdfs = []
         
@@ -107,6 +114,7 @@ class MeetDataPipeline:
         logging.info(f"Downloaded {len(downloaded_pdfs)} PDFs total")
         return downloaded_pdfs
     
+
     def parse_meet_text(self, text: str) -> List[Dict]:
         events_dict = {}
         current_event_num = None
@@ -148,9 +156,10 @@ class MeetDataPipeline:
                 # Save current records and results to previous event
                 if current_event_num is not None:
                     if current_event_num not in events_dict:
+                        unique_records = self.deduplicate_records(current_records)
                         events_dict[current_event_num] = {
                             'event': current_event,
-                            'records': current_records,
+                            'records': unique_records,
                             'results': current_results
                         }
                     else:
@@ -202,6 +211,7 @@ class MeetDataPipeline:
         # Convert dict to list and return
         return list(events_dict.values())
     
+
     def parse_single_pdf(self, pdf_path: Path) -> List[Dict]:
         logging.info(f"Parsing PDF: {pdf_path.name}")
         
@@ -257,6 +267,7 @@ class MeetDataPipeline:
             logging.error(f"Failed to parse {pdf_path.name}: {e}")
             return []
     
+
     def parse_all_pdfs(self, pdf_paths: List[Path]) -> pd.DataFrame:
         logging.info(f"Parsing {len(pdf_paths)} PDF files...")
         
@@ -288,24 +299,97 @@ class MeetDataPipeline:
         
         return df
     
+
+    def deduplicate_records(self, records: List[Dict]) -> List[Dict]:
+        seen_records: Set[Tuple] = set()
+        unique_records = []
+        
+        for record in records:
+            # Create a tuple key for deduplication
+            record_key = (
+                record['type'],
+                record['time'],
+                record['date'],
+                record['athlete']
+            )
+            
+            if record_key not in seen_records:
+                seen_records.add(record_key)
+                unique_records.append(record)
+        
+        return unique_records
+
+
+    def clean_dataframe(self, df: pd.DataFrame) -> pd.DataFrame:
+        logging.info("Cleaning DataFrame")
+
+        if df.empty:
+            return df
+        
+        def has_entries(entries_str):
+            if pd.isna(entries_str):
+                return False
+            try:
+                entries = ast.literal_eval(str(entries_str))
+                return len(entries) > 0
+            except:
+                return False
+        
+        def has_records(records_str):
+            if pd.isna(records_str):
+                return False
+            try:
+                records = ast.literal_eval(str(records_str))
+                return len(records) > 0
+            except:
+                return False
+            
+        has_entries_mask = df['entries'].apply(has_entries)
+        has_records_mask = df['records'].apply(has_records)
+
+        keep_mask = has_entries_mask & has_records_mask
+
+        cleaned_df = df[keep_mask].copy()
+
+        original_count = len(df)
+        final_count = len(cleaned_df)
+        removed_count = original_count - final_count
+
+        logging.info(f"Removed {removed_count} rows with no entries or records")
+
+        return cleaned_df.reset_index(drop=True)
+
+
     def save_processed_data(self, df: pd.DataFrame) -> Path:
         if df.empty:
             logging.warning("No data exists")
             return None
         
-        output_path = self.processed_dir / "all_meets_parsed.csv"
+        output_path = self.processed_dir / "parsed_events.csv"
         df.to_csv(output_path, index=False)
         
         logging.info(f"Saved processed data to: {output_path}")
-        logging.info(f"Dataset shape: {df.shape}")
         
         return output_path
     
-    def run_full_pipeline(self) -> Path:
+
+    def save_clean_data(self, df: pd.DataFrame) -> Path:
+        if df.empty:
+            logging.warning("No data exists")
+            return None
+        
+        output_path = self.clean_dir / "clean_events.csv"
+        df.to_csv(output_path, index=False)
+        
+        logging.info(f"Saved clean data to: {output_path}")
+        
+        return output_path
+    
+
+    def run_pipeline(self) -> Tuple[Path, Path]:
         logging.info("Starting Complete Meet Data Pipeline")
         
-        # Step 1: Download PDFs
-        logging.info("Step 1: Downloading meet PDFs...")
+        logging.info("Downloading meet PDFs")
         slugs = self.fetch_all_meet_slugs()
         pdf_paths = self.download_meet_pdfs(slugs)
         
@@ -313,21 +397,24 @@ class MeetDataPipeline:
             logging.error("No PDFs downloaded")
             return None
         
-        # Step 2: Parse PDFs
-        logging.info("Step 2: Parsing PDFs...")
-        df = self.parse_all_pdfs(pdf_paths)
+        logging.info("Parsing PDFs")
+        original_df = self.parse_all_pdfs(pdf_paths)
         
-        # Step 3: Save results
-        logging.info("Step 3: Saving processed data...")
-        output_path = self.save_processed_data(df)
-        
-        logging.info("Pipeline Complete")
-        return output_path
+        logging.info("Saving processed data")
+        original_path = self.save_processed_data(original_df)
+
+        logging.info("Cleaning saved data")
+        clean_df = self.clean_dataframe(original_df)
+
+        logging.info("Saving clean data")
+        self.save_clean_data(clean_df)
+
+        return original_path, clean_df
     
+
     def parse_existing_pdfs(self) -> Path:
         logging.info("Parsing Existing PDFs")
         
-        # Find all existing PDFs
         pdf_paths = list(self.raw_pdf_dir.rglob("*.pdf"))
         
         if not pdf_paths:
@@ -335,35 +422,63 @@ class MeetDataPipeline:
             return None
         
         logging.info(f"Found {len(pdf_paths)} existing PDFs")
-        
-        # Parse and save
+
         df = self.parse_all_pdfs(pdf_paths)
         output_path = self.save_processed_data(df)
         
         return output_path
 
+
+    def clean_existing_data(self) -> Tuple[Path, Path]:
+        logging.info("Cleaning Existing Parsed Data")
+    
+        parsed_data_path = self.processed_dir / "all_meets_parsed.csv"
+        
+        if not parsed_data_path.exists():
+            logging.info(f"No parsed data found at: {parsed_data_path}", "ERROR")
+            return None, None
+        
+        logging.info(f"Loading existing data from: {parsed_data_path}")
+        
+        try:
+            original_df = pd.read_csv(parsed_data_path)
+            logging.info(f"Loaded {len(original_df)} events from existing data")
+            
+            # Clean the data
+            clean_df = self.clean_dataframe(original_df)
+            
+            # Save data
+            clean_path = self.save_clean_data(clean_df)
+            
+            return parsed_data_path, clean_path
+            
+        except Exception as e:
+            logging.info(f"Failed to clean existing data: {e}", "ERROR")
+            return None, None
+
+
 def main():
-    # Setup paths
     base_dir = Path(__file__).parent.parent
     output_base = base_dir / "data"
     
-    # Initialize pipeline
     pipeline = MeetDataPipeline(output_base)
-    
-    # Check if user wants to download new data or parse existing
+
     import sys
     if len(sys.argv) > 1 and sys.argv[1] == "--parse-only":
         # Parse existing PDFs only
-        output_path = pipeline.parse_existing_pdfs()
+        original_path, clean_path = pipeline.parse_existing_pdfs()
+    elif len(sys.argv) > 1 and sys.argv[1] == "--clean-only":
+        # Clean existing parsed data only
+        original_path, clean_path = pipeline.clean_existing_data()
     else:
-        # Run full pipeline (download + parse)
-        output_path = pipeline.run_full_pipeline()
+        original_path, clean_path = pipeline.run_pipeline()
     
-    if output_path:
-        print(f"\n Success: {output_path}")
+    if original_path and clean_path:
+        print(f"\n Success: {original_path.name} and {clean_path.name}")
         
     else:
         print("\nFailed.")
+
 
 if __name__ == "__main__":
     main()
