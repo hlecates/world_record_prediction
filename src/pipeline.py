@@ -168,9 +168,15 @@ class MeetDataPipeline:
                 # Start new event or continue existing one
                 current_event_num = event_num
                 current_event = line
-                # Initialize empty records for new event, keep existing records for continuing event
-                current_records = [] if event_num not in events_dict else events_dict[event_num]['records']
-                current_results = []
+
+                # Only reuse existing records when extending results, not when reprocessing
+                if event_num not in events_dict:
+                    current_records = []
+                    current_results = []
+                else:
+                    # If event exists, don't reprocess records, just collect new results
+                    current_records = []  # Don't reprocess records
+                    current_results = []
                 continue
 
             # Process records and results for current event
@@ -432,7 +438,7 @@ class MeetDataPipeline:
     def clean_existing_data(self) -> Tuple[Path, Path]:
         logging.info("Cleaning Existing Parsed Data")
     
-        parsed_data_path = self.processed_dir / "all_meets_parsed.csv"
+        parsed_data_path = self.processed_dir / "parsed_events.csv"
         
         if not parsed_data_path.exists():
             logging.info(f"No parsed data found at: {parsed_data_path}", "ERROR")
@@ -464,18 +470,26 @@ def main():
     pipeline = MeetDataPipeline(output_base)
 
     import sys
-    if len(sys.argv) > 1 and sys.argv[1] == "--parse-only":
+    if len(sys.argv) > 2 and sys.argv[1] == "--parse" and sys.argv[2] == "--clean":
+        # Parse existing PDFs and then clean the data
+        parse_path = pipeline.parse_existing_pdfs()
+        if parse_path:
+            _, clean_path = pipeline.clean_existing_data()
+        else:
+            clean_path = None
+    elif len(sys.argv) > 1 and sys.argv[1] == "--parse":
         # Parse existing PDFs only
-        original_path, clean_path = pipeline.parse_existing_pdfs()
-    elif len(sys.argv) > 1 and sys.argv[1] == "--clean-only":
+        parse_path = pipeline.parse_existing_pdfs()
+    elif len(sys.argv) > 1 and sys.argv[1] == "--clean":
         # Clean existing parsed data only
-        original_path, clean_path = pipeline.clean_existing_data()
+        parse_path, clean_path = pipeline.clean_existing_data()
     else:
-        original_path, clean_path = pipeline.run_pipeline()
+        parse_path, clean_path = pipeline.run_pipeline()
     
-    if original_path and clean_path:
-        print(f"\n Success: {original_path.name} and {clean_path.name}")
-        
+    if parse_path and clean_path:
+        print(f"\n Success: {parse_path.name} and {clean_path.name}")
+    elif parse_path and not clean_path:
+        print(f"\n Success: {parse_path.name} (no clean data generated)")
     else:
         print("\nFailed.")
 
