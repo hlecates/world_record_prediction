@@ -357,6 +357,10 @@ class MeetDataPipeline:
 
         cleaned_df = df[keep_mask].copy()
 
+        # Hardcoded formatting of strokes 
+        cleaned_df['stroke'] = cleaned_df['stroke'].astype(str).str.replace(' Knockout', '', regex=False)
+        cleaned_df['stroke'] = cleaned_df['stroke'].astype(str).str.replace('(cid:976)', '', regex=False)
+
         original_count = len(df)
         final_count = len(cleaned_df)
         removed_count = original_count - final_count
