@@ -348,34 +348,205 @@ class ParticipantAnalyzer:
 
 class FeatureEngineer:
     def __init__(self):
-        pass
+        self.time_converter = TimeConverter()
+        self.record_analyzer = RecordAnalyzer()
+        self.seed_time_analyzer = SeedTimeAnalyzer()
+        self.participant_analyzer = ParticipantAnalyzer()
+
 
     def parse_entries(self, entries_str: str) -> List[Dict]:
-        pass
+        if pd.isna(entries_str) or entries_str == '[]':
+            return []
+        
+        try:
+            entries_list = ast.literal_eval(entries_str)
+            parsed_entries = []
+            for entry in entries_list:
+                parsed_entries.append({
+                    'rank': entry[0],
+                    'name': entry[1],
+                    'age': entry[2],
+                    'team': entry[3],
+                    'seed_time': entry[4],
+                    'final_time': entry[5]
+                })
+            return parsed_entries
+        except:
+            return []
+
 
     def create_event_features(self, row: pd.Series) -> Dict:
-        pass
+        features = {}
 
+        # Add basic event information
+        # features['event_id'] = row['event_id']
+        features['meet'] = row['meet'].strip()
+        features['stroke'] = row['stroke']
+        features['gender'] = row['gender']
+        features['distance'] = row['distance']
+        features['event_type'] = f"{row['gender']}_{row['stroke']}_{row['distance']}"
+
+        # Parse data
+        records = self.record_analyzer.parse_records(row['records'])
+        entries = self.parse_entries(row['entries'])
+
+        # Get world, American, and US Open records
+        world_record = self.record_analyzer.get_best_time_by_type(records, 'World')
+        american_record = self.record_analyzer.get_best_time_by_type(records, 'American')
+        us_open_record = self.record_analyzer.get_best_time_by_type(records, 'U.S. Open')
+
+        features['world_record_time'] = world_record
+        features['american_record_time'] = american_record
+        features['us_open_record_time'] = us_open_record
+
+        # Get seed times
+        seed_times = self.seed_time_analyzer.extract_seed_time(entries)
+
+
+        # Add all features
+        features.update(self.seed_time_analyzer.calculate_field_depth_features(seed_times))
+        features.update(self.seed_time_analyzer.calculate_record_proximity_features(
+            seed_times, world_record, american_record, us_open_record))
+        features.update(self.seed_time_analyzer.calculate_psychological_features(seed_times))
+        features.update(self.participant_analyzer.analyze_participants(entries, records))
+
+        # Add target features
+        features.update(self._create_target_features(entries, world_record, american_record, us_open_record))
+
+        return features
+    
+    
     def _create_target_features(self, entries: List[Dict],
                                 world_record: Optional[float],
                                 american_record: Optional[float],
                                 us_open_record: Optional[float]) -> Dict:
-        pass
+        targets = {}
+        
+        # Find actual race results
+        results = []
+        for entry in entries:
+            final_time = self.time_converter.time_to_seconds(entry['final_time'])
+            seed_time = self.time_converter.time_to_seconds(entry['seed_time'])
+            if not pd.isna(final_time):
+                results.append({
+                    'name': entry['name'],
+                    'final_time': final_time,
+                    'seed_time': seed_time
+                })
+        
+        if not results:
+            # No race results available
+            targets['winner_vs_world_record'] = np.nan
+            targets['winner_vs_american_record'] = np.nan
+            targets['winner_vs_us_open_record'] = np.nan
+            targets['top_seed_won'] = np.nan
+            return targets
+        
+        # Sort by final time to find winner
+        results.sort(key=lambda x: x['final_time'])
+        winner = results[0]
+        
+        # Calculate record residuals
+        if world_record:
+            targets['winner_vs_world_record'] = winner['final_time'] - world_record
+        else:
+            targets['winner_vs_world_record'] = np.nan
+            
+        if american_record:
+            targets['winner_vs_american_record'] = winner['final_time'] - american_record
+        else:
+            targets['winner_vs_american_record'] = np.nan
+            
+        if us_open_record:
+            targets['winner_vs_us_open_record'] = winner['final_time'] - us_open_record
+        else:
+            targets['winner_vs_us_open_record'] = np.nan
+        
+        # Determine if top seed won
+        seed_results = [(r['name'], r['seed_time']) for r in results if not pd.isna(r['seed_time'])]
+        if seed_results:
+            top_seed_name = min(seed_results, key=lambda x: x[1])[0]
+            targets['top_seed_won'] = (winner['name'] == top_seed_name)
+        else:
+            targets['top_seed_won'] = np.nan
+        
+        return targets
+
 
     def engineer_features(self, df: pd.DataFrame) -> pd.DataFrame:
-        pass
+        feature_rows = []
+        for _, row in df.iterrows():
+            event_features = self.create_event_features(row)
+            feature_rows.append(event_features)
+
+        features_df = pd.DataFrame(feature_rows)
+
+        features_df = self._add_meet_level_features(features_df)
+        features_df = self._add_event_level_features(features_df)
+
+        return features_df
 
     def _add_meet_level_features(self, df: pd.DataFrame) -> pd.DataFrame:
-        pass
+        meet_stats = df.groupby('meet').agg({
+            'field_size': 'mean',
+            'hhi_seed_times': 'mean',
+            'pressure_index': 'mean',
+            'record_holders_count': 'sum'
+        }).rename(columns={
+            'field_size': 'meet_avg_field_size',
+            'hhi_seed_times': 'meet_avg_competitiveness',
+            'pressure_index': 'meet_avg_pressure',
+            'record_holders_count': 'meet_total_record_holders'
+        })
+        
+        df = df.merge(meet_stats, left_on='meet', right_index=True, how='left')
+        
+        return df
+
 
     def _add_event_level_features(self, df: pd.DataFrame) -> pd.DataFrame:
-        pass
+        df['distance_category'] = pd.cut(df['distance'], 
+                                       bins=[0, 100, 200, 400, 800, 2000],
+                                       labels=['sprint', 'short', 'middle', 'distance', 'long_distance'])
+        
+        # Stroke encoding
+        stroke_map = {
+            'Freestyle': 'free',
+            'Backstroke': 'back',
+            'Breaststroke': 'breast', 
+            'Butterfly': 'fly',
+            'IM': 'im'
+        }
+        df['stroke_category'] = df['stroke'].map(stroke_map)
+        
+        return df
 
-    def _classify_meet_type(self, meet_name: str) -> str:
-        pass
 
 def load_and_combine_data() -> pd.DataFrame:
-    pass
+    data_dir = Path(__file__).parent.parent / "data" / "processed" / "clean"
+
+    if not data_dir.exists():
+        raise FileNotFoundError(f"Data directory {data_dir} does not exist.")
+    
+    all_dfs = []
+    csv_files = list(data_dir.glob("*.csv"))
+
+    print(f"Found {len(csv_files)} CSV files in {data_dir}")
+
+    for file in csv_files:
+        try:
+            df = pd.read_csv(file)
+            all_dfs.append(df)
+            print(f"Loaded {file.name} with shape {df.shape}")
+        except Exception as e:
+            print(f"Error loading {file.name}: {e}")
+
+    if not all_dfs:
+        raise ValueError("No valid CSV files found in the data directory.")
+    
+    combined_df = pd.concat(all_dfs, ignore_index=True)
+
+    return combined_df
 
 def main():
     print("Engineering features")
@@ -391,6 +562,7 @@ def main():
 
     features_df.to_csv(output_path, index=False)
     print(f"Features saved to {output_path}")
+
 
 if __name__ == "__main__":
     main()
