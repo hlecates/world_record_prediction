@@ -59,7 +59,7 @@ class Preprocessor:
 
             X = self._handle_missing_values(X)
 
-            X_selected = self._select_features(X, y, task_name, is_classification=(task_name == 'top_seed'))
+            X_selected = self._select_features(X, y, task_name, is_classification=(task_name == 'top_seed_win'))
 
             X_scaled = self._scale_features(X_selected, task_name)
 
@@ -69,10 +69,6 @@ class Preprocessor:
     
 
     def _encode_categorical_features(self, X: pd.DataFrame, task_name: str) -> pd.DataFrame:
-        non_numeric = X.select_dtypes(exclude=[np.number, bool]).columns.tolist()
-        print(f"[{task_name}] Non-numeric columns: {non_numeric}")
-
-
         categorical_cols = ['distance_category', 'stroke_category', 'gender', ]
 
         for col in categorical_cols:
@@ -105,6 +101,8 @@ class Preprocessor:
 
     def _select_features(self, X: pd.DataFrame, y: pd.Series, task_name: str, is_classification: bool=False) -> pd.DataFrame:
         score_func = f_classif if is_classification else f_regression
+        
+        print(f"Using {'f_classif' if is_classification else 'f_regression'} for {task_name}")
 
         # Select top features based on univariate statistical tests
         n_features = min(50, X.shape[1])
@@ -120,7 +118,6 @@ class Preprocessor:
             'features': selected_features
         }
         
-        print(f"Selected {len(selected_features)} features for {task_name}")
         
         return pd.DataFrame(X_selected, columns=selected_features, index=X.index)
     
@@ -263,6 +260,7 @@ class ModelTrainer:
         
         return self.results
     
+
     def _evaluate_model(self, model, X_train, X_test, y_train, y_test, is_classification: bool) -> Dict:
         # Predictions
         y_train_pred = model.predict(X_train)
@@ -304,63 +302,15 @@ class ModelTrainer:
         return results
     
 
-class ModelEvaluation:
-    def __init__(self):
-        pass
-
-    
-    def print_results_summary(self, results: Dict[str, Dict]):
-        for task_name, task_results in results.items():
-            print(f"\nRESULTS SUMMARY: {task_name.upper()}")
-            
-            # Determine if classification or regression
-            is_classification = task_name == 'top_seed_win'
-            
-            if is_classification:
-                # Classification results table
-                print(f"{'Model':<20} {'Test Acc':<10} {'Test F1':<10} {'Test AUC':<10} {'Test Prec':<10} {'Test Rec':<10}")
-                print("-" * 70)
-                
-                for model_name, metrics in task_results.items():
-                    auc_str = f"{metrics.get('test_auc', 0):.3f}" if 'test_auc' in metrics else "N/A"
-                    print(f"{model_name:<20} {metrics['test_accuracy']:<10.3f} {metrics['test_f1']:<10.3f} "
-                          f"{auc_str:<10} {metrics['test_precision']:<10.3f} {metrics['test_recall']:<10.3f}")
-            
-            else:
-                # Regression results table
-                print(f"{'Model':<20} {'Test RMSE':<12} {'Test MAE':<12} {'Test R²':<12} {'Train R²':<12}")
-                print("-" * 68)
-                
-                for model_name, metrics in task_results.items():
-                    print(f"{model_name:<20} {metrics['test_rmse']:<12.3f} {metrics['test_mae']:<12.3f} "
-                          f"{metrics['test_r2']:<12.3f} {metrics['train_r2']:<12.3f}")
-    
-    def identify_best_models(self, results: Dict[str, Dict]) -> Dict[str, str]:
-        best_models = {}
-        
-        for task_name, task_results in results.items():
-            if task_name == 'top_seed_win':
-                # For classification, use test AUC if available, otherwise test F1
-                metric_key = 'test_auc' if any('test_auc' in metrics for metrics in task_results.values()) else 'test_f1'
-                best_model = max(task_results.items(), key=lambda x: x[1].get(metric_key, 0))
-            else:
-                # For regression, use test R²
-                best_model = max(task_results.items(), key=lambda x: x[1].get('test_r2', -np.inf))
-            
-            best_models[task_name] = best_model[0]
-            print(f"\nBest model for {task_name}: {best_model[0]}")
-        
-        return best_models
-
 class ModelSaver:
     def __init__(self, output_dir: str):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
     
-    def save_models_and_preprocessing(self, models: Dict, preprocessor: Preprocessor, 
-                                    best_models: Dict[str, str]):
+
+    def save_all_models_and_preprocessing(self, models: Dict, preprocessor: Preprocessor, training_results: Dict[str, Dict]):
         
-        print(f"\nSaving models to {self.output_dir}")
+        print(f"\nSaving all models to {self.output_dir}")
         
         # Save preprocessing objects
         preprocessing_objects = {
@@ -372,26 +322,35 @@ class ModelSaver:
         with open(self.output_dir / 'preprocessing.pkl', 'wb') as f:
             pickle.dump(preprocessing_objects, f)
         
-        # Save best models
-        saved_models = {}
-        for task_name, best_model_name in best_models.items():
-            if task_name in models and best_model_name in models[task_name]:
-                model_info = models[task_name][best_model_name]
-                saved_models[task_name] = {
+        # Save ALL models (not just best ones)
+        all_models = {}
+        for task_name, task_models in models.items():
+            all_models[task_name] = {}
+            for model_name, model_info in task_models.items():
+                all_models[task_name][model_name] = {
                     'model': model_info['model'],
                     'feature_names': model_info['feature_names'],
-                    'model_type': best_model_name
+                    'model_type': model_name
                 }
-                print(f"Prepared {task_name}: {best_model_name}")
         
-        with open(self.output_dir / 'best_models.pkl', 'wb') as f:
-            pickle.dump(saved_models, f)
+        with open(self.output_dir / 'all_models.pkl', 'wb') as f:
+            pickle.dump(all_models, f)
         
-        # Save model metadata
+        # Save training results for reference
+        with open(self.output_dir / 'training_results.pkl', 'wb') as f:
+            pickle.dump(training_results, f)
+        
+        # Save comprehensive metadata
         metadata = {
-            'tasks': list(best_models.keys()),
-            'best_models': best_models,
-            'timestamp': pd.Timestamp.now().isoformat()
+            'tasks': list(models.keys()),
+            'models_per_task': {task: list(task_models.keys()) for task, task_models in models.items()},
+            'total_models': sum(len(task_models) for task_models in models.values()),
+            'timestamp': pd.Timestamp.now().isoformat(),
+            'preprocessing_info': {
+                'scalers': list(preprocessor.scalers.keys()),
+                'label_encoders': {task: list(encoders.keys()) for task, encoders in preprocessor.label_encoders.items()},
+                'feature_counts': {task: len(selector['features']) for task, selector in preprocessor.feature_selectors.items()}
+            }
         }
         
         with open(self.output_dir / 'model_metadata.pkl', 'wb') as f:
@@ -406,7 +365,6 @@ def main():
     # Initialize components
     preprocessor = Preprocessor()
     trainer = ModelTrainer()
-    evaluator = ModelEvaluation()
     saver = ModelSaver(models_output_dir)
     
     # Load and prepare data
@@ -414,18 +372,14 @@ def main():
     prepared_data = preprocessor.prepare_features_targets(df)
     
     if not prepared_data:
-        print("No valid data prepared")
+        print("No valid data prepared. Exiting...")
         return
     
     # Train models
     results = trainer.train_models(prepared_data)
     
-    # Evaluate results
-    evaluator.print_results_summary(results)
-    best_models = evaluator.identify_best_models(results)
-    
-    # Save models
-    saver.save_models_and_preprocessing(trainer.models, preprocessor, best_models)
+    # Save all models
+    saver.save_all_models_and_preprocessing(trainer.models, preprocessor, results)
     
     print(f"\nModels saved to: {models_output_dir}")
 
