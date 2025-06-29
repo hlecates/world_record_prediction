@@ -2,8 +2,6 @@
   <img src="docs/Aqua-Logo.png" alt="Aqua Logo" width="400"/>
 </p>
 
-# Aqua Analytics
-
 A comprehensive machine learning project for predicting competitive swimming performance across multiple levels of competition. Aqua Analytics applies data science techniques to analyze swimming meet data and forecast various aspects of race outcomes, from individual performance metrics to competitive dynamics.
 
 ## Project Overview
