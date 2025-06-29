@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split, cross_val_score, GridSearc
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.feature_selection import SelectKBest, f_regression, f_classif, RFE
 from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier, GradientBoostingRegressor, GradientBoostingClassifier
-from sklearn.linear_model import LinearRegression, LogisticRegression, Ridge, Lasso, ElasticNet
+from sklearn.linear_model import LogisticRegression, Ridge, Lasso, ElasticNet
 from sklearn.svm import SVR, SVC
 from sklearn.metrics import (mean_squared_error, mean_absolute_error, r2_score, 
                            accuracy_score, precision_score, recall_score, f1_score, 
@@ -140,10 +140,7 @@ class ModelTrainer:
 
     def define_model_configurations(self) -> Dict[str, Dict]:
         regression_models = {
-            'linear_regression': {
-                'model': LinearRegression(),
-                'params': {}
-            },
+
             'ridge': {
                 'model': Ridge(),
                 'params': {'alpha': [0.1, 1.0, 10.0, 100.0]}
@@ -308,9 +305,7 @@ class ModelSaver:
         self.output_dir.mkdir(parents=True, exist_ok=True)
     
 
-    def save_all_models_and_preprocessing(self, models: Dict, preprocessor: Preprocessor, training_results: Dict[str, Dict]):
-        
-        print(f"\nSaving all models to {self.output_dir}")
+    def save_all_models_and_preprocessing(self, models: Dict, preprocessor: Preprocessor, training_results: Dict[str, Dict], prepared_data: Dict[str, Tuple]):
         
         # Save preprocessing objects
         preprocessing_objects = {
@@ -340,6 +335,30 @@ class ModelSaver:
         with open(self.output_dir / 'training_results.pkl', 'wb') as f:
             pickle.dump(training_results, f)
         
+        # NEW: Save preprocessed data splits
+        data_splits = {}
+        for task_name, (X, y, feature_names) in prepared_data.items():
+            # Recreate the same train/test split used in training
+            is_classification = task_name == 'top_seed_win'
+            X_train, X_test, y_train, y_test = train_test_split(
+                X, y, test_size=0.2, random_state=42,
+                stratify=y if is_classification else None
+            )
+            
+            data_splits[task_name] = {
+                'X_train': X_train,
+                'X_test': X_test,
+                'y_train': y_train,
+                'y_test': y_test,
+                'X_full': X,
+                'y_full': y,
+                'feature_names': feature_names,
+                'is_classification': is_classification
+            }
+        
+        with open(self.output_dir / 'data_splits.pkl', 'wb') as f:
+            pickle.dump(data_splits, f)
+        
         # Save comprehensive metadata
         metadata = {
             'tasks': list(models.keys()),
@@ -350,12 +369,18 @@ class ModelSaver:
                 'scalers': list(preprocessor.scalers.keys()),
                 'label_encoders': {task: list(encoders.keys()) for task, encoders in preprocessor.label_encoders.items()},
                 'feature_counts': {task: len(selector['features']) for task, selector in preprocessor.feature_selectors.items()}
+            },
+            'data_info': {
+                'train_test_split': 0.2,
+                'random_state': 42,
+                'stratification': 'Used for classification tasks',
+                'samples_per_task': {task: len(splits['y_full']) for task, splits in data_splits.items()}
             }
         }
         
         with open(self.output_dir / 'model_metadata.pkl', 'wb') as f:
             pickle.dump(metadata, f)
-
+      
 
 def main():
     # Configuration
@@ -377,9 +402,9 @@ def main():
     
     # Train models
     results = trainer.train_models(prepared_data)
-    
-    # Save all models
-    saver.save_all_models_and_preprocessing(trainer.models, preprocessor, results)
+
+    # Save ALL models and data (not just best ones)
+    saver.save_all_models_and_preprocessing(trainer.models, preprocessor, results, prepared_data)
     
     print(f"\nModels saved to: {models_output_dir}")
 
