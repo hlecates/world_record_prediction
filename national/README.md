@@ -159,10 +159,6 @@ The feature engineering creates **60+ sophisticated features** across multiple c
 3. **Comprehensive evaluation** - Multiple metrics and cross-validation
 4. **Practical insights** - Feature importance reveals key competitive factors
 
-### Limitations & Challenges
-
-#### 
-
 ## Usage
 
 ### Training New Models
