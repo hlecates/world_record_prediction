@@ -12,6 +12,8 @@ def setup_logging():
         format="%(asctime)s [%(levelname)s] %(message)s",
         datefmt=config.DATE_FORMAT
     )
+    logging.getLogger("pdfminer").setLevel(logging.WARNING)
+    logging.getLogger("pdfplumber").setLevel(logging.WARNING)
 
 def read_csv(path):
     import pandas as pd
