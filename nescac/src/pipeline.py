@@ -1,38 +1,79 @@
-import os
-import time
 import logging
 import re
 import pandas as pd
 import pdfplumber
 from pathlib import Path
-from typing import List, Dict, Tuple, Set, Optional, Union
-import ast
+from typing import List, Dict, Tuple, Optional
 
-import config
 import utils
 
+
 class TextParser:
-    """Handles parsing of swimming meet text data from both PDF extracts and direct text files."""
     
     def __init__(self):
-        # Shared regex patterns
+        # Event header pattern (shared)
         self.event_re = re.compile(r'^Event\s+(\d+)\s+(Women|Men)\s+(\d+)\s+Yard\s+([A-Za-z ]+)(?:\s+Time\s+Trial)?$')
-        self.individual_entry_re = re.compile(
+        self.diving_re = re.compile(r'^Event\s+(\d+)\s+(Women|Men)\s+([13])\s+mtr\s+Diving')
+        
+        # TXT FORMAT PATTERNS
+        self.txt_individual_finals_re = re.compile(
+            r'^\s*(\d+)\s+(.+?)\s+([A-Z]{2})\s+(.+?)\s+([\d:.NTXb#&]+)\s+([\d:.NTXb#&A-Z!]+)(?:\s+(\d+))?\s*$'
+        )
+        
+        self.txt_individual_prelims_re = re.compile(
+            r'^\s*(\d+)\s+(.+?)\s+([A-Z]{2})\s+(.+?)\s+([\d:.NTXb#&]+)\s+([\d:.NTXb#&A-Z!]+)\s*$'
+        )
+        
+        self.txt_relay_re = re.compile(
+            r"""^\s*
+                (\d+)                                         # rank
+                \s+
+                ([A-Za-z\s\-]+?(?:College|University)(?:-[A-Z]{2})?)  # team
+                \s+'([A-Z])'                                  # relay letter
+                \s+
+                ([\d:.NTXb#&]+)                               # first time (seed/prelim)
+                \s+
+                ([\d:.NTXb#&]+)                               # second time (finals)
+                (?:\s+(\d+))?                                 # optional points
+                \s*$
+            """, re.VERBOSE
+        )
+        
+        # PDF FORMAT PATTERNS
+        self.pdf_individual_finals_re = re.compile(
+            r'^\s*(\d+)\s+([A-Za-z\',.\s-]+?)\s+([A-Z]{2})\s+([A-Za-z\s\-]+(?:-[A-Z]{2})?)\s+([\d:.NTXb#&]+)\s+([\d:.NTXb#&A-Z!]+)\s*(\d+)?\s*$'
+        )
+        
+        self.pdf_individual_prelims_re = re.compile(
+            r'^\s*(\d+)\s+([A-Za-z\',.\s-]+?)\s+([A-Z]{2})\s+([A-Za-z\s\-]+(?:-[A-Z]{2})?)\s+([\d:.NTXb#&]+)\s+([\d:.NTXb#&A-Z!]+)\s*$'
+        )
+        
+        # Legacy PDF individual pattern (keep for backwards compatibility)
+        self.pdf_individual_legacy_re = re.compile(
             r'^(\*?\d+|---)\s+([A-Za-z\',.-]+,\s+[A-Za-z\',.-]+)\s+([A-Z]{2})\s+([A-Za-z ]+(?:[A-Za-z])+)\s+([\d:.NTXb]+)\s+([\d:.NTXb]+)(?:\s+([\d:.NTXb]+))?(?:\s+(\d+))?'
         )
-        self.relay_entry_re = re.compile(
+        
+        self.pdf_relay_re = re.compile(
             r'^(\*?\d+|---)\s+([A-Za-z ]+)\s+([A-Z])\s+([\d:.NTXb]+)\s+([\d:.NTXb]+)(?:\s+([\d:.NTXb]+))?(?:\s+(\d+))?'
         )
-        self.diving_re = re.compile(r'^Event\s+(\d+)\s+(Women|Men)\s+([13])\s+mtr\s+Diving')
-    
-    def preprocess_text(self, text: str, source_format: str = 'auto') -> str:
-        """
-        Preprocess text based on source format.
+
+    def _get_patterns_for_format(self, source_format: str) -> dict:
+        if source_format == 'txt':
+            return {
+                'individual_finals': self.txt_individual_finals_re,
+                'individual_prelims': self.txt_individual_prelims_re,
+                'relay': self.txt_relay_re
+            }
+        else:  # pdf
+            return {
+                'individual_finals': self.pdf_individual_finals_re,
+                'individual_prelims': self.pdf_individual_prelims_re,
+                'individual_legacy': self.pdf_individual_legacy_re,
+                'relay': self.pdf_relay_re
+            }
         
-        Args:
-            text: Raw text content
-            source_format: 'pdf', 'txt', or 'auto'
-        """
+
+    def preprocess_text(self, text: str, source_format: str = 'auto') -> str:
         if source_format == 'auto':
             source_format = self._detect_format(text)
         
@@ -42,43 +83,39 @@ class TextParser:
             return self._preprocess_pdf_format(text)
     
     def _detect_format(self, text: str) -> str:
-        """Auto-detect if text came from PDF extraction or direct text file."""
+        # Look for TXT-specific formatting patterns
+        txt_indicators = [
+            'Championship Final',
+            'Consolation Final',
+            'Preconsolation Final',
+            'Preliminaries',
+            '==============================================================================='
+        ]
+        
+        if any(indicator in text for indicator in txt_indicators):
+            return 'txt'
+        
         # Look for PDF-specific artifacts
         pdf_indicators = [
-            'HY-TEK\'S MEET MANAGER',  # Common in your txt files from PDF
-            'Licensed to',             # Another PDF indicator
-            'COMPLETE RESULTS'         # Header format
+            'HY-TEK\'S MEET MANAGER',
+            'Licensed to',
+            'COMPLETE RESULTS'
         ]
         
         if any(indicator in text for indicator in pdf_indicators):
-            return 'txt'  # Actually from PDF but saved as txt
+            return 'pdf'
         
-        # Look for cleaner formatting that suggests direct text
-        lines = text.split('\n')
-        clean_event_lines = [line for line in lines if line.strip().startswith('Event')]
-        
-        if len(clean_event_lines) > 0:
-            # Check if events are cleanly formatted
-            return 'txt'
-        
-        return 'pdf'  # Default to PDF processing
+        return 'txt'  # Default to txt format for better parsing
     
     def _preprocess_txt_format(self, text: str) -> str:
-        """
-        Preprocess text files that may have different formatting.
-        Handle issues like:
-        - Extra spacing
-        - Different line endings
-        - Encoding issues
-        """
         lines = text.split('\n')
         processed_lines = []
         
         for line in lines:
-            # Strip extra whitespace but preserve structure
+            # Keep original line structure but strip trailing whitespace
             line = line.rstrip()
             
-            # Skip empty lines and header cruft
+            # Skip empty lines
             if not line.strip():
                 continue
             
@@ -86,11 +123,43 @@ class TextParser:
             skip_patterns = [
                 r'^Licensed to',
                 r'^HY-TEK\'S MEET MANAGER',
+                r'^\d{4}.*Championships.*Results$',
+                r'^={40,}$',  # Very long equal signs (table separators)
+                r'^-{40,}$',  # Very long dashes
+                r'^\s*Page\s+\d+',
+                r'^\s*www\.',
+                r'^\s*NESCAC:\s*\*',  # Record lines
+                r'^\s*Pool:\s*#',     # Pool record lines
+                r'^\s*Meet:\s*&',     # Meet record lines
+                r'^\s*\d+\.\d+\s+NAT[AB]$',  # Qualifying times
+            ]
+            
+            if any(re.match(pattern, line, re.IGNORECASE) for pattern in skip_patterns):
+                continue
+            
+            processed_lines.append(line)
+        
+        return '\n'.join(processed_lines)
+    
+    def _preprocess_pdf_format(self, text: str) -> str:
+        # For now, minimal preprocessing since PDF extraction seems fine
+        lines = text.split('\n')
+        processed_lines = []
+        
+        for line in lines:
+            line = line.rstrip()
+            if not line.strip():
+                continue
+            
+            # Skip common PDF headers
+            skip_patterns = [
+                r'^Licensed to',
+                r'^HY-TEK\'S MEET MANAGER',
                 r'^COMPLETE RESULTS$',
                 r'^\s*Results\s*$',
-                r'^\d{4}.*Championship.*\d{4}$',  # Date ranges
-                r'^={20,}$',  # Long equal signs
-                r'^-{20,}$'   # Long dashes
+                r'^\d{4}.*Championship.*\d{4}$',
+                r'^={20,}$',
+                r'^-{20,}$'
             ]
             
             if any(re.match(pattern, line) for pattern in skip_patterns):
@@ -100,36 +169,261 @@ class TextParser:
         
         return '\n'.join(processed_lines)
     
-    def _preprocess_pdf_format(self, text: str) -> str:
-        """
-        Preprocess PDF-extracted text.
-        Handle PDF-specific issues like:
-        - Inconsistent spacing
-        - Line breaks in wrong places
-        - OCR artifacts
-        """
-        # For now, minimal preprocessing since your PDF extraction seems clean
-        return text
+    def _is_section_header(self, line: str) -> Optional[str]:
+        line_clean = line.strip().lower()
+
+        # TXT format section headers
+        finals_indicators = [
+            'championship final',
+            'consolation final', 
+            'preconsolation final',
+            'final',
+            'championship',
+            'consolation',
+            'preconsolation',
+        ]
+
+        prelims_indicators = [
+            'preliminaries',
+            'prelim'
+        ]
+
+        # Recognize 'A - Final', 'B - Final', etc.
+        if re.match(r'^[a-z] - final$', line_clean):
+            return 'finals'
+        if re.match(r'^[a-z] - championship$', line_clean):
+            return 'finals'
+        if re.match(r'^[a-z] - consolation$', line_clean):
+            return 'finals'
+        if re.match(r'^[a-z] - preconsolation$', line_clean):
+            return 'finals'
+
+        # Check TXT format first
+        for indicator in finals_indicators:
+            if indicator in line_clean:
+                return 'finals'
+        for indicator in prelims_indicators:
+            if indicator in line_clean:
+                return 'prelims'
+
+        # PDF format (legacy support)
+        if line_clean.startswith('finals') or 'final' in line_clean:
+            return 'finals'
+        elif line_clean.startswith('prelim'):
+            return 'prelims'
+
+        return None
+    
+
+    def _parse_relay_entry(self, line: str, source_format: str, is_exhibition: bool) -> Optional[Dict]:
+        patterns = self._get_patterns_for_format(source_format)
+        
+        if source_format == 'txt':
+            # Skip split time lines for TXT relays
+            if re.match(r'^\s*(?:\d+(?:\.\d+)?\s+){3,}\d+(?:\.\d+)?\s*$', line):
+                return None
+            
+            m = patterns['relay'].match(line)
+            if m:
+                return {
+                    'raw': line,
+                    'rank': m.group(1),
+                    'team': m.group(2).strip(),
+                    'relay_letter': m.group(3),
+                    'entry_type': 'relay',
+                    'seed_time': m.group(4),
+                    'finals_time': m.group(5),
+                    'points': m.group(6) if m.group(6) else None,
+                    'prelim_time': None,
+                    'exhibition': is_exhibition
+                }
+        
+        else:  # PDF format
+            m = patterns['relay'].match(line)
+            if m:
+                return {
+                    'raw': line,
+                    'rank': m.group(1),
+                    'team': m.group(2).strip(),
+                    'relay_letter': m.group(3),
+                    'entry_type': 'relay',
+                    'seed_time': m.group(4),
+                    'finals_time': m.group(5),
+                    'points': m.group(7) if len(m.groups()) >= 7 else None,
+                    'prelim_time': None,
+                    'exhibition': is_exhibition
+                }
+        
+        return None
+
+    def _parse_individual_entry(self, line: str, current_section: str, source_format: str, is_exhibition: bool) -> Optional[Dict]:
+        patterns = self._get_patterns_for_format(source_format)
+        
+        # Clean the line for exhibition entries
+        clean_line = line
+        if is_exhibition:
+            if source_format == 'txt':
+                clean_line = re.sub(r'^\s*--\s+', '  ', line)
+            else:  # PDF format
+                # For PDF, don't clean the line since --- is part of the rank field
+                clean_line = line
+        
+        if source_format == 'txt':
+            # TXT format parsing (keep existing logic)
+            if current_section == 'prelims':
+                m = patterns['individual_prelims'].match(clean_line)
+                if m:
+                    rank, name, yr, school, seed_time, prelim_time = m.groups()
+                    return {
+                        'raw': line,
+                        'rank': rank,
+                        'name': name.strip(),
+                        'yr': yr,
+                        'school': school.strip(),
+                        'entry_type': 'individual',
+                        'exhibition': is_exhibition,
+                        'seed_time': seed_time,
+                        'prelim_time': prelim_time,
+                        'finals_time': None,
+                        'points': None
+                    }
+            else:  # finals section
+                m = patterns['individual_finals'].match(clean_line)
+                if m:
+                    rank, name, yr, school, seed_time, finals_time, points = m.groups()
+                    return {
+                        'raw': line,
+                        'rank': rank,
+                        'name': name.strip(),
+                        'yr': yr,
+                        'school': school.strip(),
+                        'entry_type': 'individual',
+                        'exhibition': is_exhibition,
+                        'seed_time': seed_time,
+                        'finals_time': finals_time,
+                        'points': points,
+                        'prelim_time': None
+                    }
+        
+        else:  # PDF format parsing
+            # IMPORTANT: For PDF format, check if this is an exhibition entry
+            # Exhibition entries should be skipped or handled separately
+            if is_exhibition:
+                return None  # Skip exhibition entries entirely for PDF
+            
+            # Try new PDF patterns first (only for non-exhibition entries)
+            if current_section == 'prelims':
+                m = patterns['individual_prelims'].match(clean_line)
+                if m:
+                    rank, name, yr, school, seed_time, prelim_time = m.groups()
+                    return {
+                        'raw': line,
+                        'rank': rank,
+                        'name': name.strip(),
+                        'yr': yr,
+                        'school': school.strip(),
+                        'entry_type': 'individual',
+                        'exhibition': False,  # Non-exhibition since we filtered them out
+                        'seed_time': seed_time,
+                        'prelim_time': prelim_time,
+                        'finals_time': None,
+                        'points': None
+                    }
+            else:  # finals section
+                m = patterns['individual_finals'].match(clean_line)
+                if m:
+                    rank, name, yr, school, seed_time, finals_time, points = m.groups()
+                    return {
+                        'raw': line,
+                        'rank': rank,
+                        'name': name.strip(),
+                        'yr': yr,
+                        'school': school.strip(),
+                        'entry_type': 'individual',
+                        'exhibition': False,  # Non-exhibition since we filtered them out
+                        'seed_time': seed_time,
+                        'finals_time': finals_time,
+                        'points': points,
+                        'prelim_time': None
+                    }
+            
+            # Fall back to legacy PDF pattern if new ones don't work 
+            m = patterns['individual_legacy'].match(line)
+            if m:
+                # Check if the rank indicates exhibition
+                rank = m.group(1)
+                if rank == '---':
+                    logging.debug(f"Skipping exhibition entry (legacy pattern): {line}")
+                    return None
+                
+                entry = {
+                    'raw': line,
+                    'rank': rank,
+                    'name': m.group(2).strip(),
+                    'yr': m.group(3),
+                    'school': m.group(4).strip(),
+                    'entry_type': 'individual',
+                    'exhibition': False
+                }
+                
+                # Handle time assignments based on current section
+                if current_section == 'finals':
+                    entry['seed_time'] = None
+                    entry['prelim_time'] = m.group(5)
+                    entry['finals_time'] = m.group(6)
+                    entry['points'] = m.group(8) if len(m.groups()) >= 8 else None
+                else:
+                    entry['seed_time'] = m.group(5)
+                    entry['prelim_time'] = m.group(6)
+                    entry['finals_time'] = m.group(7) if len(m.groups()) >= 7 else None
+                    entry['points'] = m.group(8) if len(m.groups()) >= 8 else None
+                
+                return entry
+        
+        return None
+
+    def _parse_entry(self, line: str, current_section: str, event_type: str, source_format: str) -> Optional[Dict]:
+        if not line.strip():
+            return None
+
+        # Skip separator lines
+        if re.match(r'^\s*-{5,}\s*$', line):
+            return None
+        
+        # Skip split time lines (just numbers)
+        if re.match(r'^\s*(?:\d+\.\d+\s+){2,}\s*$', line):
+            return None
+            
+        # Skip reaction time lines and other technical info
+        if 'r:+' in line or 'Declared false start' in line or line.strip().startswith('r:'):
+            return None
+        
+        is_exhibition = False
+        if source_format == 'txt':
+            # TXT format: exhibition entries start with --
+            is_exhibition = line.strip().startswith('--')
+        else:  # PDF format
+            # PDF format: exhibition entries start with --- (in rank position)
+            is_exhibition = line.strip().startswith('---') or ' X' in line
+        
+        # Choose appropriate parser
+        if event_type == 'relay':
+            return self._parse_relay_entry(line, source_format, is_exhibition)
+        else:
+            return self._parse_individual_entry(line, current_section, source_format, is_exhibition)
     
     def parse_meet_text(self, text: str, source_format: str = 'auto') -> List[Dict]:
-        """
-        Main parsing method that works for both PDF and text sources.
+        # Detect format if auto
+        if source_format == 'auto':
+            source_format = self._detect_format(text)
         
-        Args:
-            text: Raw text content
-            source_format: 'pdf', 'txt', or 'auto'
-        """
         # Preprocess based on format
         processed_text = self.preprocess_text(text, source_format)
         
-        # Use your existing parsing logic with the processed text
-        return self._parse_processed_text(processed_text)
+        # Use format-aware parsing logic
+        return self._parse_processed_text(processed_text, source_format)
     
-    def _parse_processed_text(self, text: str) -> List[Dict]:
-        """
-        Core parsing logic - identical to your existing parse_meet_text method.
-        This is the shared logic that works for both PDF and txt sources.
-        """
+    def _parse_processed_text(self, text: str, source_format: str) -> List[Dict]:
         # Event tracking dictionary - key: (event_num, gender, distance, stroke)
         events_dict = {}
         
@@ -138,26 +432,22 @@ class TextParser:
         current_section = None
         
         def get_event_key(event_line: str) -> Optional[Tuple[str, str, int, str]]:
-            """Extract normalized event key from event header line."""
             match = self.event_re.match(event_line)
             if match:
                 event_num, gender, distance, stroke = match.groups()
-                # Skip Time Trial events
-                if 'time trial' in event_line.lower():
-                    return None
-                if self.is_diving_event(event_line):
+                # Skip Time Trial events and diving
+                if ('time trial' in event_line.lower() or 
+                    self.is_diving_event(event_line)):
                     return None
                 return (event_num, gender, int(distance), stroke.strip())
             return None
         
         def is_any_skipped_event(event_line: str) -> bool:
-            """Check if this is any type of event we want to skip."""
             return (self.is_diving_event(event_line) or 
                     'time trial' in event_line.lower() or
                     'swim-off' in event_line.lower())
         
         def ensure_event_exists(event_key: Tuple, event_line: str):
-            """Ensure event exists in events_dict, create if necessary."""
             if event_key not in events_dict:
                 # Determine if this is a relay event
                 is_relay = any(word in event_line.lower() for word in ['relay', 'medley relay', 'freestyle relay'])
@@ -176,70 +466,26 @@ class TextParser:
                         'event_type': 'individual'
                     }
         
-        def is_section_header(line: str) -> Optional[str]:
-            """Check if line is a section header and return section type."""
-            line_lower = line.lower()
-            if line_lower.startswith('finals') or 'final' in line_lower:
-                return 'finals'
-            elif line_lower.startswith('prelim'):
-                return 'prelims'
-            return None
-        
-        def parse_entry(line: str) -> Optional[Dict]:
-            """Parse a swimmer/relay entry line."""
-            # Skip exhibition swims (entries with --- rank or X times)
-            if line.startswith('---') or ' X' in line or line.endswith(' X'):
-                return None
-            
-            # Try individual swimmer first
-            m = self.individual_entry_re.match(line)
-            if m:
-                entry = {
-                    'raw': line,
-                    'rank': m.group(1),
-                    'name': m.group(2),
-                    'yr': m.group(3),
-                    'school': m.group(4),
-                    'entry_type': 'individual'
-                }
-                
-                # Handle time assignments based on current section
-                if current_section == 'finals':
-                    entry['seed_time'] = None
-                    entry['prelim_time'] = m.group(5)
-                    entry['finals_time'] = m.group(6)
-                    entry['points'] = m.group(8)
-                else:
-                    entry['seed_time'] = m.group(5)
-                    entry['prelim_time'] = m.group(6)
-                    entry['finals_time'] = m.group(7)
-                    entry['points'] = m.group(8)
-                
-                return entry
-            
-            # Try relay team (reuse existing logic)
-            return None
-        
-        # Main parsing loop - identical to your existing logic
+        # Main parsing loop
         lines = text.splitlines()
         for i, line in enumerate(lines):
-            line = line.strip()
-            if not line:
+            line_stripped = line.strip()
+            if not line_stripped:
                 continue
             
             # Check if this is ANY event header (including ones we want to skip)
-            if line.startswith('Event'):
+            if line_stripped.startswith('Event'):
                 # Check if we should skip this event
-                if is_any_skipped_event(line):
+                if is_any_skipped_event(line_stripped):
                     current_event_key = None  # CRITICAL: Clear the current context
                     current_section = None
                     continue
                 
                 # Check if this is a valid swimming event
-                event_key = get_event_key(line)
+                event_key = get_event_key(line_stripped)
                 if event_key:
                     current_event_key = event_key
-                    ensure_event_exists(event_key, line)
+                    ensure_event_exists(event_key, line_stripped)
                     current_section = None  # Reset section when new event found
                     continue
                 else:
@@ -249,17 +495,18 @@ class TextParser:
             
             # Check for section header (only process if we have a valid current event)
             if current_event_key:
-                section = is_section_header(line)
+                section = self._is_section_header(line)
                 if section:
                     current_section = section
                     continue
             
             # Try to parse entry (only if we have a valid current event and section)
             if current_event_key and current_section:
-                entry = parse_entry(line)
+                event_type = events_dict[current_event_key]['event_type']
+                entry = self._parse_entry(line, current_section, event_type, source_format)
                 if entry:
                     # Handle relay vs individual events differently
-                    if events_dict[current_event_key]['event_type'] == 'relay':
+                    if event_type == 'relay':
                         events_dict[current_event_key]['results'].append(entry)
                     else:
                         events_dict[current_event_key][current_section].append(entry)
@@ -269,10 +516,9 @@ class TextParser:
         events = list(events_dict.values())
         
         # Log summary
-        logging.info(f"Parsed {len(events)} events from text")
+        logging.debug(f"Parsed {len(events)} events from {source_format.upper()} format")
         
         # Print summary of parsed events
-        logging.info(f"Parsed events summary:")
         total_events = len(events)
         individual_events = [e for e in events if e.get('event_type') == 'individual']
         relay_events = [e for e in events if e.get('event_type') == 'relay']
@@ -281,9 +527,9 @@ class TextParser:
         total_prelims = sum(len(e.get('prelims', [])) for e in individual_events)
         total_relay_results = sum(len(e.get('results', [])) for e in relay_events)
         
-        logging.info(f"  Total unique events: {total_events}")
-        logging.info(f"  Individual events: {len(individual_events)} (Finals: {total_finals}, Prelims: {total_prelims})")
-        logging.info(f"  Relay events: {len(relay_events)} (Results: {total_relay_results})")
+        logging.debug(f"  Total unique events: {total_events}")
+        logging.debug(f"  Individual events: {len(individual_events)} (Finals: {total_finals}, Prelims: {total_prelims})")
+        logging.debug(f"  Relay events: {len(relay_events)} (Results: {total_relay_results})")
         
         for e in events:
             if e.get('event_type') == 'relay':
@@ -294,7 +540,6 @@ class TextParser:
         return events
     
     def is_diving_event(self, event_line: str) -> bool:
-        """Check if event is a diving event."""
         return self.diving_re.match(event_line) is not None
 
 
@@ -320,8 +565,7 @@ class MeetDataPipeline:
         self.individual_meet_dfs = {}
     
     def parse_single_pdf(self, pdf_path: Path) -> List[Dict]:
-        """Parse a single PDF file."""
-        logging.info(f"Parsing PDF: {pdf_path.name}")
+        logging.debug(f"Parsing PDF: {pdf_path.name}")
         try:
             all_text = ""
             with pdfplumber.open(pdf_path) as pdf:
@@ -338,8 +582,7 @@ class MeetDataPipeline:
             return []
     
     def parse_single_txt(self, txt_path: Path) -> List[Dict]:
-        """Parse a single text file."""
-        logging.info(f"Parsing TXT: {txt_path.name}")
+        logging.debug(f"Parsing TXT: {txt_path.name}")
         try:
             with open(txt_path, 'r', encoding='utf-8', errors='ignore') as file:
                 all_text = file.read()
@@ -353,17 +596,14 @@ class MeetDataPipeline:
             return []
     
     def _process_events_for_pdf(self, events: List[Dict], pdf_path: Path) -> List[Dict]:
-        """Process parsed events for PDF source."""
         meet_name = pdf_path.stem.replace('-complete-results', '').replace('-', ' ').title()
         return self._process_events_common(events, meet_name, pdf_path.name, pdf_path.parent.name)
     
     def _process_events_for_txt(self, events: List[Dict], txt_path: Path) -> List[Dict]:
-        """Process parsed events for text file source."""
         meet_name = txt_path.stem.replace('-complete-results', '').replace('-', ' ').title()
         return self._process_events_common(events, meet_name, txt_path.name, txt_path.parent.name)
     
     def _process_events_common(self, events: List[Dict], meet_name: str, source_file: str, meet_category: str) -> List[Dict]:
-        """Common event processing logic for both PDF and txt sources."""
         processed_events = []
         
         for event in events:
@@ -399,14 +639,13 @@ class MeetDataPipeline:
         return processed_events
     
     def parse_all_files(self, pdf_paths: List[Path] = None, txt_paths: List[Path] = None) -> pd.DataFrame:
-        """Parse both PDF and text files."""
         if pdf_paths is None:
             pdf_paths = list(self.raw_pdf_dir.rglob("*.pdf"))
         if txt_paths is None:
             txt_paths = list(self.raw_txt_dir.rglob("*.txt"))
         
         total_files = len(pdf_paths) + len(txt_paths)
-        logging.info(f"Parsing {len(pdf_paths)} PDF files and {len(txt_paths)} TXT files ({total_files} total)")
+        logging.debug(f"Parsing {len(pdf_paths)} PDF files and {len(txt_paths)} TXT files ({total_files} total)")
         
         all_events = []
         successful_parses = 0
@@ -425,8 +664,8 @@ class MeetDataPipeline:
                 all_events.extend(events)
                 successful_parses += 1
         
-        logging.info(f"Successfully parsed {successful_parses}/{total_files} files")
-        logging.info(f"Total events extracted: {len(all_events)}")
+        logging.debug(f"Successfully parsed {successful_parses}/{total_files} files")
+        logging.debug(f"Total events extracted: {len(all_events)}")
         
         if not all_events:
             logging.warning("No events were successfully parsed!")
@@ -438,7 +677,6 @@ class MeetDataPipeline:
     
     
     def save_parsed_data(self, df: pd.DataFrame) -> Path:
-        """Save processed data and create individual meet DataFrames."""
         if df.empty:
             logging.warning("No data exists")
             return None
@@ -449,13 +687,11 @@ class MeetDataPipeline:
         # Store individual meets as DataFrames in memory
         self._create_individual_meet_dataframes(df)
         
-        logging.info(f"Saved processed data to: {output_path}")
-        logging.info(f"Created {len(self.individual_meet_dfs)} individual meet DataFrames")
+        logging.debug(f"Saved processed data to: {output_path}")
         
         return output_path
     
     def _create_individual_meet_dataframes(self, df: pd.DataFrame):
-        """Create and store individual meet DataFrames."""
         if df.empty or 'meet' not in df.columns:
             return
         
@@ -476,7 +712,6 @@ class MeetDataPipeline:
     
     
     def clean_existing_data(self) -> Tuple[Path, Path]:
-        """Clean existing parsed data (no prediction)."""
         logging.info("Cleaning Existing Parsed Data")
 
         parsed_data_path = self.processed_dir / "parsed_events.csv"
@@ -505,7 +740,6 @@ class MeetDataPipeline:
 
 
     def run_pipeline(self) -> Tuple[Path, Path]:
-        """Run the complete pipeline on both PDF and TXT files (no prediction)."""
         logging.info("Starting Complete Meet Data Pipeline")
         
         logging.info("Parsing all files (PDF and TXT)")
@@ -523,7 +757,6 @@ class MeetDataPipeline:
         return original_path, clean_path
     
 
-
 def main():
     base_dir = Path(__file__).parent.parent
     output_base = base_dir / "data"
@@ -539,12 +772,17 @@ def main():
         if command == "--parse":
             # Parse existing files only (no cleaning)
             logging.info("Running parse-only")
-            parse_path = pipeline.parse_all_files()
+            df = pipeline.parse_all_files()  # This returns a DataFrame
             
-            if parse_path:
-                print(f"\nSucces: Generated {parse_path}")
+            if not df.empty:  # Check if DataFrame has data
+                # Save the parsed data
+                parse_path = pipeline.save_parsed_data(df)
+                if parse_path:
+                    print(f"\nSuccess: Generated {parse_path}")
+                else:
+                    print("\nFailed to save parsed data.")
             else:
-                print("\nFailed to parse files.")
+                print("\nFailed to parse files - no data found.")
        
         elif command == "--clean":
             # Clean existing parsed data only
@@ -557,7 +795,7 @@ def main():
                 print("\nFailed to clean existing data.")
             
     else:
-        # Default behavior: parse only (skip cleaning for now)
+        # Default behavior: run full pipeline
         parse_path, clean_path = pipeline.run_pipeline()
             
         if parse_path and clean_path:
