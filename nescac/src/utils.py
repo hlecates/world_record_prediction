@@ -3,17 +3,55 @@ import logging
 import time
 import requests
 from typing import Optional, Dict
+from datetime import datetime
 
 import config
 
-def setup_logging():
-    logging.basicConfig(
-        level=getattr(logging, config.LOG_LEVEL),
-        format="%(asctime)s [%(levelname)s] %(message)s",
+def setup_logging(log_dir: str = "logs", log_filename: Optional[str] = None):
+    # Create logs directory if it doesn't exist
+    os.makedirs(log_dir, exist_ok=True)
+    
+    # Generate log filename with timestamp if not provided
+    if log_filename is None:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        log_filename = f"pipeline_run_{timestamp}.log"
+    
+    log_filepath = os.path.join(log_dir, log_filename)
+    
+    # Create formatter
+    formatter = logging.Formatter(
+        fmt="%(asctime)s [%(levelname)s] %(message)s",
         datefmt=config.DATE_FORMAT
     )
+    
+    # Get root logger
+    logger = logging.getLogger()
+    logger.setLevel(getattr(logging, config.LOG_LEVEL))
+    
+    # Clear any existing handlers
+    logger.handlers = []
+    
+    # Create console handler
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(getattr(logging, config.LOG_LEVEL))
+    console_handler.setFormatter(formatter)
+    logger.addHandler(console_handler)
+    
+    # Create file handler
+    file_handler = logging.FileHandler(log_filepath, mode='w', encoding='utf-8')
+    file_handler.setLevel(getattr(logging, config.LOG_LEVEL))
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
+    
+    # Set levels for noisy libraries
     logging.getLogger("pdfminer").setLevel(logging.WARNING)
     logging.getLogger("pdfplumber").setLevel(logging.WARNING)
+    
+    # Log the setup
+    logging.info(f"Logging initialized. Log file: {log_filepath}")
+    
+    return log_filepath
+
 
 def read_csv(path):
     import pandas as pd

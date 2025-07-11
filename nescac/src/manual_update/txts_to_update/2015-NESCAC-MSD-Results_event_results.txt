@@ -1,0 +1,6347 @@
+event: 1
+meet: 2015_Nescac_Msd_Results
+stroke: Freestyle Relay
+gender: Men
+distance: 200
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: relay
+Results:
+--------------------------------------------------
+event: 2
+meet: 2015_Nescac_Msd_Results
+stroke: Breaststroke
+gender: Men
+distance: 50
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Tamposi,
+yr: Jake
+school: JR Williams College
+exhibition: False
+seed_time: 25.51
+prelim_time: 25.51
+finals_time: 25.42C
+prelim_rank: 1
+final_rank: 1
+
+Swimmer 2:
+name: Netto,
+yr: Mike
+school: FR Bowdoin College
+exhibition: False
+seed_time: 25.83
+prelim_time: 25.83
+finals_time: 25.64
+prelim_rank: 3
+final_rank: 2
+
+Swimmer 3:
+name: Spiro, Elijah
+yr: FR
+school: Amherst College
+exhibition: False
+seed_time: 26.00
+prelim_time: 26.00
+finals_time: 25.69
+prelim_rank: 5
+final_rank: 3
+
+Swimmer 4:
+name: Briggs, Andrew
+yr: SR
+school: Bates College
+exhibition: False
+seed_time: 25.77
+prelim_time: 25.77
+finals_time: 25.81
+prelim_rank: 2
+final_rank: 6
+
+Swimmer 5:
+name: Yin,
+yr: Jon
+school: JR Williams College
+exhibition: False
+seed_time: 26.27
+prelim_time: 26.27
+finals_time: 26.11
+prelim_rank: 8
+final_rank: 7
+
+Swimmer 6:
+name: Hepner, Billy
+yr: JR
+school: Wesleyan University
+exhibition: False
+seed_time: 26.16
+prelim_time: 26.16
+finals_time: 26.22
+prelim_rank: 6
+final_rank: 8
+
+Swimmer 7:
+name: Ciliv, Morgan
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 26.61
+prelim_time: 26.61
+finals_time: 26.22
+prelim_rank: 14
+final_rank: 9
+
+Swimmer 8:
+name: Steiner, Dylan
+yr: JR
+school: Connecticut College
+exhibition: False
+seed_time: 26.68
+prelim_time: 26.68
+finals_time: 26.36
+prelim_rank: 16
+final_rank: 10
+
+Swimmer 9:
+name: Brankovic, Milan
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 26.54
+prelim_time: 26.54
+finals_time: 26.49
+prelim_rank: *11
+final_rank: 11
+
+Swimmer 10:
+name: Lagasse,
+yr: John
+school: JR Bowdoin College
+exhibition: False
+seed_time: 26.57
+prelim_time: 26.57
+finals_time: 26.63
+prelim_rank: 13
+final_rank: 12
+
+Swimmer 11:
+name: Pender, Theodore
+yr: FR
+school: Bates College
+exhibition: False
+seed_time: 26.45
+prelim_time: 26.45
+finals_time: 26.75
+prelim_rank: 10
+final_rank: 13
+
+Swimmer 12:
+name: Thunem,
+yr: Ned
+school: SO Bates College
+exhibition: False
+seed_time: 26.39
+prelim_time: 26.39
+finals_time: 26.79
+prelim_rank: 9
+final_rank: 14
+
+Swimmer 13:
+name: Johnson,
+yr: Cam
+school: SR Connecticut College
+exhibition: False
+seed_time: 26.54
+prelim_time: 26.54
+finals_time: 26.83
+prelim_rank: *11
+final_rank: 15
+
+Swimmer 14:
+name: Simpson, Scott
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 26.63
+prelim_time: 26.63
+finals_time: 26.87
+prelim_rank: 15
+final_rank: 16
+
+Swimmer 15:
+name: Freiberg, Drake
+yr: FR
+school: Connecticut College
+exhibition: False
+seed_time: 26.71
+prelim_time: 26.71
+finals_time: 26.53
+prelim_rank: 17
+final_rank: 17
+
+Swimmer 16:
+name: Bazile, Jacques
+yr: JR
+school: Wesleyan University
+exhibition: False
+seed_time: 27.06
+prelim_time: 27.06
+finals_time: 26.63
+prelim_rank: *22
+final_rank: 18
+
+Swimmer 17:
+name: Sivulich, Ethan
+yr: FR
+school: Middlebury College
+exhibition: False
+seed_time: 26.78
+prelim_time: 26.78
+finals_time: 26.87
+prelim_rank: 18
+final_rank: 19
+
+Swimmer 18:
+name: Kang,
+yr: Alex
+school: SR Amherst College
+exhibition: False
+seed_time: 26.82
+prelim_time: 26.82
+finals_time: 26.95
+prelim_rank: 19
+final_rank: 20
+
+Swimmer 19:
+name: Asao, Hikaru
+yr: JR
+school: Bates College
+exhibition: False
+seed_time: 27.01
+prelim_time: 27.01
+finals_time: 27.15
+prelim_rank: 20
+final_rank: 21
+
+Swimmer 20:
+name: Du, Jasper
+yr: SO
+school: Tufts University
+exhibition: False
+seed_time: 27.03
+prelim_time: 27.03
+finals_time: 27.23
+prelim_rank: 21
+final_rank: 22
+
+Swimmer 21:
+name: Chun, Eliot
+yr: FR
+school: Bates College
+exhibition: False
+seed_time: 27.06
+prelim_time: 27.06
+finals_time: 27.35
+prelim_rank: *22
+final_rank: 23
+
+Swimmer 22:
+name: Pla, Stefan
+yr: FR
+school: Middlebury College
+exhibition: False
+seed_time: 27.13
+prelim_time: 27.13
+finals_time: 27.40
+prelim_rank: 24
+final_rank: 24
+
+Swimmer 23:
+name: Koenigsberger, Stephan
+yr: JR
+school: Middlebury College
+exhibition: False
+seed_time: 26.80
+prelim_time: 25.88
+finals_time: None
+prelim_rank: 4
+final_rank: None
+
+Swimmer 24:
+name: Czelewicz,
+yr: Kirk
+school: SR Connecticut College
+exhibition: False
+seed_time: 27.89
+prelim_time: 26.18
+finals_time: None
+prelim_rank: 7
+final_rank: None
+
+Swimmer 25:
+name: Wennberg,
+yr: Paul
+school: SR Colby College
+exhibition: False
+seed_time: 29.17
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 26:
+name: Jones,
+yr: Alex
+school: JR Hamilton College
+exhibition: False
+seed_time: 28.31
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 27:
+name: Chow,
+yr: Jd
+school: SO Bates College
+exhibition: False
+seed_time: 27.91
+prelim_time: None
+finals_time: None
+prelim_rank: 27
+final_rank: None
+
+Swimmer 28:
+name: Owlett, Carson
+yr: SO
+school: Connecticut College
+exhibition: False
+seed_time: 29.24
+prelim_time: None
+finals_time: None
+prelim_rank: 28
+final_rank: None
+
+Swimmer 29:
+name: Arbaugh,
+yr: Jon
+school: SO Tufts University
+exhibition: False
+seed_time: 29.28
+prelim_time: None
+finals_time: None
+prelim_rank: 29
+final_rank: None
+
+Swimmer 30:
+name: Lee, Andrew
+yr: SR
+school: Middlebury College
+exhibition: False
+seed_time: 28.65
+prelim_time: None
+finals_time: None
+prelim_rank: 30
+final_rank: None
+
+Swimmer 31:
+name: Devine,
+yr: John
+school: FR Colby College
+exhibition: False
+seed_time: 28.69
+prelim_time: None
+finals_time: None
+prelim_rank: 31
+final_rank: None
+
+Swimmer 32:
+name: Smith,
+yr: Nate
+school: JR Middlebury College
+exhibition: False
+seed_time: 29.84
+prelim_time: None
+finals_time: None
+prelim_rank: 32
+final_rank: None
+
+Swimmer 33:
+name: Seaton, Andrew
+yr: SR
+school: Bates College
+exhibition: False
+seed_time: 29.05
+prelim_time: None
+finals_time: None
+prelim_rank: 33
+final_rank: None
+
+Swimmer 34:
+name: Hamlish,
+yr: Noah
+school: JR Wesleyan University
+exhibition: False
+seed_time: 30.33
+prelim_time: None
+finals_time: None
+prelim_rank: 34
+final_rank: None
+
+Swimmer 35:
+name: McConnell,
+yr: Trip
+school: FR Trinity College
+exhibition: False
+seed_time: 28.27
+prelim_time: None
+finals_time: None
+prelim_rank: 35
+final_rank: None
+
+Swimmer 36:
+name: Elwyn, Chandler
+yr: SO
+school: Hamilton College
+exhibition: False
+seed_time: 29.56
+prelim_time: None
+finals_time: None
+prelim_rank: 36
+final_rank: None
+
+Swimmer 37:
+name: Paine,
+yr: Joe
+school: SO Trinity College
+exhibition: False
+seed_time: 31.53
+prelim_time: None
+finals_time: None
+prelim_rank: 37
+final_rank: None
+--------------------------------------------------
+event: 3
+meet: 2015_Nescac_Msd_Results
+stroke: Butterfly
+gender: Men
+distance: 50
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Gagne, Matthew
+yr: SR
+school: Bates College
+exhibition: False
+seed_time: 22.46
+prelim_time: 22.46
+finals_time: 22.35
+prelim_rank: 2
+final_rank: 1
+
+Swimmer 2:
+name: Bowen, Loring
+yr: JR
+school: Connecticut College
+exhibition: False
+seed_time: 22.25
+prelim_time: 22.25P
+finals_time: 22.39
+prelim_rank: 1
+final_rank: 2
+
+Swimmer 3:
+name: Hampton, Tyler
+yr: SR
+school: Amherst College
+exhibition: False
+seed_time: 22.55
+prelim_time: 22.55
+finals_time: 22.67
+prelim_rank: 3
+final_rank: 3
+
+Swimmer 4:
+name: Patterson,
+yr: Reed
+school: SO Amherst College
+exhibition: False
+seed_time: 22.61
+prelim_time: 22.61
+finals_time: 22.73
+prelim_rank: 4
+final_rank: 4
+
+Swimmer 5:
+name: Spurrell,
+yr: Sam
+school: FR Amherst College
+exhibition: False
+seed_time: 23.00
+prelim_time: 23.00
+finals_time: 22.90
+prelim_rank: 5
+final_rank: 5
+
+Swimmer 6:
+name: Yan,
+yr: Erik
+school: SR Wesleyan University
+exhibition: False
+seed_time: 23.22
+prelim_time: 23.22
+finals_time: 23.08
+prelim_rank: *7
+final_rank: 6
+
+Swimmer 7:
+name: House, Logan
+yr: SO
+school: Bowdoin College
+exhibition: False
+seed_time: 23.22
+prelim_time: 23.22
+finals_time: 23.14
+prelim_rank: *7
+final_rank: 7
+
+Swimmer 8:
+name: Patton, William
+yr: SR
+school: Bates College
+exhibition: False
+seed_time: 23.18
+prelim_time: 23.18
+finals_time: 23.35
+prelim_rank: 6
+final_rank: 8
+
+Swimmer 9:
+name: Stephens, Weston
+yr: FR
+school: Connecticut College
+exhibition: False
+seed_time: 23.48
+prelim_time: 23.48
+finals_time: 23.36
+prelim_rank: *11
+final_rank: 9
+
+Swimmer 10:
+name: Lewtan, Tyler
+yr: JR
+school: Colby College
+exhibition: False
+seed_time: 23.48
+prelim_time: 23.48
+finals_time: 23.47
+prelim_rank: *11
+final_rank: 10
+
+Swimmer 11:
+name: Shi, William
+yr: SR
+school: Bowdoin College
+exhibition: False
+seed_time: 23.53
+prelim_time: 23.53
+finals_time: 23.55
+prelim_rank: 14
+final_rank: 11
+
+Swimmer 12:
+name: Hammond,
+yr: John
+school: JR Williams College
+exhibition: False
+seed_time: 23.26
+prelim_time: 23.26
+finals_time: 23.56
+prelim_rank: 9
+final_rank: 12
+
+Swimmer 13:
+name: Napolitano,
+yr: Mike
+school: SR Tufts University
+exhibition: False
+seed_time: 23.72
+prelim_time: 23.72
+finals_time: 23.59
+prelim_rank: 15
+final_rank: 13
+
+Swimmer 14:
+name: Snyder,
+yr: Nels
+school: JR Williams College
+exhibition: False
+seed_time: 23.30
+prelim_time: 23.30
+finals_time: 23.76
+prelim_rank: 10
+final_rank: 14
+
+Swimmer 15:
+name: Edwards, Thomas
+yr: FR
+school: Connecticut College
+exhibition: False
+seed_time: 23.80
+prelim_time: 23.80
+finals_time: 23.78
+prelim_rank: 16
+final_rank: 15
+
+Swimmer 16:
+name: McGinnis, Patrick
+yr: SR
+school: Connecticut College
+exhibition: False
+seed_time: 23.52
+prelim_time: 23.52
+finals_time: 23.98
+prelim_rank: 13
+final_rank: 16
+
+Swimmer 17:
+name: Kuo, Theodore
+yr: SR
+school: Middlebury College
+exhibition: False
+seed_time: 23.97
+prelim_time: 23.97
+finals_time: 23.95
+prelim_rank: 20
+final_rank: 17
+
+Swimmer 18:
+name: Flynn, Chris
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 23.84
+prelim_time: 23.84
+finals_time: 24.14
+prelim_rank: 18
+final_rank: 18
+
+Swimmer 19:
+name: Smachlo,
+yr: Alex
+school: SR Bates College
+exhibition: False
+seed_time: 23.94
+prelim_time: 23.94
+finals_time: 24.32
+prelim_rank: 19
+final_rank: 21
+
+Swimmer 20:
+name: Fothergill, Daniel
+yr: FR
+school: Bates College
+exhibition: False
+seed_time: 24.19
+prelim_time: 24.19
+finals_time: 24.35
+prelim_rank: 22
+final_rank: 22
+
+Swimmer 21:
+name: Brosnihan,
+yr: Niko
+school: SO Connecticut College
+exhibition: False
+seed_time: 24.24
+prelim_time: 24.24
+finals_time: 24.36
+prelim_rank: 23
+final_rank: 23
+
+Swimmer 22:
+name: Jeton,
+yr: Luke
+school: SO Hamilton College
+exhibition: False
+seed_time: 24.31
+prelim_time: 24.31
+finals_time: 24.60
+prelim_rank: 24
+final_rank: 24
+
+Swimmer 23:
+name: Deardorff, Peter
+yr: SR
+school: Bowdoin College
+exhibition: False
+seed_time: 24.35
+prelim_time: 23.81
+finals_time: None
+prelim_rank: 17
+final_rank: None
+
+Swimmer 24:
+name: Cruz, Sebastian
+yr: JR
+school: Amherst College
+exhibition: False
+seed_time: NT
+prelim_time: 24.04
+finals_time: None
+prelim_rank: 21
+final_rank: None
+
+Swimmer 25:
+name: Lis, Chase
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: NT
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 26:
+name: Berson,
+yr: Marc
+school: FR Bowdoin College
+exhibition: False
+seed_time: 25.45
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 27:
+name: Fleisher, Andrew
+yr: JR
+school: Middlebury College
+exhibition: False
+seed_time: 26.52
+prelim_time: None
+finals_time: None
+prelim_rank: 27
+final_rank: None
+
+Swimmer 28:
+name: Reinhardt,
+yr: Karl
+school: SR Bowdoin College
+exhibition: False
+seed_time: 26.09
+prelim_time: None
+finals_time: None
+prelim_rank: 28
+final_rank: None
+
+Swimmer 29:
+name: Ho, Wesley
+yr: SR
+school: Wesleyan University
+exhibition: False
+seed_time: 25.93
+prelim_time: None
+finals_time: None
+prelim_rank: 29
+final_rank: None
+
+Swimmer 30:
+name: Cohen, Peter
+yr: SO
+school: Bowdoin College
+exhibition: False
+seed_time: 25.66
+prelim_time: None
+finals_time: None
+prelim_rank: 30
+final_rank: None
+
+Swimmer 31:
+name: Rosenbloom,
+yr: Jake
+school: SR Wesleyan University
+exhibition: False
+seed_time: 26.62
+prelim_time: None
+finals_time: None
+prelim_rank: 31
+final_rank: None
+
+Swimmer 32:
+name: Kurose,
+yr: Alex
+school: SR Trinity College
+exhibition: False
+seed_time: 25.45
+prelim_time: None
+finals_time: None
+prelim_rank: 32
+final_rank: None
+
+Swimmer 33:
+name: Williams, Travis
+yr: SR
+school: Wesleyan University
+exhibition: False
+seed_time: 26.22
+prelim_time: None
+finals_time: None
+prelim_rank: 33
+final_rank: None
+
+Swimmer 34:
+name: Holmes,
+yr: Clay
+school: FR Hamilton College
+exhibition: False
+seed_time: 26.52
+prelim_time: None
+finals_time: None
+prelim_rank: 34
+final_rank: None
+
+Swimmer 35:
+name: Ma, Lawrence
+yr: JR
+school: Wesleyan University
+exhibition: False
+seed_time: 27.16
+prelim_time: None
+finals_time: None
+prelim_rank: 35
+final_rank: None
+--------------------------------------------------
+event: 4
+meet: 2015_Nescac_Msd_Results
+stroke: Freestyle
+gender: Men
+distance: 500
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Ricotta,
+yr: Thad
+school: SR Williams College
+exhibition: False
+seed_time: 4:27.66
+prelim_time: None
+finals_time: 4:25.93M
+prelim_rank: None
+final_rank: 1
+
+Swimmer 2:
+name: Simko,
+yr: Cam
+school: JR Tufts University
+exhibition: False
+seed_time: 4:33.16
+prelim_time: None
+finals_time: 4:37.11
+prelim_rank: None
+final_rank: 6
+
+Swimmer 3:
+name: Needham,
+yr: Dan
+school: FR Williams College
+exhibition: False
+seed_time: 4:36.19
+prelim_time: None
+finals_time: 4:37.18
+prelim_rank: None
+final_rank: 7
+
+Swimmer 4:
+name: Brody,
+yr: John
+school: SO Amherst College
+exhibition: False
+seed_time: 4:37.25
+prelim_time: 4:37.25
+finals_time: 4:37.24
+prelim_rank: 8
+final_rank: 8
+
+Swimmer 5:
+name: Downey, Adrien
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 4:39.79
+prelim_time: 4:39.79
+finals_time: 4:38.48
+prelim_rank: 11
+final_rank: 9
+
+Swimmer 6:
+name: Ives, Nathan
+yr: FR
+school: Amherst College
+exhibition: False
+seed_time: 4:38.88
+prelim_time: 4:38.88
+finals_time: 4:38.65
+prelim_rank: 9
+final_rank: 10
+
+Swimmer 7:
+name: Molina,
+yr: Mace
+school: SO Connecticut College
+exhibition: False
+seed_time: 4:40.20
+prelim_time: 4:40.20
+finals_time: 4:40.26
+prelim_rank: 12
+final_rank: 11
+
+Swimmer 8:
+name: Brown,
+yr: Will
+school: SR Williams College
+exhibition: False
+seed_time: 4:39.23
+prelim_time: 4:39.23
+finals_time: 4:41.47
+prelim_rank: 10
+final_rank: 12
+
+Swimmer 9:
+name: Cassidy,
+yr: Ryan
+school: SO Hamilton College
+exhibition: False
+seed_time: 4:40.97
+prelim_time: 4:40.97
+finals_time: 4:41.94
+prelim_rank: 14
+final_rank: 13
+
+Swimmer 10:
+name: Weihs, Chris
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 4:40.54
+prelim_time: 4:40.54
+finals_time: 4:42.14
+prelim_rank: 13
+final_rank: 14
+
+Swimmer 11:
+name: Avidan, Lucas
+yr: SR
+school: Middlebury College
+exhibition: False
+seed_time: 4:41.29
+prelim_time: 4:41.29
+finals_time: 4:42.58
+prelim_rank: 15
+final_rank: 15
+
+Swimmer 12:
+name: Debenedetto, Anthony
+yr: JR
+school: Tufts University
+exhibition: False
+seed_time: 4:41.46
+prelim_time: 4:41.46
+finals_time: 4:43.16
+prelim_rank: 16
+final_rank: 16
+
+Swimmer 13:
+name: McGean,
+yr: Mike
+school: SO Middlebury College
+exhibition: False
+seed_time: 4:41.82
+prelim_time: 4:41.82
+finals_time: 4:37.83
+prelim_rank: 18
+final_rank: 17
+
+Swimmer 14:
+name: Druckman, Daniel
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 4:42.39
+prelim_time: 4:42.39
+finals_time: 4:38.77
+prelim_rank: 19
+final_rank: 18
+
+Swimmer 15:
+name: Lantin,
+yr: Matt
+school: FR Middlebury College
+exhibition: False
+seed_time: 4:45.15
+prelim_time: 4:45.15
+finals_time: 4:41.57
+prelim_rank: 24
+final_rank: 19
+
+Swimmer 16:
+name: Rosenthal, Andrew
+yr: JR
+school: Middlebury College
+exhibition: False
+seed_time: 4:44.07
+prelim_time: 4:44.07
+finals_time: 4:42.67
+prelim_rank: 22
+final_rank: 20
+
+Swimmer 17:
+name: Janezich,
+yr: John
+school: FR Amherst College
+exhibition: False
+seed_time: 4:41.62
+prelim_time: 4:41.62
+finals_time: 4:43.50
+prelim_rank: 17
+final_rank: 21
+
+Swimmer 18:
+name: Depew, Jonathan
+yr: FR
+school: Bates College
+exhibition: False
+seed_time: 4:44.09
+prelim_time: 4:44.09
+finals_time: 4:43.84
+prelim_rank: 23
+final_rank: 22
+
+Swimmer 19:
+name: Pearson, Trevor
+yr: FR
+school: Hamilton College
+exhibition: False
+seed_time: 4:43.81
+prelim_time: 4:43.81
+finals_time: 4:45.01
+prelim_rank: 20
+final_rank: 23
+
+Swimmer 20:
+name: Lafky,
+yr: Nick
+school: SO Amherst College
+exhibition: False
+seed_time: 4:43.94
+prelim_time: 4:43.94
+finals_time: 4:45.15
+prelim_rank: 21
+final_rank: 24
+
+Swimmer 21:
+name: Martin,
+yr: Bo
+school: SR Connecticut College
+exhibition: False
+seed_time: 4:53.25
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 22:
+name: Long,
+yr: Tim
+school: SO Bowdoin College
+exhibition: False
+seed_time: 4:54.48
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 23:
+name: McElduff, James
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 4:49.33
+prelim_time: None
+finals_time: None
+prelim_rank: 27
+final_rank: None
+
+Swimmer 24:
+name: Spazzarini,
+yr: Neil
+school: FR Tufts University
+exhibition: False
+seed_time: 4:53.75
+prelim_time: None
+finals_time: None
+prelim_rank: 28
+final_rank: None
+
+Swimmer 25:
+name: Patapis, Peter
+yr: FR
+school: Wesleyan University
+exhibition: False
+seed_time: 5:08.70
+prelim_time: None
+finals_time: None
+prelim_rank: 29
+final_rank: None
+
+Swimmer 26:
+name: Lueck, Tyler
+yr: JR
+school: Tufts University
+exhibition: False
+seed_time: 5:06.88
+prelim_time: None
+finals_time: None
+prelim_rank: 30
+final_rank: None
+
+Swimmer 27:
+name: Courville, Nathan
+yr: SO
+school: Wesleyan University
+exhibition: False
+seed_time: 5:08.73
+prelim_time: None
+finals_time: None
+prelim_rank: 31
+final_rank: None
+
+Swimmer 28:
+name: Curtin,
+yr: Doug
+school: SO Trinity College
+exhibition: False
+seed_time: 4:57.33
+prelim_time: None
+finals_time: None
+prelim_rank: 32
+final_rank: None
+
+Swimmer 29:
+name: McWhirter, Andrew
+yr: SR
+school: Hamilton College
+exhibition: False
+seed_time: 4:58.42
+prelim_time: None
+finals_time: None
+prelim_rank: 33
+final_rank: None
+
+Swimmer 30:
+name: Buchser, Andrew
+yr: FR
+school: Middlebury College
+exhibition: False
+seed_time: 5:06.62
+prelim_time: None
+finals_time: None
+prelim_rank: 34
+final_rank: None
+
+Swimmer 31:
+name: Tatro,
+yr: Case
+school: FR Hamilton College
+exhibition: False
+seed_time: 5:02.09
+prelim_time: None
+finals_time: None
+prelim_rank: 35
+final_rank: None
+
+Swimmer 32:
+name: Laser, Jacob
+yr: SO
+school: Colby College
+exhibition: False
+seed_time: 5:08.63
+prelim_time: None
+finals_time: None
+prelim_rank: 36
+final_rank: None
+
+Swimmer 33:
+name: Stanton,
+yr: Eric
+school: SO Middlebury College
+exhibition: False
+seed_time: 5:09.84
+prelim_time: None
+finals_time: None
+prelim_rank: 37
+final_rank: None
+
+Swimmer 34:
+name: Webster, Robert
+yr: FR
+school: Wesleyan University
+exhibition: False
+seed_time: 5:17.81
+prelim_time: None
+finals_time: None
+prelim_rank: 38
+final_rank: None
+
+Swimmer 35:
+name: McConnell,
+yr: Ryan
+school: SR Trinity College
+exhibition: False
+seed_time: 5:21.04
+prelim_time: None
+finals_time: None
+prelim_rank: 39
+final_rank: None
+
+Swimmer 36:
+name: Distler,
+yr: Max
+school: FR Wesleyan University
+exhibition: False
+seed_time: 5:03.12
+prelim_time: None
+finals_time: None
+prelim_rank: 40
+final_rank: None
+
+Swimmer 37:
+name: Knight,
+yr: Joe
+school: SO Colby College
+exhibition: False
+seed_time: 5:17.68
+prelim_time: None
+finals_time: None
+prelim_rank: 41
+final_rank: None
+
+Swimmer 38:
+name: Klein, Christopher
+yr: FR
+school: Hamilton College
+exhibition: False
+seed_time: 5:12.13
+prelim_time: None
+finals_time: None
+prelim_rank: 42
+final_rank: None
+
+Swimmer 39:
+name: Brown, Frankie
+yr: FR
+school: Wesleyan University
+exhibition: False
+seed_time: 5:21.67
+prelim_time: None
+finals_time: None
+prelim_rank: 43
+final_rank: None
+
+Swimmer 40:
+name: Weeks,
+yr: Ryan
+school: JR Colby College
+exhibition: False
+seed_time: 5:22.60
+prelim_time: None
+finals_time: None
+prelim_rank: 44
+final_rank: None
+
+Swimmer 41:
+name: Fields,
+yr: Ben
+school: SR Hamilton College
+exhibition: False
+seed_time: 5:45.92
+prelim_time: None
+finals_time: None
+prelim_rank: 45
+final_rank: None
+
+Swimmer 42:
+name: Dizengoff, Reuben
+yr: SR
+school: Hamilton College
+exhibition: False
+seed_time: 5:46.20
+prelim_time: None
+finals_time: None
+prelim_rank: 46
+final_rank: None
+--------------------------------------------------
+event: 5
+meet: 2015_Nescac_Msd_Results
+stroke: Backstroke
+gender: Men
+distance: 50
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Lin, Benjamin
+yr: SO
+school: Williams College
+exhibition: False
+seed_time: 22.37
+prelim_time: 22.37C
+finals_time: 22.48
+prelim_rank: 1
+final_rank: 1
+
+Swimmer 2:
+name: Fothergill, Michael
+yr: SO
+school: Connecticut College
+exhibition: False
+seed_time: 22.78
+prelim_time: 22.78
+finals_time: 23.00
+prelim_rank: 2
+final_rank: 2
+
+Swimmer 3:
+name: Winget, Michael
+yr: JR
+school: Tufts University
+exhibition: False
+seed_time: 23.07
+prelim_time: 23.07
+finals_time: 23.38
+prelim_rank: 3
+final_rank: 3
+
+Swimmer 4:
+name: Lawton, Trebor
+yr: SO
+school: Connecticut College
+exhibition: False
+seed_time: 23.54
+prelim_time: 23.54
+finals_time: 23.41
+prelim_rank: 4
+final_rank: 4
+
+Swimmer 5:
+name: Paquette,
+yr: Sean
+school: SR Connecticut College
+exhibition: False
+seed_time: 23.73
+prelim_time: 23.73
+finals_time: 23.71
+prelim_rank: 7
+final_rank: 7
+
+Swimmer 6:
+name: Sommer,
+yr: Ben
+school: JR Bates College
+exhibition: False
+seed_time: 23.77
+prelim_time: 23.77
+finals_time: 23.74
+prelim_rank: 8
+final_rank: 8
+
+Swimmer 7:
+name: Brienza, Michael
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 24.21
+prelim_time: 24.21
+finals_time: 24.11
+prelim_rank: 10
+final_rank: 9
+
+Swimmer 8:
+name: Schultz,
+yr: Nico
+school: SR Connecticut College
+exhibition: False
+seed_time: 24.28
+prelim_time: 24.28
+finals_time: 24.33
+prelim_rank: 11
+final_rank: 10
+
+Swimmer 9:
+name: Brown, Brandon
+yr: SR
+school: Amherst College
+exhibition: False
+seed_time: 24.39
+prelim_time: 24.39
+finals_time: 24.42
+prelim_rank: 12
+final_rank: 11
+
+Swimmer 10:
+name: Heise, Matthew
+yr: JR
+school: Amherst College
+exhibition: False
+seed_time: 23.95
+prelim_time: 23.95
+finals_time: 24.45
+prelim_rank: 9
+final_rank: 12
+
+Swimmer 11:
+name: Patton, William
+yr: SR
+school: Bates College
+exhibition: False
+seed_time: 24.54
+prelim_time: 24.54
+finals_time: 24.56
+prelim_rank: 14
+final_rank: 13
+
+Swimmer 12:
+name: Antonisse,
+yr: Noel
+school: SO Middlebury College
+exhibition: False
+seed_time: 24.81
+prelim_time: 24.81
+finals_time: 24.70
+prelim_rank: 16
+final_rank: 14
+
+Swimmer 13:
+name: Tang, Spencer
+yr: FR
+school: Wesleyan University
+exhibition: False
+seed_time: 24.80
+prelim_time: 24.80
+finals_time: 24.71
+prelim_rank: 15
+final_rank: 15
+
+Swimmer 14:
+name: Warren, Chris
+yr: SO
+school: Bowdoin College
+exhibition: False
+seed_time: 24.46
+prelim_time: 24.46
+finals_time: 24.74
+prelim_rank: 13
+final_rank: 16
+
+Swimmer 15:
+name: Given, Michael
+yr: SO
+school: Bowdoin College
+exhibition: False
+seed_time: 25.65
+prelim_time: 25.65
+finals_time: 25.23
+prelim_rank: *23
+final_rank: 17
+
+Swimmer 16:
+name: Cho, Justin
+yr: SO
+school: Middlebury College
+exhibition: False
+seed_time: 24.92
+prelim_time: 24.92
+finals_time: 25.24
+prelim_rank: *17
+final_rank: 18
+
+Swimmer 17:
+name: Anderson, Lloyd
+yr: JR
+school: Bowdoin College
+exhibition: False
+seed_time: 25.65
+prelim_time: 25.65
+finals_time: 25.31
+prelim_rank: *23
+final_rank: 19
+
+Swimmer 18:
+name: Blackburn,
+yr: John
+school: SO Colby College
+exhibition: False
+seed_time: 24.92
+prelim_time: 24.92
+finals_time: 25.43
+prelim_rank: *17
+final_rank: 20
+
+Swimmer 19:
+name: Savidge, Timothy
+yr: SO
+school: Tufts University
+exhibition: False
+seed_time: 25.64
+prelim_time: 25.64
+finals_time: 25.66
+prelim_rank: 22
+final_rank: 23
+
+Swimmer 20:
+name: Park, Andrew
+yr: SR
+school: Bowdoin College
+exhibition: False
+seed_time: 25.50
+prelim_time: 25.50
+finals_time: 25.89
+prelim_rank: *19
+final_rank: 24
+
+Swimmer 21:
+name: Rochford, Michael
+yr: SR
+school: Amherst College
+exhibition: False
+seed_time: 24.79
+prelim_time: 23.58
+finals_time: None
+prelim_rank: 5
+final_rank: None
+
+Swimmer 22:
+name: Swartz,
+yr: Reid
+school: SR Hamilton College
+exhibition: False
+seed_time: 23.62
+prelim_time: 23.64
+finals_time: None
+prelim_rank: 6
+final_rank: None
+
+Swimmer 23:
+name: Siegelbaum, Jacob
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 25.73
+prelim_time: 25.50
+finals_time: None
+prelim_rank: *19
+final_rank: None
+
+Swimmer 24:
+name: Brower, McClure
+yr: FR
+school: Bowdoin College
+exhibition: False
+seed_time: 26.74
+prelim_time: 25.52
+finals_time: None
+prelim_rank: 21
+final_rank: None
+
+Swimmer 25:
+name: Dowling,
+yr: Will
+school: FR Middlebury College
+exhibition: False
+seed_time: 26.91
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 26:
+name: Hobson,
+yr: Ryan
+school: JR Hamilton College
+exhibition: False
+seed_time: 28.43
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 27:
+name: Meyer,
+yr: Jake
+school: FR Amherst College
+exhibition: False
+seed_time: 28.03
+prelim_time: None
+finals_time: None
+prelim_rank: 27
+final_rank: None
+--------------------------------------------------
+event: 6
+meet: 2015_Nescac_Msd_Results
+stroke: IM
+gender: Men
+distance: 200
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Lattimer, Timothy
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 1:51.88
+prelim_time: None
+finals_time: 1:49.92M
+prelim_rank: None
+final_rank: 1
+
+Swimmer 2:
+name: Tilneac, George
+yr: FR
+school: Connecticut College
+exhibition: False
+seed_time: 1:53.62
+prelim_time: 1:53.62
+finals_time: 1:53.44
+prelim_rank: 8
+final_rank: 7
+
+Swimmer 3:
+name: Young,
+yr: Knox
+school: JR Williams College
+exhibition: False
+seed_time: 1:53.16
+prelim_time: None
+finals_time: 1:54.25
+prelim_rank: None
+final_rank: 8
+
+Swimmer 4:
+name: Kulesza,
+yr: Ryan
+school: SR Bowdoin College
+exhibition: False
+seed_time: 1:53.66
+prelim_time: 1:53.66
+finals_time: 1:53.68
+prelim_rank: 9
+final_rank: 9
+
+Swimmer 5:
+name: Guadagno,
+yr: Luca
+school: SO Tufts University
+exhibition: False
+seed_time: 1:54.61
+prelim_time: 1:54.61
+finals_time: 1:53.83
+prelim_rank: 11
+final_rank: 10
+
+Swimmer 6:
+name: McDonald,
+yr: Pete
+school: JR Williams College
+exhibition: False
+seed_time: 1:53.98
+prelim_time: 1:53.98
+finals_time: 1:54.28
+prelim_rank: 10
+final_rank: 11
+
+Swimmer 7:
+name: Ewing, Riley
+yr: FR
+school: Bates College
+exhibition: False
+seed_time: 1:55.47
+prelim_time: 1:55.47
+finals_time: 1:54.33
+prelim_rank: 13
+final_rank: 12
+
+Swimmer 8:
+name: Pite,
+yr: AJ
+school: FR Connecticut College
+exhibition: False
+seed_time: 1:55.78
+prelim_time: 1:55.78
+finals_time: 1:54.70
+prelim_rank: 15
+final_rank: 13
+
+Swimmer 9:
+name: Simmons, Keegan
+yr: SO
+school: Amherst College
+exhibition: False
+seed_time: 1:55.52
+prelim_time: 1:55.52
+finals_time: 1:54.83
+prelim_rank: 14
+final_rank: 14
+
+Swimmer 10:
+name: Miller, Tripp
+yr: FR
+school: Hamilton College
+exhibition: False
+seed_time: 1:55.91
+prelim_time: 1:55.91
+finals_time: 1:55.54
+prelim_rank: 16
+final_rank: 15
+
+Swimmer 11:
+name: Schultz,
+yr: Nico
+school: SR Connecticut College
+exhibition: False
+seed_time: 1:55.38
+prelim_time: 1:55.38
+finals_time: 1:57.33
+prelim_rank: 12
+final_rank: 16
+
+Swimmer 12:
+name: Garner, Nathan
+yr: SO
+school: Bowdoin College
+exhibition: False
+seed_time: 1:56.95
+prelim_time: 1:56.95
+finals_time: 1:55.53
+prelim_rank: 21
+final_rank: 17
+
+Swimmer 13:
+name: Chansakul,
+yr: Jr
+school: JR Bowdoin College
+exhibition: False
+seed_time: 1:56.86
+prelim_time: 1:56.86
+finals_time: 1:56.00
+prelim_rank: 20
+final_rank: 18
+
+Swimmer 14:
+name: Metcalfe, William
+yr: SO
+school: Tufts University
+exhibition: False
+seed_time: 1:58.23
+prelim_time: 1:58.23
+finals_time: 1:56.33
+prelim_rank: 24
+final_rank: 19
+
+Swimmer 15:
+name: McBratney,
+yr: John
+school: JR Hamilton College
+exhibition: False
+seed_time: 1:56.61
+prelim_time: 1:56.61
+finals_time: 1:56.84
+prelim_rank: 18
+final_rank: 20
+
+Swimmer 16:
+name: McCormick, Connor
+yr: FR
+school: Middlebury College
+exhibition: False
+seed_time: 1:56.65
+prelim_time: 1:56.65
+finals_time: 1:56.99
+prelim_rank: 19
+final_rank: 21
+
+Swimmer 17:
+name: Bullis, Grant
+yr: FR
+school: Connecticut College
+exhibition: False
+seed_time: 1:57.14
+prelim_time: 1:57.14
+finals_time: 1:57.15
+prelim_rank: 22
+final_rank: 22
+
+Swimmer 18:
+name: Grant,
+yr: Andy
+school: SO Middlebury College
+exhibition: False
+seed_time: 1:56.42
+prelim_time: 1:56.42
+finals_time: 1:57.51
+prelim_rank: 17
+final_rank: 23
+
+Swimmer 19:
+name: Jacobsen,
+yr: Hugh
+school: FR Colby College
+exhibition: False
+seed_time: 1:57.59
+prelim_time: 1:57.59
+finals_time: 1:59.35
+prelim_rank: 23
+final_rank: 24
+
+Swimmer 20:
+name: Nemeth, Andrew
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 1:58.60
+prelim_time: 1:53.44
+finals_time: None
+prelim_rank: 7
+final_rank: None
+
+Swimmer 21:
+name: Miller,
+yr: Nick
+school: FR Connecticut College
+exhibition: False
+seed_time: 2:00.81
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 22:
+name: Gibney,
+yr: Carl
+school: JR Trinity College
+exhibition: False
+seed_time: 2:06.69
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 23:
+name: Weinzierl, Michael
+yr: SR
+school: Hamilton College
+exhibition: False
+seed_time: 2:04.09
+prelim_time: None
+finals_time: None
+prelim_rank: 27
+final_rank: None
+
+Swimmer 24:
+name: Goldberg, Steven
+yr: JR
+school: Amherst College
+exhibition: False
+seed_time: 2:04.69
+prelim_time: None
+finals_time: None
+prelim_rank: 28
+final_rank: None
+
+Swimmer 25:
+name: Wong,
+yr: Kyle
+school: FR Colby College
+exhibition: False
+seed_time: 2:06.69
+prelim_time: None
+finals_time: None
+prelim_rank: 29
+final_rank: None
+
+Swimmer 26:
+name: Rehor, Tyler
+yr: SO
+school: Hamilton College
+exhibition: False
+seed_time: 2:09.30
+prelim_time: None
+finals_time: None
+prelim_rank: 30
+final_rank: None
+
+Swimmer 27:
+name: Blake, Gavin
+yr: FR
+school: Colby College
+exhibition: False
+seed_time: 2:09.14
+prelim_time: None
+finals_time: None
+prelim_rank: 31
+final_rank: None
+
+Swimmer 28:
+name: Celestin,
+yr: Joe
+school: SR Bowdoin College
+exhibition: False
+seed_time: 2:08.45
+prelim_time: None
+finals_time: None
+prelim_rank: 32
+final_rank: None
+
+Swimmer 29:
+name: Kim,
+yr: Nick
+school: JR Colby College
+exhibition: False
+seed_time: 2:12.62
+prelim_time: None
+finals_time: None
+prelim_rank: 33
+final_rank: None
+
+Swimmer 30:
+name: Ortegon,
+yr: Karl
+school: FR Wesleyan University
+exhibition: False
+seed_time: 2:11.42
+prelim_time: None
+finals_time: None
+prelim_rank: 34
+final_rank: None
+
+Swimmer 31:
+name: Carfi,
+yr: Zach
+school: SO Wesleyan University
+exhibition: False
+seed_time: 2:11.82
+prelim_time: None
+finals_time: None
+prelim_rank: 35
+final_rank: None
+
+Swimmer 32:
+name: Cho, Justin
+yr: SO
+school: Middlebury College
+exhibition: False
+seed_time: 2:06.67
+prelim_time: None
+finals_time: None
+prelim_rank: 36
+final_rank: None
+--------------------------------------------------
+event: 7
+meet: 2015_Nescac_Msd_Results
+stroke: Freestyle
+gender: Men
+distance: 50
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Johnson, Grant
+yr: SO
+school: Williams College
+exhibition: False
+seed_time: 21.09
+prelim_time: 21.09
+finals_time: 20.96
+prelim_rank: 7
+final_rank: 4
+
+Swimmer 2:
+name: Galea, Vince
+yr: SR
+school: Colby College
+exhibition: False
+seed_time: 20.94
+prelim_time: 20.94
+finals_time: 20.98
+prelim_rank: 4
+final_rank: 5
+
+Swimmer 3:
+name: Hampton, Tyler
+yr: SR
+school: Amherst College
+exhibition: False
+seed_time: 21.05
+prelim_time: 21.05
+finals_time: 21.03
+prelim_rank: 6
+final_rank: 6
+
+Swimmer 4:
+name: Nanda, Alexander
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 21.00
+prelim_time: 21.00
+finals_time: 21.16
+prelim_rank: 5
+final_rank: 7
+
+Swimmer 5:
+name: Rines, Joshua
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 21.16
+prelim_time: 21.16
+finals_time: 21.24
+prelim_rank: 8
+final_rank: 8
+
+Swimmer 6:
+name: Owlett, Carson
+yr: SO
+school: Connecticut College
+exhibition: False
+seed_time: 21.41
+prelim_time: 21.41
+finals_time: 21.17
+prelim_rank: 16
+final_rank: 9
+
+Swimmer 7:
+name: Pender, Theodore
+yr: FR
+school: Bates College
+exhibition: False
+seed_time: 21.35
+prelim_time: 21.35
+finals_time: 21.18
+prelim_rank: *13
+final_rank: 10
+
+Swimmer 8:
+name: Dreisbach,
+yr: Alex
+school: SO Amherst College
+exhibition: False
+seed_time: 21.17
+prelim_time: 21.17
+finals_time: 21.33
+prelim_rank: 9
+final_rank: 11
+
+Swimmer 9:
+name: Hammond,
+yr: John
+school: JR Williams College
+exhibition: False
+seed_time: 21.27
+prelim_time: 21.27
+finals_time: 21.50
+prelim_rank: 12
+final_rank: 12
+
+Swimmer 10:
+name: Briggs, Andrew
+yr: SR
+school: Bates College
+exhibition: False
+seed_time: 21.35
+prelim_time: 21.35
+finals_time: 21.52
+prelim_rank: *13
+final_rank: 13
+
+Swimmer 11:
+name: Lagasse,
+yr: Paul
+school: JR Middlebury College
+exhibition: False
+seed_time: 21.25
+prelim_time: 21.25
+finals_time: 21.63
+prelim_rank: 11
+final_rank: 14
+
+Swimmer 12:
+name: Shi, William
+yr: SR
+school: Bowdoin College
+exhibition: False
+seed_time: 21.19
+prelim_time: 21.19
+finals_time: 21.64
+prelim_rank: 10
+final_rank: 15
+
+Swimmer 13:
+name: Henry,
+yr: Emil
+school: JR Connecticut College
+exhibition: False
+seed_time: 21.37
+prelim_time: 21.37
+finals_time: 21.66
+prelim_rank: 15
+final_rank: 16
+
+Swimmer 14:
+name: Freeman,
+yr: John
+school: SO Williams College
+exhibition: False
+seed_time: 21.44
+prelim_time: 21.44
+finals_time: 21.27
+prelim_rank: *17
+final_rank: 17
+
+Swimmer 15:
+name: Hutchinson,
+yr: Will
+school: FR Bowdoin College
+exhibition: False
+seed_time: 21.44
+prelim_time: 21.44
+finals_time: 21.31
+prelim_rank: *17
+final_rank: 18
+
+Swimmer 16:
+name: Cheuk, Bryan
+yr: JR
+school: Middlebury College
+exhibition: False
+seed_time: 21.47
+prelim_time: 21.47
+finals_time: 21.47
+prelim_rank: 19
+final_rank: 19
+
+Swimmer 17:
+name: Skoufalos, Panos
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 21.77
+prelim_time: 21.77
+finals_time: 21.49
+prelim_rank: 24
+final_rank: 20
+
+Swimmer 18:
+name: Wood, Harry
+yr: JR
+school: Tufts University
+exhibition: False
+seed_time: 21.65
+prelim_time: 21.65
+finals_time: 21.69
+prelim_rank: *22
+final_rank: 21
+
+Swimmer 19:
+name: McGinnis, Patrick
+yr: SR
+school: Connecticut College
+exhibition: False
+seed_time: 21.61
+prelim_time: 21.61
+finals_time: 21.82
+prelim_rank: 20
+final_rank: 22
+
+Swimmer 20:
+name: Dina,
+yr: Jack
+school: SO Bates College
+exhibition: False
+seed_time: 21.63
+prelim_time: 21.63
+finals_time: 21.83
+prelim_rank: 21
+final_rank: 23
+
+Swimmer 21:
+name: Brosnihan,
+yr: Niko
+school: SO Connecticut College
+exhibition: False
+seed_time: 21.65
+prelim_time: 21.65
+finals_time: 21.87
+prelim_rank: *22
+final_rank: 24
+
+Swimmer 22:
+name: McCarter,
+yr: Alex
+school: JR Williams College
+exhibition: False
+seed_time: 21.26
+prelim_time: 20.93
+finals_time: None
+prelim_rank: 3
+final_rank: None
+
+Swimmer 23:
+name: McLaughlin,
+yr: Jack
+school: FR Middlebury College
+exhibition: False
+seed_time: 22.20
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 24:
+name: Connolly,
+yr: Mike
+school: SO Bates College
+exhibition: False
+seed_time: 22.55
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 25:
+name: Lau, Lorenzo
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 22.01
+prelim_time: None
+finals_time: None
+prelim_rank: 27
+final_rank: None
+
+Swimmer 26:
+name: Bachur,
+yr: Ryan
+school: SR Colby College
+exhibition: False
+seed_time: 22.85
+prelim_time: None
+finals_time: None
+prelim_rank: 28
+final_rank: None
+
+Swimmer 27:
+name: Blackburn,
+yr: John
+school: SO Colby College
+exhibition: False
+seed_time: 22.98
+prelim_time: None
+finals_time: None
+prelim_rank: 29
+final_rank: None
+
+Swimmer 28:
+name: Antonisse,
+yr: Noel
+school: SO Middlebury College
+exhibition: False
+seed_time: 22.80
+prelim_time: None
+finals_time: None
+prelim_rank: *30
+final_rank: None
+
+Swimmer 29:
+name: Kang,
+yr: Alex
+school: SR Amherst College
+exhibition: False
+seed_time: 22.71
+prelim_time: None
+finals_time: None
+prelim_rank: *30
+final_rank: None
+
+Swimmer 30:
+name: Ho, Wesley
+yr: SR
+school: Wesleyan University
+exhibition: False
+seed_time: 22.64
+prelim_time: None
+finals_time: None
+prelim_rank: 32
+final_rank: None
+
+Swimmer 31:
+name: Warren, Chris
+yr: SO
+school: Bowdoin College
+exhibition: False
+seed_time: 22.39
+prelim_time: None
+finals_time: None
+prelim_rank: 33
+final_rank: None
+
+Swimmer 32:
+name: Anderson,
+yr: Lyle
+school: JR Bowdoin College
+exhibition: False
+seed_time: 22.92
+prelim_time: None
+finals_time: None
+prelim_rank: 34
+final_rank: None
+
+Swimmer 33:
+name: Moore, Taylor
+yr: FR
+school: Middlebury College
+exhibition: False
+seed_time: 22.58
+prelim_time: None
+finals_time: None
+prelim_rank: 35
+final_rank: None
+
+Swimmer 34:
+name: Koziol,
+yr: Greg
+school: SO Bowdoin College
+exhibition: False
+seed_time: 23.01
+prelim_time: None
+finals_time: None
+prelim_rank: 36
+final_rank: None
+
+Swimmer 35:
+name: Asao, Hikaru
+yr: JR
+school: Bates College
+exhibition: False
+seed_time: 22.37
+prelim_time: None
+finals_time: None
+prelim_rank: 37
+final_rank: None
+
+Swimmer 36:
+name: Becker, Scott
+yr: SO
+school: Hamilton College
+exhibition: False
+seed_time: 22.88
+prelim_time: None
+finals_time: None
+prelim_rank: 38
+final_rank: None
+
+Swimmer 37:
+name: Cruz, Sebastian
+yr: JR
+school: Amherst College
+exhibition: False
+seed_time: 22.56
+prelim_time: None
+finals_time: None
+prelim_rank: 39
+final_rank: None
+
+Swimmer 38:
+name: Lee, Andrew
+yr: SR
+school: Middlebury College
+exhibition: False
+seed_time: 23.07
+prelim_time: None
+finals_time: None
+prelim_rank: 40
+final_rank: None
+
+Swimmer 39:
+name: Melby,
+yr: Evan
+school: SO Bowdoin College
+exhibition: False
+seed_time: 23.41
+prelim_time: None
+finals_time: None
+prelim_rank: 41
+final_rank: None
+
+Swimmer 40:
+name: Hamlish,
+yr: Noah
+school: JR Wesleyan University
+exhibition: False
+seed_time: 23.37
+prelim_time: None
+finals_time: None
+prelim_rank: 42
+final_rank: None
+
+Swimmer 41:
+name: Reinhardt,
+yr: Karl
+school: SR Bowdoin College
+exhibition: False
+seed_time: 23.88
+prelim_time: None
+finals_time: None
+prelim_rank: 43
+final_rank: None
+
+Swimmer 42:
+name: Mitchell-Adams, Hunter
+yr: FR
+school: Trinity College
+exhibition: False
+seed_time: 24.39
+prelim_time: None
+finals_time: None
+prelim_rank: 44
+final_rank: None
+
+Swimmer 43:
+name: Cohen, Peter
+yr: SO
+school: Bowdoin College
+exhibition: False
+seed_time: 23.99
+prelim_time: None
+finals_time: None
+prelim_rank: 45
+final_rank: None
+
+Swimmer 44:
+name: McNamara,
+yr: Tom
+school: SO Trinity College
+exhibition: False
+seed_time: 24.21
+prelim_time: None
+finals_time: None
+prelim_rank: 46
+final_rank: None
+
+Swimmer 45:
+name: Bjorn,
+yr: Jack
+school: JR Colby College
+exhibition: False
+seed_time: 23.49
+prelim_time: None
+finals_time: None
+prelim_rank: 47
+final_rank: None
+
+Swimmer 46:
+name: Gartley, Andrew
+yr: SO
+school: Wesleyan University
+exhibition: False
+seed_time: 24.21
+prelim_time: None
+finals_time: None
+prelim_rank: 48
+final_rank: None
+
+Swimmer 47:
+name: Bazile, Jacques
+yr: JR
+school: Wesleyan University
+exhibition: False
+seed_time: 23.26
+prelim_time: None
+finals_time: None
+prelim_rank: 49
+final_rank: None
+
+Swimmer 48:
+name: Williams, Travis
+yr: SR
+school: Wesleyan University
+exhibition: False
+seed_time: 24.95
+prelim_time: None
+finals_time: None
+prelim_rank: 50
+final_rank: None
+
+Swimmer 49:
+name: Ma, Lawrence
+yr: JR
+school: Wesleyan University
+exhibition: False
+seed_time: 24.84
+prelim_time: None
+finals_time: None
+prelim_rank: 51
+final_rank: None
+--------------------------------------------------
+event: 9
+meet: 2015_Nescac_Msd_Results
+stroke: Medley Relay
+gender: Men
+distance: 400
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: relay
+Results:
+--------------------------------------------------
+event: 10
+meet: 2015_Nescac_Msd_Results
+stroke: Medley Relay
+gender: Men
+distance: 200
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: relay
+Results:
+--------------------------------------------------
+event: 11
+meet: 2015_Nescac_Msd_Results
+stroke: Freestyle
+gender: Men
+distance: 1000
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Gronbeck, Christian
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 9:25.25
+prelim_time: None
+finals_time: 9:13.18C
+prelim_rank: None
+final_rank: 1
+
+Swimmer 2:
+name: Haley, Connor
+yr: SO
+school: Amherst College
+exhibition: False
+seed_time: 9:45.85
+prelim_time: None
+finals_time: 9:29.38
+prelim_rank: None
+final_rank: 2
+
+Swimmer 3:
+name: Downey, Adrien
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 9:56.73
+prelim_time: None
+finals_time: 9:29.93
+prelim_rank: None
+final_rank: 3
+
+Swimmer 4:
+name: McGean,
+yr: Mike
+school: SO Middlebury College
+exhibition: False
+seed_time: 9:35.08
+prelim_time: None
+finals_time: 9:32.87
+prelim_rank: None
+final_rank: 4
+
+Swimmer 5:
+name: Skaperdas, Stephen
+yr: SO
+school: Connecticut College
+exhibition: False
+seed_time: 9:53.41
+prelim_time: None
+finals_time: 9:35.30
+prelim_rank: None
+final_rank: 5
+
+Swimmer 6:
+name: Druckman, Daniel
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 9:52.84
+prelim_time: None
+finals_time: 9:36.31
+prelim_rank: None
+final_rank: 6
+
+Swimmer 7:
+name: Needham,
+yr: Dan
+school: FR Williams College
+exhibition: False
+seed_time: 9:52.42
+prelim_time: None
+finals_time: 9:37.36
+prelim_rank: None
+final_rank: 7
+
+Swimmer 8:
+name: Molina,
+yr: Mace
+school: SO Connecticut College
+exhibition: False
+seed_time: 10:00.10
+prelim_time: None
+finals_time: 9:40.40
+prelim_rank: None
+final_rank: 8
+
+Swimmer 9:
+name: Martin,
+yr: Bo
+school: SR Connecticut College
+exhibition: False
+seed_time: 10:00.94
+prelim_time: None
+finals_time: 9:41.61
+prelim_rank: None
+final_rank: 9
+
+Swimmer 10:
+name: Cassidy,
+yr: Ryan
+school: SO Hamilton College
+exhibition: False
+seed_time: 10:06.86
+prelim_time: None
+finals_time: 9:41.84
+prelim_rank: None
+final_rank: 10
+
+Swimmer 11:
+name: McElduff, James
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 10:03.79
+prelim_time: None
+finals_time: 9:42.83
+prelim_rank: None
+final_rank: 11
+
+Swimmer 12:
+name: Rosenthal, Andrew
+yr: JR
+school: Middlebury College
+exhibition: False
+seed_time: 10:05.61
+prelim_time: None
+finals_time: 9:44.63
+prelim_rank: None
+final_rank: 12
+
+Swimmer 13:
+name: Lantin,
+yr: Matt
+school: FR Middlebury College
+exhibition: False
+seed_time: 9:38.18
+prelim_time: None
+finals_time: 9:46.02
+prelim_rank: None
+final_rank: 13
+
+Swimmer 14:
+name: Lee, Christopher
+yr: FR
+school: Bates College
+exhibition: False
+seed_time: 10:25.99
+prelim_time: None
+finals_time: 9:53.41
+prelim_rank: None
+final_rank: 16
+
+Swimmer 15:
+name: Long,
+yr: Tim
+school: SO Bowdoin College
+exhibition: False
+seed_time: 10:06.16
+prelim_time: None
+finals_time: 9:53.70
+prelim_rank: None
+final_rank: 17
+
+Swimmer 16:
+name: Patapis, Peter
+yr: FR
+school: Wesleyan University
+exhibition: False
+seed_time: 10:31.72
+prelim_time: None
+finals_time: 9:54.61
+prelim_rank: None
+final_rank: 18
+
+Swimmer 17:
+name: Lueck, Tyler
+yr: JR
+school: Tufts University
+exhibition: False
+seed_time: 10:38.44
+prelim_time: None
+finals_time: 9:56.98
+prelim_rank: None
+final_rank: 19
+
+Swimmer 18:
+name: Delaporte, Matthew
+yr: SO
+school: Connecticut College
+exhibition: False
+seed_time: 10:09.44
+prelim_time: None
+finals_time: 9:57.39
+prelim_rank: None
+final_rank: 20
+
+Swimmer 19:
+name: Courville, Nathan
+yr: SO
+school: Wesleyan University
+exhibition: False
+seed_time: 10:31.28
+prelim_time: None
+finals_time: 10:01.41
+prelim_rank: None
+final_rank: 21
+
+Swimmer 20:
+name: Phillips, Matthew
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 10:10.71
+prelim_time: None
+finals_time: 10:04.08
+prelim_rank: None
+final_rank: 22
+
+Swimmer 21:
+name: Daus-Haberle, Spencer
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 10:17.93
+prelim_time: None
+finals_time: 10:05.66
+prelim_rank: None
+final_rank: 23
+
+Swimmer 22:
+name: Savidge, Timothy
+yr: SO
+school: Tufts University
+exhibition: False
+seed_time: 10:24.69
+prelim_time: None
+finals_time: 10:07.20
+prelim_rank: None
+final_rank: 24
+
+Swimmer 23:
+name: Drennan, Craig
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 10:29.62
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 24:
+name: Tatro,
+yr: Case
+school: FR Hamilton College
+exhibition: False
+seed_time: 10:32.00
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 25:
+name: Rider, Mitch
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 10:27.80
+prelim_time: None
+finals_time: None
+prelim_rank: 27
+final_rank: None
+
+Swimmer 26:
+name: Watson,
+yr: Luke
+school: SR Connecticut College
+exhibition: False
+seed_time: 10:36.54
+prelim_time: None
+finals_time: None
+prelim_rank: 28
+final_rank: None
+
+Swimmer 27:
+name: McWhirter, Andrew
+yr: SR
+school: Hamilton College
+exhibition: False
+seed_time: 10:24.45
+prelim_time: None
+finals_time: None
+prelim_rank: 29
+final_rank: None
+
+Swimmer 28:
+name: Stanton,
+yr: Eric
+school: SO Middlebury College
+exhibition: False
+seed_time: 10:31.31
+prelim_time: None
+finals_time: None
+prelim_rank: 30
+final_rank: None
+
+Swimmer 29:
+name: Laser, Jacob
+yr: SO
+school: Colby College
+exhibition: False
+seed_time: 10:41.05
+prelim_time: None
+finals_time: None
+prelim_rank: 31
+final_rank: None
+
+Swimmer 30:
+name: Weeks,
+yr: Ryan
+school: JR Colby College
+exhibition: False
+seed_time: 11:03.76
+prelim_time: None
+finals_time: None
+prelim_rank: 32
+final_rank: None
+
+Swimmer 31:
+name: Dizengoff, Reuben
+yr: SR
+school: Hamilton College
+exhibition: False
+seed_time: 11:52.70
+prelim_time: None
+finals_time: None
+prelim_rank: 33
+final_rank: None
+--------------------------------------------------
+event: 12
+meet: 2015_Nescac_Msd_Results
+stroke: IM
+gender: Men
+distance: 400
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Miller,
+yr: Nick
+school: FR Connecticut College
+exhibition: False
+seed_time: 4:06.75
+prelim_time: None
+finals_time: 4:08.10
+prelim_rank: None
+final_rank: 13
+
+Swimmer 2:
+name: Grant,
+yr: Andy
+school: SO Middlebury College
+exhibition: False
+seed_time: 4:12.26
+prelim_time: 4:12.26
+finals_time: 4:10.44
+prelim_rank: 16
+final_rank: 14
+
+Swimmer 3:
+name: Daus-Haberle, Spencer
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 4:11.38
+prelim_time: 4:11.38
+finals_time: 4:12.40
+prelim_rank: 15
+final_rank: 15
+
+Swimmer 4:
+name: Garner, Nathan
+yr: SO
+school: Bowdoin College
+exhibition: False
+seed_time: 4:12.61
+prelim_time: 4:12.61
+finals_time: 4:08.74
+prelim_rank: 17
+final_rank: 17
+
+Swimmer 5:
+name: McCormick, Connor
+yr: FR
+school: Middlebury College
+exhibition: False
+seed_time: 4:13.84
+prelim_time: 4:13.84
+finals_time: 4:12.37
+prelim_rank: 18
+final_rank: 18
+
+Swimmer 6:
+name: Watson,
+yr: Luke
+school: SR Connecticut College
+exhibition: False
+seed_time: 4:18.22
+prelim_time: 4:18.22
+finals_time: 4:15.30
+prelim_rank: 22
+final_rank: 19
+
+Swimmer 7:
+name: Chansakul,
+yr: Jr
+school: JR Bowdoin College
+exhibition: False
+seed_time: 4:15.59
+prelim_time: 4:15.59
+finals_time: 4:16.12
+prelim_rank: 19
+final_rank: 20
+
+Swimmer 8:
+name: Drennan, Craig
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 4:16.57
+prelim_time: 4:16.57
+finals_time: 4:16.51
+prelim_rank: 20
+final_rank: 21
+
+Swimmer 9:
+name: Lis, Chase
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 4:17.61
+prelim_time: 4:17.61
+finals_time: 4:17.49
+prelim_rank: 21
+final_rank: 22
+
+Swimmer 10:
+name: Distler,
+yr: Max
+school: FR Wesleyan University
+exhibition: False
+seed_time: 4:24.02
+prelim_time: 4:24.02
+finals_time: 4:20.34
+prelim_rank: 24
+final_rank: 23
+
+Swimmer 11:
+name: Wong,
+yr: Kyle
+school: FR Colby College
+exhibition: False
+seed_time: 4:21.66
+prelim_time: 4:21.66
+finals_time: 4:22.49
+prelim_rank: 23
+final_rank: 24
+
+Swimmer 12:
+name: Lattimer, Timothy
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 4:01.61
+prelim_time: 3:54.22P
+finals_time: None
+prelim_rank: 1
+final_rank: None
+
+Swimmer 13:
+name: Bullis, Grant
+yr: FR
+school: Connecticut College
+exhibition: False
+seed_time: 4:20.42
+prelim_time: 4:10.78
+finals_time: None
+prelim_rank: 14
+final_rank: None
+
+Swimmer 14:
+name: Fleisher, Andrew
+yr: JR
+school: Middlebury College
+exhibition: False
+seed_time: 4:39.99
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 15:
+name: Seaton, Andrew
+yr: SR
+school: Bates College
+exhibition: False
+seed_time: 4:43.40
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 16:
+name: Blake, Gavin
+yr: FR
+school: Colby College
+exhibition: False
+seed_time: 4:38.40
+prelim_time: None
+finals_time: None
+prelim_rank: 27
+final_rank: None
+
+Swimmer 17:
+name: Celestin,
+yr: Joe
+school: SR Bowdoin College
+exhibition: False
+seed_time: 4:42.13
+prelim_time: None
+finals_time: None
+prelim_rank: 28
+final_rank: None
+--------------------------------------------------
+event: 13
+meet: 2015_Nescac_Msd_Results
+stroke: Butterfly
+gender: Men
+distance: 100
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Patterson,
+yr: Reed
+school: SO Amherst College
+exhibition: False
+seed_time: 49.76
+prelim_time: None
+finals_time: 50.02
+prelim_rank: None
+final_rank: 7
+
+Swimmer 2:
+name: Nemeth, Andrew
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 50.78
+prelim_time: 50.78
+finals_time: 50.68
+prelim_rank: 8
+final_rank: 8
+
+Swimmer 3:
+name: Metcalfe, William
+yr: SO
+school: Tufts University
+exhibition: False
+seed_time: 51.38
+prelim_time: 51.38
+finals_time: 50.43
+prelim_rank: 12
+final_rank: 9
+
+Swimmer 4:
+name: Napolitano,
+yr: Mike
+school: SR Tufts University
+exhibition: False
+seed_time: 50.92
+prelim_time: 50.92
+finals_time: 51.15
+prelim_rank: 9
+final_rank: 10
+
+Swimmer 5:
+name: House, Logan
+yr: SO
+school: Bowdoin College
+exhibition: False
+seed_time: 51.30
+prelim_time: 51.30
+finals_time: 51.35
+prelim_rank: 11
+final_rank: 11
+
+Swimmer 6:
+name: Yan,
+yr: Erik
+school: SR Wesleyan University
+exhibition: False
+seed_time: 51.86
+prelim_time: 51.86
+finals_time: 51.44
+prelim_rank: 15
+final_rank: 12
+
+Swimmer 7:
+name: Pourmaleki,
+yr: Ali
+school: FR Wesleyan University
+exhibition: False
+seed_time: 51.83
+prelim_time: 51.83
+finals_time: 51.48
+prelim_rank: 14
+final_rank: 13
+
+Swimmer 8:
+name: Stephens, Weston
+yr: FR
+school: Connecticut College
+exhibition: False
+seed_time: 51.02
+prelim_time: 51.02
+finals_time: 51.53
+prelim_rank: 10
+final_rank: 14
+
+Swimmer 9:
+name: Smith,
+yr: Alex
+school: FR Middlebury College
+exhibition: False
+seed_time: 51.51
+prelim_time: 51.51
+finals_time: 51.62
+prelim_rank: 13
+final_rank: 15
+
+Swimmer 10:
+name: Flynn, Chris
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 51.94
+prelim_time: 51.94
+finals_time: 52.08
+prelim_rank: 16
+final_rank: 16
+
+Swimmer 11:
+name: Patton, William
+yr: SR
+school: Bates College
+exhibition: False
+seed_time: 52.08
+prelim_time: 52.08
+finals_time: 52.07
+prelim_rank: 17
+final_rank: 17
+
+Swimmer 12:
+name: Snyder,
+yr: Nels
+school: JR Williams College
+exhibition: False
+seed_time: 52.79
+prelim_time: 52.79
+finals_time: 52.25
+prelim_rank: 20
+final_rank: 18
+
+Swimmer 13:
+name: Kuo, Theodore
+yr: SR
+school: Middlebury College
+exhibition: False
+seed_time: 52.43
+prelim_time: 52.43
+finals_time: 52.37
+prelim_rank: 18
+final_rank: 19
+
+Swimmer 14:
+name: Cheuk, Bryan
+yr: JR
+school: Middlebury College
+exhibition: False
+seed_time: 52.84
+prelim_time: 52.84
+finals_time: 52.51
+prelim_rank: 21
+final_rank: 20
+
+Swimmer 15:
+name: Lewtan, Tyler
+yr: JR
+school: Colby College
+exhibition: False
+seed_time: 52.45
+prelim_time: 52.45
+finals_time: 52.86
+prelim_rank: 19
+final_rank: 21
+
+Swimmer 16:
+name: Berson,
+yr: Marc
+school: FR Bowdoin College
+exhibition: False
+seed_time: 53.31
+prelim_time: 53.31
+finals_time: 53.47
+prelim_rank: 23
+final_rank: 22
+
+Swimmer 17:
+name: Cooper, Benjamin
+yr: FR
+school: Hamilton College
+exhibition: False
+seed_time: 55.09
+prelim_time: 55.09
+finals_time: 53.98
+prelim_rank: 24
+final_rank: 23
+
+Swimmer 18:
+name: Smachlo,
+yr: Alex
+school: SR Bates College
+exhibition: False
+seed_time: 53.19
+prelim_time: 53.19
+finals_time: 54.21
+prelim_rank: 22
+final_rank: 24
+
+Swimmer 19:
+name: Ricotta,
+yr: Thad
+school: SR Williams College
+exhibition: False
+seed_time: 50.95
+prelim_time: 48.95P
+finals_time: None
+prelim_rank: 1
+final_rank: None
+
+Swimmer 20:
+name: Cohen, Peter
+yr: SO
+school: Bowdoin College
+exhibition: False
+seed_time: 57.56
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 21:
+name: Brown, Frankie
+yr: FR
+school: Wesleyan University
+exhibition: False
+seed_time: 58.87
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 22:
+name: Ortegon,
+yr: Karl
+school: FR Wesleyan University
+exhibition: False
+seed_time: 58.14
+prelim_time: None
+finals_time: None
+prelim_rank: 27
+final_rank: None
+
+Swimmer 23:
+name: Kim,
+yr: Nick
+school: JR Colby College
+exhibition: False
+seed_time: 59.72
+prelim_time: None
+finals_time: None
+prelim_rank: 28
+final_rank: None
+
+Swimmer 24:
+name: Kurose,
+yr: Alex
+school: SR Trinity College
+exhibition: False
+seed_time: 57.87
+prelim_time: None
+finals_time: None
+prelim_rank: 29
+final_rank: None
+
+Swimmer 25:
+name: Holmes,
+yr: Clay
+school: FR Hamilton College
+exhibition: False
+seed_time: 59.32
+prelim_time: None
+finals_time: None
+prelim_rank: 30
+final_rank: None
+
+Swimmer 26:
+name: Fothergill, Daniel
+yr: FR
+school: Bates College
+exhibition: False
+seed_time: 54.28
+prelim_time: None
+finals_time: None
+prelim_rank: 31
+final_rank: None
+
+Swimmer 27:
+name: Williams, Travis
+yr: SR
+school: Wesleyan University
+exhibition: False
+seed_time: 59.17
+prelim_time: None
+finals_time: None
+prelim_rank: 32
+final_rank: None
+
+Swimmer 28:
+name: Rosenbloom,
+yr: Jake
+school: SR Wesleyan University
+exhibition: False
+seed_time: 1:00.23
+prelim_time: None
+finals_time: None
+prelim_rank: 33
+final_rank: None
+
+Swimmer 29:
+name: Ma, Lawrence
+yr: JR
+school: Wesleyan University
+exhibition: False
+seed_time: 1:01.06
+prelim_time: None
+finals_time: None
+prelim_rank: 34
+final_rank: None
+--------------------------------------------------
+event: 14
+meet: 2015_Nescac_Msd_Results
+stroke: Freestyle
+gender: Men
+distance: 200
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Galea, Vince
+yr: SR
+school: Colby College
+exhibition: False
+seed_time: 1:41.21
+prelim_time: 1:41.21
+finals_time: 1:41.25
+prelim_rank: 3
+final_rank: 3
+
+Swimmer 2:
+name: Brown,
+yr: Will
+school: SR Williams College
+exhibition: False
+seed_time: 1:41.67
+prelim_time: 1:41.67
+finals_time: 1:41.47
+prelim_rank: 4
+final_rank: 4
+
+Swimmer 3:
+name: Nanda, Alexander
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 1:42.25
+prelim_time: 1:42.25
+finals_time: 1:41.78
+prelim_rank: 5
+final_rank: 5
+
+Swimmer 4:
+name: Freeman,
+yr: John
+school: SO Williams College
+exhibition: False
+seed_time: 1:42.50
+prelim_time: 1:42.50
+finals_time: 1:42.82
+prelim_rank: *7
+final_rank: 6
+
+Swimmer 5:
+name: Dreisbach,
+yr: Alex
+school: SO Amherst College
+exhibition: False
+seed_time: 1:42.36
+prelim_time: 1:42.36
+finals_time: 1:43.00
+prelim_rank: 6
+final_rank: 7
+
+Swimmer 6:
+name: Simmons, Keegan
+yr: SO
+school: Amherst College
+exhibition: False
+seed_time: 1:42.50
+prelim_time: 1:42.50
+finals_time: 1:44.08
+prelim_rank: *7
+final_rank: 8
+
+Swimmer 7:
+name: Simko,
+yr: Cam
+school: JR Tufts University
+exhibition: False
+seed_time: 1:42.59
+prelim_time: 1:42.59
+finals_time: 1:41.96
+prelim_rank: 9
+final_rank: 9
+
+Swimmer 8:
+name: Pender, Theodore
+yr: FR
+school: Bates College
+exhibition: False
+seed_time: 1:42.90
+prelim_time: 1:42.90
+finals_time: 1:42.45
+prelim_rank: 11
+final_rank: 10
+
+Swimmer 9:
+name: Brody,
+yr: John
+school: SO Amherst College
+exhibition: False
+seed_time: 1:42.60
+prelim_time: 1:42.60
+finals_time: 1:43.14
+prelim_rank: 10
+final_rank: 11
+
+Swimmer 10:
+name: McBratney,
+yr: John
+school: JR Hamilton College
+exhibition: False
+seed_time: 1:43.72
+prelim_time: 1:43.72
+finals_time: 1:43.30
+prelim_rank: 15
+final_rank: 12
+
+Swimmer 11:
+name: Weihs, Chris
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 1:43.51
+prelim_time: 1:43.51
+finals_time: 1:43.56
+prelim_rank: 14
+final_rank: 13
+
+Swimmer 12:
+name: Debenedetto, Anthony
+yr: JR
+school: Tufts University
+exhibition: False
+seed_time: 1:43.41
+prelim_time: 1:43.41
+finals_time: 1:43.72
+prelim_rank: 13
+final_rank: 14
+
+Swimmer 13:
+name: Spazzarini,
+yr: Neil
+school: FR Tufts University
+exhibition: False
+seed_time: 1:43.82
+prelim_time: 1:43.82
+finals_time: 1:43.92
+prelim_rank: 16
+final_rank: 15
+
+Swimmer 14:
+name: Depew, Jonathan
+yr: FR
+school: Bates College
+exhibition: False
+seed_time: 1:43.25
+prelim_time: 1:43.25
+finals_time: 1:44.05
+prelim_rank: 12
+final_rank: 16
+
+Swimmer 15:
+name: Dina,
+yr: Jack
+school: SO Bates College
+exhibition: False
+seed_time: 1:44.28
+prelim_time: 1:44.28
+finals_time: 1:43.95
+prelim_rank: 18
+final_rank: 17
+
+Swimmer 16:
+name: Ives, Nathan
+yr: FR
+school: Amherst College
+exhibition: False
+seed_time: 1:44.36
+prelim_time: 1:44.36
+finals_time: 1:44.61
+prelim_rank: 19
+final_rank: 18
+
+Swimmer 17:
+name: Connolly,
+yr: Mike
+school: SO Bates College
+exhibition: False
+seed_time: 1:45.11
+prelim_time: 1:45.11
+finals_time: 1:44.68
+prelim_rank: 24
+final_rank: 19
+
+Swimmer 18:
+name: Lau, Lorenzo
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 1:45.06
+prelim_time: 1:45.06
+finals_time: 1:44.75
+prelim_rank: 23
+final_rank: 20
+
+Swimmer 19:
+name: Lagasse,
+yr: Paul
+school: JR Middlebury College
+exhibition: False
+seed_time: 1:44.60
+prelim_time: 1:44.60
+finals_time: 1:44.83
+prelim_rank: 22
+final_rank: 21
+
+Swimmer 20:
+name: Edwards, Thomas
+yr: FR
+school: Connecticut College
+exhibition: False
+seed_time: 1:44.06
+prelim_time: 1:44.06
+finals_time: 1:44.88
+prelim_rank: 17
+final_rank: 22
+
+Swimmer 21:
+name: Janezich,
+yr: John
+school: FR Amherst College
+exhibition: False
+seed_time: 1:44.42
+prelim_time: 1:44.42
+finals_time: 1:45.02
+prelim_rank: 21
+final_rank: 23
+
+Swimmer 22:
+name: Bachur,
+yr: Ryan
+school: SR Colby College
+exhibition: False
+seed_time: 1:44.37
+prelim_time: 1:44.37
+finals_time: 1:45.20
+prelim_rank: 20
+final_rank: 24
+
+Swimmer 23:
+name: Miller, Tripp
+yr: FR
+school: Hamilton College
+exhibition: False
+seed_time: 1:48.82
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 24:
+name: Lee, Christopher
+yr: FR
+school: Bates College
+exhibition: False
+seed_time: 1:51.66
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 25:
+name: Henry,
+yr: Emil
+school: JR Connecticut College
+exhibition: False
+seed_time: 1:50.32
+prelim_time: None
+finals_time: None
+prelim_rank: 27
+final_rank: None
+
+Swimmer 26:
+name: Given, Michael
+yr: SO
+school: Bowdoin College
+exhibition: False
+seed_time: 1:51.99
+prelim_time: None
+finals_time: None
+prelim_rank: 28
+final_rank: None
+
+Swimmer 27:
+name: Lantin,
+yr: Matt
+school: FR Middlebury College
+exhibition: False
+seed_time: 1:44.99
+prelim_time: None
+finals_time: None
+prelim_rank: 29
+final_rank: None
+
+Swimmer 28:
+name: Rines, Joshua
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 1:53.41
+prelim_time: None
+finals_time: None
+prelim_rank: 30
+final_rank: None
+
+Swimmer 29:
+name: Curtin,
+yr: Doug
+school: SO Trinity College
+exhibition: False
+seed_time: 1:49.73
+prelim_time: None
+finals_time: None
+prelim_rank: 31
+final_rank: None
+
+Swimmer 30:
+name: Wood, Harry
+yr: JR
+school: Tufts University
+exhibition: False
+seed_time: 1:55.46
+prelim_time: None
+finals_time: None
+prelim_rank: 32
+final_rank: None
+
+Swimmer 31:
+name: McWhirter, Andrew
+yr: SR
+school: Hamilton College
+exhibition: False
+seed_time: 1:49.21
+prelim_time: None
+finals_time: None
+prelim_rank: 33
+final_rank: None
+
+Swimmer 32:
+name: Gibney,
+yr: Carl
+school: JR Trinity College
+exhibition: False
+seed_time: 1:50.57
+prelim_time: None
+finals_time: None
+prelim_rank: 34
+final_rank: None
+
+Swimmer 33:
+name: Anderson,
+yr: Lyle
+school: JR Bowdoin College
+exhibition: False
+seed_time: 1:52.97
+prelim_time: None
+finals_time: None
+prelim_rank: 35
+final_rank: None
+
+Swimmer 34:
+name: Deardorff, Peter
+yr: SR
+school: Bowdoin College
+exhibition: False
+seed_time: 1:47.80
+prelim_time: None
+finals_time: None
+prelim_rank: 36
+final_rank: None
+
+Swimmer 35:
+name: Laser, Jacob
+yr: SO
+school: Colby College
+exhibition: False
+seed_time: 1:50.68
+prelim_time: None
+finals_time: None
+prelim_rank: 37
+final_rank: None
+
+Swimmer 36:
+name: Becker, Scott
+yr: SO
+school: Hamilton College
+exhibition: False
+seed_time: 1:51.19
+prelim_time: None
+finals_time: None
+prelim_rank: 38
+final_rank: None
+
+Swimmer 37:
+name: Rehor, Tyler
+yr: SO
+school: Hamilton College
+exhibition: False
+seed_time: 1:53.50
+prelim_time: None
+finals_time: None
+prelim_rank: 39
+final_rank: None
+
+Swimmer 38:
+name: Koziol,
+yr: Greg
+school: SO Bowdoin College
+exhibition: False
+seed_time: 1:50.93
+prelim_time: None
+finals_time: None
+prelim_rank: 40
+final_rank: None
+
+Swimmer 39:
+name: Knight,
+yr: Joe
+school: SO Colby College
+exhibition: False
+seed_time: 1:53.38
+prelim_time: None
+finals_time: None
+prelim_rank: 41
+final_rank: None
+
+Swimmer 40:
+name: Jeton,
+yr: Luke
+school: SO Hamilton College
+exhibition: False
+seed_time: 1:52.40
+prelim_time: None
+finals_time: None
+prelim_rank: 42
+final_rank: None
+
+Swimmer 41:
+name: McLaughlin,
+yr: Jack
+school: FR Middlebury College
+exhibition: False
+seed_time: 1:53.97
+prelim_time: None
+finals_time: None
+prelim_rank: 43
+final_rank: None
+
+Swimmer 42:
+name: Buchser, Andrew
+yr: FR
+school: Middlebury College
+exhibition: False
+seed_time: 1:52.23
+prelim_time: None
+finals_time: None
+prelim_rank: 44
+final_rank: None
+
+Swimmer 43:
+name: Webster, Robert
+yr: FR
+school: Wesleyan University
+exhibition: False
+seed_time: 1:53.87
+prelim_time: None
+finals_time: None
+prelim_rank: 45
+final_rank: None
+
+Swimmer 44:
+name: McConnell,
+yr: Ryan
+school: SR Trinity College
+exhibition: False
+seed_time: 1:54.54
+prelim_time: None
+finals_time: None
+prelim_rank: 46
+final_rank: None
+
+Swimmer 45:
+name: Gartley, Andrew
+yr: SO
+school: Wesleyan University
+exhibition: False
+seed_time: 1:56.69
+prelim_time: None
+finals_time: None
+prelim_rank: 47
+final_rank: None
+
+Swimmer 46:
+name: Fields,
+yr: Ben
+school: SR Hamilton College
+exhibition: False
+seed_time: 2:03.63
+prelim_time: None
+finals_time: None
+prelim_rank: 48
+final_rank: None
+
+Swimmer 47:
+name: Bjorn,
+yr: Jack
+school: JR Colby College
+exhibition: False
+seed_time: NT
+prelim_time: None
+finals_time: None
+prelim_rank: 49
+final_rank: None
+--------------------------------------------------
+event: 15
+meet: 2015_Nescac_Msd_Results
+stroke: Breaststroke
+gender: Men
+distance: 100
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Delaporte, Matthew
+yr: SO
+school: Connecticut College
+exhibition: False
+seed_time: 57.97
+prelim_time: 57.97
+finals_time: 57.93
+prelim_rank: 14
+final_rank: 11
+
+Swimmer 2:
+name: Freiberg, Drake
+yr: FR
+school: Connecticut College
+exhibition: False
+seed_time: 57.96
+prelim_time: 57.96
+finals_time: 57.96
+prelim_rank: 13
+final_rank: 12
+
+Swimmer 3:
+name: Johnson,
+yr: Cam
+school: SR Connecticut College
+exhibition: False
+seed_time: 57.80
+prelim_time: None
+finals_time: 58.03
+prelim_rank: None
+final_rank: 13
+
+Swimmer 4:
+name: Hepner, Billy
+yr: JR
+school: Wesleyan University
+exhibition: False
+seed_time: 58.00
+prelim_time: 58.00
+finals_time: 58.07
+prelim_rank: 16
+final_rank: 14
+
+Swimmer 5:
+name: Lagasse,
+yr: John
+school: JR Bowdoin College
+exhibition: False
+seed_time: 57.70
+prelim_time: None
+finals_time: 58.32
+prelim_rank: None
+final_rank: 15
+
+Swimmer 6:
+name: Pla, Stefan
+yr: FR
+school: Middlebury College
+exhibition: False
+seed_time: 57.98
+prelim_time: 57.98
+finals_time: 58.54
+prelim_rank: 15
+final_rank: 16
+
+Swimmer 7:
+name: Kang,
+yr: Alex
+school: SR Amherst College
+exhibition: False
+seed_time: 58.86
+prelim_time: 58.86
+finals_time: 57.91
+prelim_rank: 21
+final_rank: 18
+
+Swimmer 8:
+name: Arbaugh,
+yr: Jon
+school: SO Tufts University
+exhibition: False
+seed_time: 58.71
+prelim_time: 58.71
+finals_time: 58.22
+prelim_rank: 20
+final_rank: 19
+
+Swimmer 9:
+name: Steiner, Dylan
+yr: JR
+school: Connecticut College
+exhibition: False
+seed_time: 58.12
+prelim_time: 58.12
+finals_time: 58.53
+prelim_rank: 18
+final_rank: 20
+
+Swimmer 10:
+name: Chow,
+yr: Jd
+school: SO Bates College
+exhibition: False
+seed_time: 58.19
+prelim_time: 58.19
+finals_time: 58.63
+prelim_rank: 19
+final_rank: 21
+
+Swimmer 11:
+name: Chun, Eliot
+yr: FR
+school: Bates College
+exhibition: False
+seed_time: 59.08
+prelim_time: 59.08
+finals_time: 58.65
+prelim_rank: 22
+final_rank: 22
+
+Swimmer 12:
+name: Du, Jasper
+yr: SO
+school: Tufts University
+exhibition: False
+seed_time: 59.12
+prelim_time: 59.12
+finals_time: 58.72
+prelim_rank: 24
+final_rank: 23
+
+Swimmer 13:
+name: Brankovic, Milan
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 59.10
+prelim_time: 59.10
+finals_time: 59.96
+prelim_rank: 23
+final_rank: 24
+
+Swimmer 14:
+name: Tamposi,
+yr: Jake
+school: JR Williams College
+exhibition: False
+seed_time: 57.28
+prelim_time: 55.17C
+finals_time: None
+prelim_rank: 1
+final_rank: None
+
+Swimmer 15:
+name: Ciliv, Morgan
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 57.72
+prelim_time: 58.11
+finals_time: None
+prelim_rank: 17
+final_rank: None
+
+Swimmer 16:
+name: Sivulich, Ethan
+yr: FR
+school: Middlebury College
+exhibition: False
+seed_time: 1:02.71
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 17:
+name: Simpson, Scott
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 1:00.91
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 18:
+name: Wennberg,
+yr: Paul
+school: SR Colby College
+exhibition: False
+seed_time: 1:02.83
+prelim_time: None
+finals_time: None
+prelim_rank: 27
+final_rank: None
+
+Swimmer 19:
+name: Jones,
+yr: Alex
+school: JR Hamilton College
+exhibition: False
+seed_time: 1:02.75
+prelim_time: None
+finals_time: None
+prelim_rank: 28
+final_rank: None
+
+Swimmer 20:
+name: Melby,
+yr: Evan
+school: SO Bowdoin College
+exhibition: False
+seed_time: 1:02.04
+prelim_time: None
+finals_time: None
+prelim_rank: 29
+final_rank: None
+
+Swimmer 21:
+name: Smith,
+yr: Nate
+school: JR Middlebury College
+exhibition: False
+seed_time: 1:01.73
+prelim_time: None
+finals_time: None
+prelim_rank: 30
+final_rank: None
+
+Swimmer 22:
+name: Moore, Taylor
+yr: FR
+school: Middlebury College
+exhibition: False
+seed_time: 1:02.48
+prelim_time: None
+finals_time: None
+prelim_rank: 31
+final_rank: None
+
+Swimmer 23:
+name: Goldberg, Steven
+yr: JR
+school: Amherst College
+exhibition: False
+seed_time: 1:03.91
+prelim_time: None
+finals_time: None
+prelim_rank: 32
+final_rank: None
+
+Swimmer 24:
+name: Bazile, Jacques
+yr: JR
+school: Wesleyan University
+exhibition: False
+seed_time: 1:02.66
+prelim_time: None
+finals_time: None
+prelim_rank: 33
+final_rank: None
+
+Swimmer 25:
+name: Devine,
+yr: John
+school: FR Colby College
+exhibition: False
+seed_time: 1:03.25
+prelim_time: None
+finals_time: None
+prelim_rank: 34
+final_rank: None
+
+Swimmer 26:
+name: Asao, Hikaru
+yr: JR
+school: Bates College
+exhibition: False
+seed_time: 1:02.68
+prelim_time: None
+finals_time: None
+prelim_rank: 35
+final_rank: None
+
+Swimmer 27:
+name: Jacobsen,
+yr: Hugh
+school: FR Colby College
+exhibition: False
+seed_time: 1:05.83
+prelim_time: None
+finals_time: None
+prelim_rank: 36
+final_rank: None
+
+Swimmer 28:
+name: Lee, Andrew
+yr: SR
+school: Middlebury College
+exhibition: False
+seed_time: 1:03.39
+prelim_time: None
+finals_time: None
+prelim_rank: 37
+final_rank: None
+
+Swimmer 29:
+name: McConnell,
+yr: Trip
+school: FR Trinity College
+exhibition: False
+seed_time: 1:02.46
+prelim_time: None
+finals_time: None
+prelim_rank: 38
+final_rank: None
+
+Swimmer 30:
+name: Seaton, Andrew
+yr: SR
+school: Bates College
+exhibition: False
+seed_time: 1:01.06
+prelim_time: None
+finals_time: None
+prelim_rank: 39
+final_rank: None
+
+Swimmer 31:
+name: Elwyn, Chandler
+yr: SO
+school: Hamilton College
+exhibition: False
+seed_time: 1:07.32
+prelim_time: None
+finals_time: None
+prelim_rank: 40
+final_rank: None
+
+Swimmer 32:
+name: Hamlish,
+yr: Noah
+school: JR Wesleyan University
+exhibition: False
+seed_time: 1:06.95
+prelim_time: None
+finals_time: None
+prelim_rank: 41
+final_rank: None
+
+Swimmer 33:
+name: Carfi,
+yr: Zach
+school: SO Wesleyan University
+exhibition: False
+seed_time: 1:05.24
+prelim_time: None
+finals_time: None
+prelim_rank: 42
+final_rank: None
+
+Swimmer 34:
+name: Paine,
+yr: Joe
+school: SO Trinity College
+exhibition: False
+seed_time: 1:09.15
+prelim_time: None
+finals_time: None
+prelim_rank: 43
+final_rank: None
+
+Swimmer 35:
+name: Klein, Christopher
+yr: FR
+school: Hamilton College
+exhibition: False
+seed_time: 1:08.16
+prelim_time: None
+finals_time: None
+prelim_rank: 44
+final_rank: None
+--------------------------------------------------
+event: 16
+meet: 2015_Nescac_Msd_Results
+stroke: Backstroke
+gender: Men
+distance: 100
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Lin, Benjamin
+yr: SO
+school: Williams College
+exhibition: False
+seed_time: 48.93
+prelim_time: None
+finals_time: 48.50M
+prelim_rank: None
+final_rank: 1
+
+Swimmer 2:
+name: Heise, Matthew
+yr: JR
+school: Amherst College
+exhibition: False
+seed_time: 50.80
+prelim_time: None
+finals_time: 51.41
+prelim_rank: None
+final_rank: 11
+
+Swimmer 3:
+name: Skoufalos, Panos
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 51.60
+prelim_time: 51.60
+finals_time: 51.42
+prelim_rank: 11
+final_rank: 12
+
+Swimmer 4:
+name: Schultz,
+yr: Nico
+school: SR Connecticut College
+exhibition: False
+seed_time: 51.63
+prelim_time: 51.63
+finals_time: 52.05
+prelim_rank: 12
+final_rank: 13
+
+Swimmer 5:
+name: Brienza, Michael
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 52.05
+prelim_time: 52.05
+finals_time: 52.07
+prelim_rank: 14
+final_rank: 14
+
+Swimmer 6:
+name: Brown, Brandon
+yr: SR
+school: Amherst College
+exhibition: False
+seed_time: 51.96
+prelim_time: 51.96
+finals_time: 52.50
+prelim_rank: 13
+final_rank: 15
+
+Swimmer 7:
+name: Smith,
+yr: Alex
+school: FR Middlebury College
+exhibition: False
+seed_time: 52.16
+prelim_time: 52.16
+finals_time: 52.75
+prelim_rank: 15
+final_rank: 16
+
+Swimmer 8:
+name: Tang, Spencer
+yr: FR
+school: Wesleyan University
+exhibition: False
+seed_time: 52.60
+prelim_time: 52.60
+finals_time: 52.42
+prelim_rank: 17
+final_rank: 17
+
+Swimmer 9:
+name: Warren, Chris
+yr: SO
+school: Bowdoin College
+exhibition: False
+seed_time: 52.96
+prelim_time: 52.96
+finals_time: 52.86
+prelim_rank: 18
+final_rank: 18
+
+Swimmer 10:
+name: Pourmaleki,
+yr: Ali
+school: FR Wesleyan University
+exhibition: False
+seed_time: 53.01
+prelim_time: 53.01
+finals_time: 53.19
+prelim_rank: 19
+final_rank: 19
+
+Swimmer 11:
+name: Siegelbaum, Jacob
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 53.29
+prelim_time: 53.29
+finals_time: 53.71
+prelim_rank: 20
+final_rank: 20
+
+Swimmer 12:
+name: Weinzierl, Michael
+yr: SR
+school: Hamilton College
+exhibition: False
+seed_time: 54.29
+prelim_time: 54.29
+finals_time: 53.96
+prelim_rank: 22
+final_rank: 21
+
+Swimmer 13:
+name: Hutchinson,
+yr: Will
+school: FR Bowdoin College
+exhibition: False
+seed_time: 53.56
+prelim_time: 53.56
+finals_time: 54.07
+prelim_rank: 21
+final_rank: 22
+
+Swimmer 14:
+name: Cooper, Benjamin
+yr: FR
+school: Hamilton College
+exhibition: False
+seed_time: 54.44
+prelim_time: 54.44
+finals_time: 54.21
+prelim_rank: 23
+final_rank: 23
+
+Swimmer 15:
+name: Brower, McClure
+yr: FR
+school: Bowdoin College
+exhibition: False
+seed_time: 54.61
+prelim_time: 54.61
+finals_time: 54.48
+prelim_rank: 24
+final_rank: 24
+
+Swimmer 16:
+name: Sommer,
+yr: Ben
+school: JR Bates College
+exhibition: False
+seed_time: 52.28
+prelim_time: 52.29
+finals_time: None
+prelim_rank: 16
+final_rank: None
+
+Swimmer 17:
+name: Park, Andrew
+yr: SR
+school: Bowdoin College
+exhibition: False
+seed_time: 54.14
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 18:
+name: Dowling,
+yr: Will
+school: FR Middlebury College
+exhibition: False
+seed_time: 56.66
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 19:
+name: Anderson, Lloyd
+yr: JR
+school: Bowdoin College
+exhibition: False
+seed_time: 57.86
+prelim_time: None
+finals_time: None
+prelim_rank: 27
+final_rank: None
+
+Swimmer 20:
+name: Antonisse,
+yr: Noel
+school: SO Middlebury College
+exhibition: False
+seed_time: 57.87
+prelim_time: None
+finals_time: None
+prelim_rank: 28
+final_rank: None
+
+Swimmer 21:
+name: Cho, Justin
+yr: SO
+school: Middlebury College
+exhibition: False
+seed_time: 56.04
+prelim_time: None
+finals_time: None
+prelim_rank: 29
+final_rank: None
+
+Swimmer 22:
+name: Holmes,
+yr: Clay
+school: FR Hamilton College
+exhibition: False
+seed_time: 58.93
+prelim_time: None
+finals_time: None
+prelim_rank: 30
+final_rank: None
+
+Swimmer 23:
+name: Hobson,
+yr: Ryan
+school: JR Hamilton College
+exhibition: False
+seed_time: 59.95
+prelim_time: None
+finals_time: None
+prelim_rank: 31
+final_rank: None
+
+Swimmer 24:
+name: Meyer,
+yr: Jake
+school: FR Amherst College
+exhibition: False
+seed_time: 59.67
+prelim_time: None
+finals_time: None
+prelim_rank: 32
+final_rank: None
+--------------------------------------------------
+event: 17
+meet: 2015_Nescac_Msd_Results
+stroke: Freestyle Relay
+gender: Men
+distance: 800
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: relay
+Results:
+--------------------------------------------------
+event: 18
+meet: 2015_Nescac_Msd_Results
+stroke: Freestyle
+gender: Men
+distance: 1650
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Gronbeck, Christian
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 9:25.25
+prelim_time: None
+finals_time: 15:31.66P
+prelim_rank: None
+final_rank: 1
+
+Swimmer 2:
+name: Molina,
+yr: Mace
+school: SO Connecticut College
+exhibition: False
+seed_time: 10:00.10
+prelim_time: None
+finals_time: 16:29.77
+prelim_rank: None
+final_rank: 12
+
+Swimmer 3:
+name: Phillips, Matthew
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 10:10.71
+prelim_time: None
+finals_time: 16:32.25
+prelim_rank: None
+final_rank: 13
+
+Swimmer 4:
+name: Rosenthal, Andrew
+yr: JR
+school: Middlebury College
+exhibition: False
+seed_time: 10:05.61
+prelim_time: None
+finals_time: 16:34.60
+prelim_rank: None
+final_rank: 14
+
+Swimmer 5:
+name: Avidan, Lucas
+yr: SR
+school: Middlebury College
+exhibition: False
+seed_time: 10:29.70
+prelim_time: None
+finals_time: 16:35.81
+prelim_rank: None
+final_rank: 15
+
+Swimmer 6:
+name: Patapis, Peter
+yr: FR
+school: Wesleyan University
+exhibition: False
+seed_time: 10:31.72
+prelim_time: None
+finals_time: 16:37.04
+prelim_rank: None
+final_rank: 16
+
+Swimmer 7:
+name: Lee, Christopher
+yr: FR
+school: Bates College
+exhibition: False
+seed_time: 10:25.99
+prelim_time: None
+finals_time: 16:45.64
+prelim_rank: None
+final_rank: 17
+
+Swimmer 8:
+name: Ives, Nathan
+yr: FR
+school: Amherst College
+exhibition: False
+seed_time: 10:27.14
+prelim_time: None
+finals_time: 16:45.86
+prelim_rank: None
+final_rank: 18
+
+Swimmer 9:
+name: McElduff, James
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 10:03.79
+prelim_time: None
+finals_time: 16:46.70
+prelim_rank: None
+final_rank: 19
+
+Swimmer 10:
+name: Long,
+yr: Tim
+school: SO Bowdoin College
+exhibition: False
+seed_time: 10:06.16
+prelim_time: None
+finals_time: 16:54.10
+prelim_rank: None
+final_rank: 20
+
+Swimmer 11:
+name: Drennan, Craig
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 10:29.62
+prelim_time: None
+finals_time: 16:55.06
+prelim_rank: None
+final_rank: 21
+
+Swimmer 12:
+name: Savidge, Timothy
+yr: SO
+school: Tufts University
+exhibition: False
+seed_time: 10:24.69
+prelim_time: None
+finals_time: 17:00.57
+prelim_rank: None
+final_rank: 22
+
+Swimmer 13:
+name: Lueck, Tyler
+yr: JR
+school: Tufts University
+exhibition: False
+seed_time: 10:38.44
+prelim_time: None
+finals_time: 17:05.39
+prelim_rank: None
+final_rank: 23
+
+Swimmer 14:
+name: Tatro,
+yr: Case
+school: FR Hamilton College
+exhibition: False
+seed_time: 10:32.00
+prelim_time: None
+finals_time: 17:05.59
+prelim_rank: None
+final_rank: 24
+
+Swimmer 15:
+name: Courville, Nathan
+yr: SO
+school: Wesleyan University
+exhibition: False
+seed_time: 10:31.28
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 16:
+name: Rider, Mitch
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 10:27.80
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 17:
+name: Weeks,
+yr: Ryan
+school: JR Colby College
+exhibition: False
+seed_time: 11:03.76
+prelim_time: None
+finals_time: None
+prelim_rank: 27
+final_rank: None
+
+Swimmer 18:
+name: Dizengoff, Reuben
+yr: SR
+school: Hamilton College
+exhibition: False
+seed_time: 11:52.70
+prelim_time: None
+finals_time: None
+prelim_rank: 28
+final_rank: None
+--------------------------------------------------
+event: 19
+meet: 2015_Nescac_Msd_Results
+stroke: Backstroke
+gender: Men
+distance: 200
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Lin, Benjamin
+yr: SO
+school: Williams College
+exhibition: False
+seed_time: 1:46.91
+prelim_time: None
+finals_time: 1:46.69M
+prelim_rank: None
+final_rank: 1
+
+Swimmer 2:
+name: Brown, Brandon
+yr: SR
+school: Amherst College
+exhibition: False
+seed_time: 1:52.42
+prelim_time: None
+finals_time: 1:53.54
+prelim_rank: None
+final_rank: 14
+
+Swimmer 3:
+name: Kulesza,
+yr: Ryan
+school: SR Bowdoin College
+exhibition: False
+seed_time: 1:52.98
+prelim_time: None
+finals_time: 1:53.57
+prelim_rank: None
+final_rank: 15
+
+Swimmer 4:
+name: Smith,
+yr: Alex
+school: FR Middlebury College
+exhibition: False
+seed_time: 1:53.40
+prelim_time: 1:53.40
+finals_time: 1:53.75
+prelim_rank: 15
+final_rank: 16
+
+Swimmer 5:
+name: Tang, Spencer
+yr: FR
+school: Wesleyan University
+exhibition: False
+seed_time: 1:56.14
+prelim_time: 1:56.14
+finals_time: 1:54.70
+prelim_rank: *19
+final_rank: 18
+
+Swimmer 6:
+name: Miller,
+yr: Nick
+school: FR Connecticut College
+exhibition: False
+seed_time: 1:55.35
+prelim_time: 1:55.35
+finals_time: 1:54.90
+prelim_rank: 17
+final_rank: 19
+
+Swimmer 7:
+name: Paquette,
+yr: Sean
+school: SR Connecticut College
+exhibition: False
+seed_time: 1:56.14
+prelim_time: 1:56.14
+finals_time: 1:54.97
+prelim_rank: *19
+final_rank: 20
+
+Swimmer 8:
+name: Park, Andrew
+yr: SR
+school: Bowdoin College
+exhibition: False
+seed_time: 1:56.74
+prelim_time: 1:56.74
+finals_time: 1:56.04
+prelim_rank: 21
+final_rank: 21
+
+Swimmer 9:
+name: Cooper, Benjamin
+yr: FR
+school: Hamilton College
+exhibition: False
+seed_time: 1:56.96
+prelim_time: 1:56.96
+finals_time: 1:57.10
+prelim_rank: 22
+final_rank: 22
+
+Swimmer 10:
+name: Weinzierl, Michael
+yr: SR
+school: Hamilton College
+exhibition: False
+seed_time: 1:57.13
+prelim_time: 1:57.13
+finals_time: 1:57.36
+prelim_rank: 23
+final_rank: 23
+
+Swimmer 11:
+name: Curtin,
+yr: Doug
+school: SO Trinity College
+exhibition: False
+seed_time: 1:57.73
+prelim_time: 1:57.73
+finals_time: 1:58.79
+prelim_rank: 24
+final_rank: 24
+
+Swimmer 12:
+name: Wallace, Zachary
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 1:59.69
+prelim_time: 1:54.27
+finals_time: None
+prelim_rank: 16
+final_rank: None
+
+Swimmer 13:
+name: Siegelbaum, Jacob
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 1:55.41
+prelim_time: 1:55.92
+finals_time: None
+prelim_rank: 18
+final_rank: None
+
+Swimmer 14:
+name: Pearson, Trevor
+yr: FR
+school: Hamilton College
+exhibition: False
+seed_time: 2:02.32
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 15:
+name: Gibney,
+yr: Carl
+school: JR Trinity College
+exhibition: False
+seed_time: 2:06.25
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 16:
+name: Brower, McClure
+yr: FR
+school: Bowdoin College
+exhibition: False
+seed_time: 2:00.69
+prelim_time: None
+finals_time: None
+prelim_rank: 27
+final_rank: None
+
+Swimmer 17:
+name: Anderson, Lloyd
+yr: JR
+school: Bowdoin College
+exhibition: False
+seed_time: 2:09.52
+prelim_time: None
+finals_time: None
+prelim_rank: 28
+final_rank: None
+
+Swimmer 18:
+name: Dowling,
+yr: Will
+school: FR Middlebury College
+exhibition: False
+seed_time: 2:02.80
+prelim_time: None
+finals_time: None
+prelim_rank: 29
+final_rank: None
+
+Swimmer 19:
+name: Rider, Mitch
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 2:03.11
+prelim_time: None
+finals_time: None
+prelim_rank: 30
+final_rank: None
+
+Swimmer 20:
+name: Hobson,
+yr: Ryan
+school: JR Hamilton College
+exhibition: False
+seed_time: 2:08.15
+prelim_time: None
+finals_time: None
+prelim_rank: 31
+final_rank: None
+
+Swimmer 21:
+name: Meyer,
+yr: Jake
+school: FR Amherst College
+exhibition: False
+seed_time: 2:09.16
+prelim_time: None
+finals_time: None
+prelim_rank: 32
+final_rank: None
+--------------------------------------------------
+event: 20
+meet: 2015_Nescac_Msd_Results
+stroke: Freestyle
+gender: Men
+distance: 100
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Hampton, Tyler
+yr: SR
+school: Amherst College
+exhibition: False
+seed_time: 46.13
+prelim_time: 46.13
+finals_time: 45.81
+prelim_rank: 5
+final_rank: 3
+
+Swimmer 2:
+name: Nanda, Alexander
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 46.33
+prelim_time: 46.33
+finals_time: 46.33
+prelim_rank: 7
+final_rank: 4
+
+Swimmer 3:
+name: Dreisbach,
+yr: Alex
+school: SO Amherst College
+exhibition: False
+seed_time: 46.10
+prelim_time: 46.10
+finals_time: 46.34
+prelim_rank: *3
+final_rank: 5
+
+Swimmer 4:
+name: Johnson, Grant
+yr: SO
+school: Williams College
+exhibition: False
+seed_time: 46.26
+prelim_time: 46.26
+finals_time: 46.37
+prelim_rank: 6
+final_rank: 6
+
+Swimmer 5:
+name: Hammond,
+yr: John
+school: JR Williams College
+exhibition: False
+seed_time: 46.10
+prelim_time: 46.10
+finals_time: 46.61
+prelim_rank: *3
+final_rank: 7
+
+Swimmer 6:
+name: Simmons, Keegan
+yr: SO
+school: Amherst College
+exhibition: False
+seed_time: 46.40
+prelim_time: 46.40
+finals_time: 46.85
+prelim_rank: 8
+final_rank: 8
+
+Swimmer 7:
+name: Sommer,
+yr: Ben
+school: JR Bates College
+exhibition: False
+seed_time: 46.81
+prelim_time: 46.81
+finals_time: 46.65
+prelim_rank: 10
+final_rank: 9
+
+Swimmer 8:
+name: House, Logan
+yr: SO
+school: Bowdoin College
+exhibition: False
+seed_time: 46.67
+prelim_time: 46.67
+finals_time: 46.96
+prelim_rank: 9
+final_rank: 10
+
+Swimmer 9:
+name: Shi, William
+yr: SR
+school: Bowdoin College
+exhibition: False
+seed_time: 46.83
+prelim_time: 46.83
+finals_time: 47.03
+prelim_rank: *11
+final_rank: 11
+
+Swimmer 10:
+name: Henry,
+yr: Emil
+school: JR Connecticut College
+exhibition: False
+seed_time: 47.22
+prelim_time: 47.22
+finals_time: 47.15
+prelim_rank: 15
+final_rank: 12
+
+Swimmer 11:
+name: Simko,
+yr: Cam
+school: JR Tufts University
+exhibition: False
+seed_time: 47.01
+prelim_time: 47.01
+finals_time: 47.16
+prelim_rank: 14
+final_rank: 13
+
+Swimmer 12:
+name: Brown,
+yr: Will
+school: SR Williams College
+exhibition: False
+seed_time: 47.24
+prelim_time: 47.24
+finals_time: 47.22
+prelim_rank: 16
+final_rank: 14
+
+Swimmer 13:
+name: Freeman,
+yr: John
+school: SO Williams College
+exhibition: False
+seed_time: 46.83
+prelim_time: 46.83
+finals_time: 47.38
+prelim_rank: *11
+final_rank: 15
+
+Swimmer 14:
+name: Hutchinson,
+yr: Will
+school: FR Bowdoin College
+exhibition: False
+seed_time: 46.91
+prelim_time: 46.91
+finals_time: 47.39
+prelim_rank: 13
+final_rank: 16
+
+Swimmer 15:
+name: Lagasse,
+yr: Paul
+school: JR Middlebury College
+exhibition: False
+seed_time: 47.41
+prelim_time: 47.41
+finals_time: 47.02
+prelim_rank: 24
+final_rank: 17
+
+Swimmer 16:
+name: Rines, Joshua
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 47.26
+prelim_time: 47.26
+finals_time: 47.15
+prelim_rank: *17
+final_rank: 18
+
+Swimmer 17:
+name: Brienza, Michael
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 47.40
+prelim_time: 47.40
+finals_time: 47.35
+prelim_rank: 23
+final_rank: 19
+
+Swimmer 18:
+name: Lawton, Trebor
+yr: SO
+school: Connecticut College
+exhibition: False
+seed_time: 47.32
+prelim_time: 47.32
+finals_time: 47.41
+prelim_rank: 19
+final_rank: 20
+
+Swimmer 19:
+name: Wood, Harry
+yr: JR
+school: Tufts University
+exhibition: False
+seed_time: 47.26
+prelim_time: 47.26
+finals_time: 47.55
+prelim_rank: *17
+final_rank: 21
+
+Swimmer 20:
+name: Snyder,
+yr: Nels
+school: JR Williams College
+exhibition: False
+seed_time: 47.35
+prelim_time: 47.35
+finals_time: 47.60
+prelim_rank: 20
+final_rank: 22
+
+Swimmer 21:
+name: Cheuk, Bryan
+yr: JR
+school: Middlebury College
+exhibition: False
+seed_time: 47.36
+prelim_time: 47.36
+finals_time: 47.77
+prelim_rank: 21
+final_rank: 23
+
+Swimmer 22:
+name: Blackburn,
+yr: John
+school: SO Colby College
+exhibition: False
+seed_time: 47.39
+prelim_time: 47.39
+finals_time: 47.97
+prelim_rank: 22
+final_rank: 24
+
+Swimmer 23:
+name: Galea, Vince
+yr: SR
+school: Colby College
+exhibition: False
+seed_time: 46.86
+prelim_time: 45.73
+finals_time: None
+prelim_rank: 2
+final_rank: None
+
+Swimmer 24:
+name: Connolly,
+yr: Mike
+school: SO Bates College
+exhibition: False
+seed_time: 48.95
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 25:
+name: Simpson, Scott
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 49.66
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 26:
+name: Lagasse,
+yr: John
+school: JR Bowdoin College
+exhibition: False
+seed_time: 48.77
+prelim_time: None
+finals_time: None
+prelim_rank: *27
+final_rank: None
+
+Swimmer 27:
+name: Lau, Lorenzo
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 48.20
+prelim_time: None
+finals_time: None
+prelim_rank: *27
+final_rank: None
+
+Swimmer 28:
+name: Dina,
+yr: Jack
+school: SO Bates College
+exhibition: False
+seed_time: 49.25
+prelim_time: None
+finals_time: None
+prelim_rank: 29
+final_rank: None
+
+Swimmer 29:
+name: Brosnihan,
+yr: Niko
+school: SO Connecticut College
+exhibition: False
+seed_time: 49.42
+prelim_time: None
+finals_time: None
+prelim_rank: 30
+final_rank: None
+
+Swimmer 30:
+name: McBratney,
+yr: John
+school: JR Hamilton College
+exhibition: False
+seed_time: 49.00
+prelim_time: None
+finals_time: None
+prelim_rank: 31
+final_rank: None
+
+Swimmer 31:
+name: Bachur,
+yr: Ryan
+school: SR Colby College
+exhibition: False
+seed_time: 49.03
+prelim_time: None
+finals_time: None
+prelim_rank: 32
+final_rank: None
+
+Swimmer 32:
+name: McLaughlin,
+yr: Jack
+school: FR Middlebury College
+exhibition: False
+seed_time: 49.25
+prelim_time: None
+finals_time: None
+prelim_rank: 33
+final_rank: None
+
+Swimmer 33:
+name: Weihs, Chris
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 48.51
+prelim_time: None
+finals_time: None
+prelim_rank: 34
+final_rank: None
+
+Swimmer 34:
+name: Owlett, Carson
+yr: SO
+school: Connecticut College
+exhibition: False
+seed_time: 49.70
+prelim_time: None
+finals_time: None
+prelim_rank: 35
+final_rank: None
+
+Swimmer 35:
+name: Moore, Taylor
+yr: FR
+school: Middlebury College
+exhibition: False
+seed_time: 48.78
+prelim_time: None
+finals_time: None
+prelim_rank: *36
+final_rank: None
+
+Swimmer 36:
+name: Becker, Scott
+yr: SO
+school: Hamilton College
+exhibition: False
+seed_time: 49.80
+prelim_time: None
+finals_time: None
+prelim_rank: *36
+final_rank: None
+
+Swimmer 37:
+name: Depew, Jonathan
+yr: FR
+school: Bates College
+exhibition: False
+seed_time: 49.78
+prelim_time: None
+finals_time: None
+prelim_rank: 38
+final_rank: None
+
+Swimmer 38:
+name: Given, Michael
+yr: SO
+school: Bowdoin College
+exhibition: False
+seed_time: 50.45
+prelim_time: None
+finals_time: None
+prelim_rank: 39
+final_rank: None
+
+Swimmer 39:
+name: Stephens, Weston
+yr: FR
+school: Connecticut College
+exhibition: False
+seed_time: 50.12
+prelim_time: None
+finals_time: None
+prelim_rank: 40
+final_rank: None
+
+Swimmer 40:
+name: Melby,
+yr: Evan
+school: SO Bowdoin College
+exhibition: False
+seed_time: 51.16
+prelim_time: None
+finals_time: None
+prelim_rank: 41
+final_rank: None
+
+Swimmer 41:
+name: Anderson,
+yr: Lyle
+school: JR Bowdoin College
+exhibition: False
+seed_time: 50.60
+prelim_time: None
+finals_time: None
+prelim_rank: 42
+final_rank: None
+
+Swimmer 42:
+name: Jacobsen,
+yr: Hugh
+school: FR Colby College
+exhibition: False
+seed_time: 50.15
+prelim_time: None
+finals_time: None
+prelim_rank: 43
+final_rank: None
+
+Swimmer 43:
+name: McGinnis, Patrick
+yr: SR
+school: Connecticut College
+exhibition: False
+seed_time: 50.46
+prelim_time: None
+finals_time: None
+prelim_rank: 44
+final_rank: None
+
+Swimmer 44:
+name: Cruz, Sebastian
+yr: JR
+school: Amherst College
+exhibition: False
+seed_time: 49.49
+prelim_time: None
+finals_time: None
+prelim_rank: 45
+final_rank: None
+
+Swimmer 45:
+name: Koziol,
+yr: Greg
+school: SO Bowdoin College
+exhibition: False
+seed_time: 50.13
+prelim_time: None
+finals_time: None
+prelim_rank: 46
+final_rank: None
+
+Swimmer 46:
+name: Edwards, Thomas
+yr: FR
+school: Connecticut College
+exhibition: False
+seed_time: 49.87
+prelim_time: None
+finals_time: None
+prelim_rank: 47
+final_rank: None
+
+Swimmer 47:
+name: Reinhardt,
+yr: Karl
+school: SR Bowdoin College
+exhibition: False
+seed_time: 53.10
+prelim_time: None
+finals_time: None
+prelim_rank: 48
+final_rank: None
+
+Swimmer 48:
+name: Webster, Robert
+yr: FR
+school: Wesleyan University
+exhibition: False
+seed_time: 51.79
+prelim_time: None
+finals_time: None
+prelim_rank: 49
+final_rank: None
+
+Swimmer 49:
+name: Rehor, Tyler
+yr: SO
+school: Hamilton College
+exhibition: False
+seed_time: 50.68
+prelim_time: None
+finals_time: None
+prelim_rank: 50
+final_rank: None
+
+Swimmer 50:
+name: Ho, Wesley
+yr: SR
+school: Wesleyan University
+exhibition: False
+seed_time: 51.20
+prelim_time: None
+finals_time: None
+prelim_rank: 51
+final_rank: None
+
+Swimmer 51:
+name: Knight,
+yr: Joe
+school: SO Colby College
+exhibition: False
+seed_time: 50.64
+prelim_time: None
+finals_time: None
+prelim_rank: 52
+final_rank: None
+
+Swimmer 52:
+name: Elwyn, Chandler
+yr: SO
+school: Hamilton College
+exhibition: False
+seed_time: 56.40
+prelim_time: None
+finals_time: None
+prelim_rank: 53
+final_rank: None
+
+Swimmer 53:
+name: Mitchell-Adams, Hunter
+yr: FR
+school: Trinity College
+exhibition: False
+seed_time: 54.63
+prelim_time: None
+finals_time: None
+prelim_rank: 54
+final_rank: None
+
+Swimmer 54:
+name: Bjorn,
+yr: Jack
+school: JR Colby College
+exhibition: False
+seed_time: 53.29
+prelim_time: None
+finals_time: None
+prelim_rank: 55
+final_rank: None
+
+Swimmer 55:
+name: McNamara,
+yr: Tom
+school: SO Trinity College
+exhibition: False
+seed_time: 53.26
+prelim_time: None
+finals_time: None
+prelim_rank: 56
+final_rank: None
+
+Swimmer 56:
+name: Gartley, Andrew
+yr: SO
+school: Wesleyan University
+exhibition: False
+seed_time: 52.24
+prelim_time: None
+finals_time: None
+prelim_rank: 57
+final_rank: None
+
+Swimmer 57:
+name: Fields,
+yr: Ben
+school: SR Hamilton College
+exhibition: False
+seed_time: 54.47
+prelim_time: None
+finals_time: None
+prelim_rank: 58
+final_rank: None
+
+Swimmer 58:
+name: Rosenbloom,
+yr: Jake
+school: SR Wesleyan University
+exhibition: False
+seed_time: 56.31
+prelim_time: None
+finals_time: None
+prelim_rank: 59
+final_rank: None
+--------------------------------------------------
+event: 21
+meet: 2015_Nescac_Msd_Results
+stroke: Breaststroke
+gender: Men
+distance: 200
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Lattimer, Timothy
+yr: SR
+school: Williams College
+exhibition: False
+seed_time: 2:01.01
+prelim_time: None
+finals_time: 2:00.71P
+prelim_rank: None
+final_rank: 1
+
+Swimmer 2:
+name: Pla, Stefan
+yr: FR
+school: Middlebury College
+exhibition: False
+seed_time: 2:08.08
+prelim_time: 2:08.08
+finals_time: 2:07.18
+prelim_rank: 13
+final_rank: 13
+
+Swimmer 3:
+name: Johnson,
+yr: Cam
+school: SR Connecticut College
+exhibition: False
+seed_time: 2:08.19
+prelim_time: 2:08.19
+finals_time: 2:07.48
+prelim_rank: 14
+final_rank: 14
+
+Swimmer 4:
+name: Arbaugh,
+yr: Jon
+school: SO Tufts University
+exhibition: False
+seed_time: 2:08.38
+prelim_time: 2:08.38
+finals_time: 2:07.72
+prelim_rank: *15
+final_rank: 15
+
+Swimmer 5:
+name: Chansakul,
+yr: Jr
+school: JR Bowdoin College
+exhibition: False
+seed_time: 2:07.71
+prelim_time: 2:07.71
+finals_time: 2:07.82
+prelim_rank: 12
+final_rank: 16
+
+Swimmer 6:
+name: Spiro, Elijah
+yr: FR
+school: Amherst College
+exhibition: False
+seed_time: 2:09.59
+prelim_time: 2:09.59
+finals_time: 2:07.47
+prelim_rank: 21
+final_rank: 17
+
+Swimmer 7:
+name: Miller, Tripp
+yr: FR
+school: Hamilton College
+exhibition: False
+seed_time: 2:09.07
+prelim_time: 2:09.07
+finals_time: 2:07.88
+prelim_rank: 19
+final_rank: 18
+
+Swimmer 8:
+name: Steiner, Dylan
+yr: JR
+school: Connecticut College
+exhibition: False
+seed_time: 2:08.46
+prelim_time: 2:08.46
+finals_time: 2:08.39
+prelim_rank: 17
+final_rank: 19
+
+Swimmer 9:
+name: Thunem,
+yr: Ned
+school: SO Bates College
+exhibition: False
+seed_time: 2:09.84
+prelim_time: 2:09.84
+finals_time: 2:08.56
+prelim_rank: 24
+final_rank: 20
+
+Swimmer 10:
+name: Daus-Haberle, Spencer
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 2:09.48
+prelim_time: 2:09.48
+finals_time: 2:09.30
+prelim_rank: 20
+final_rank: 21
+
+Swimmer 11:
+name: Wennberg,
+yr: Paul
+school: SR Colby College
+exhibition: False
+seed_time: 2:09.69
+prelim_time: 2:09.69
+finals_time: 2:09.46
+prelim_rank: 22
+final_rank: 22
+
+Swimmer 12:
+name: Chun, Eliot
+yr: FR
+school: Bates College
+exhibition: False
+seed_time: 2:09.75
+prelim_time: 2:09.75
+finals_time: 2:09.73
+prelim_rank: 23
+final_rank: 23
+
+Swimmer 13:
+name: Chow,
+yr: Jd
+school: SO Bates College
+exhibition: False
+seed_time: 2:09.03
+prelim_time: 2:09.03
+finals_time: 2:10.49
+prelim_rank: 18
+final_rank: 24
+
+Swimmer 14:
+name: Yin,
+yr: Jon
+school: JR Williams College
+exhibition: False
+seed_time: 2:13.53
+prelim_time: 2:06.75
+finals_time: None
+prelim_rank: 11
+final_rank: None
+
+Swimmer 15:
+name: Freiberg, Drake
+yr: FR
+school: Connecticut College
+exhibition: False
+seed_time: 2:06.14
+prelim_time: 2:08.38
+finals_time: None
+prelim_rank: *15
+final_rank: None
+
+Swimmer 16:
+name: Smith,
+yr: Nate
+school: JR Middlebury College
+exhibition: False
+seed_time: 2:20.64
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 17:
+name: Sivulich, Ethan
+yr: FR
+school: Middlebury College
+exhibition: False
+seed_time: 2:17.83
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 18:
+name: Hepner, Billy
+yr: JR
+school: Wesleyan University
+exhibition: False
+seed_time: 2:20.36
+prelim_time: None
+finals_time: None
+prelim_rank: 27
+final_rank: None
+
+Swimmer 19:
+name: Du, Jasper
+yr: SO
+school: Tufts University
+exhibition: False
+seed_time: 2:15.44
+prelim_time: None
+finals_time: None
+prelim_rank: 28
+final_rank: None
+
+Swimmer 20:
+name: Grant,
+yr: Andy
+school: SO Middlebury College
+exhibition: False
+seed_time: 2:15.16
+prelim_time: None
+finals_time: None
+prelim_rank: 29
+final_rank: None
+
+Swimmer 21:
+name: Watson,
+yr: Luke
+school: SR Connecticut College
+exhibition: False
+seed_time: 2:18.45
+prelim_time: None
+finals_time: None
+prelim_rank: 30
+final_rank: None
+
+Swimmer 22:
+name: Goldberg, Steven
+yr: JR
+school: Amherst College
+exhibition: False
+seed_time: 2:15.13
+prelim_time: None
+finals_time: None
+prelim_rank: 31
+final_rank: None
+
+Swimmer 23:
+name: McCormick, Connor
+yr: FR
+school: Middlebury College
+exhibition: False
+seed_time: 2:12.17
+prelim_time: None
+finals_time: None
+prelim_rank: 32
+final_rank: None
+
+Swimmer 24:
+name: Garner, Nathan
+yr: SO
+school: Bowdoin College
+exhibition: False
+seed_time: 2:17.06
+prelim_time: None
+finals_time: None
+prelim_rank: 33
+final_rank: None
+
+Swimmer 25:
+name: Stanton,
+yr: Eric
+school: SO Middlebury College
+exhibition: False
+seed_time: 2:19.56
+prelim_time: None
+finals_time: None
+prelim_rank: 34
+final_rank: None
+
+Swimmer 26:
+name: Wong,
+yr: Kyle
+school: FR Colby College
+exhibition: False
+seed_time: 2:17.40
+prelim_time: None
+finals_time: None
+prelim_rank: 35
+final_rank: None
+
+Swimmer 27:
+name: Devine,
+yr: John
+school: FR Colby College
+exhibition: False
+seed_time: 2:22.48
+prelim_time: None
+finals_time: None
+prelim_rank: 36
+final_rank: None
+
+Swimmer 28:
+name: Carfi,
+yr: Zach
+school: SO Wesleyan University
+exhibition: False
+seed_time: 2:21.81
+prelim_time: None
+finals_time: None
+prelim_rank: 37
+final_rank: None
+
+Swimmer 29:
+name: Brankovic, Milan
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 2:23.47
+prelim_time: None
+finals_time: None
+prelim_rank: 38
+final_rank: None
+
+Swimmer 30:
+name: Klein, Christopher
+yr: FR
+school: Hamilton College
+exhibition: False
+seed_time: 2:29.69
+prelim_time: None
+finals_time: None
+prelim_rank: 39
+final_rank: None
+--------------------------------------------------
+event: 22
+meet: 2015_Nescac_Msd_Results
+stroke: Butterfly
+gender: Men
+distance: 200
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: individual
+Results:
+
+Swimmer 1:
+name: Ricotta,
+yr: Thad
+school: SR Williams College
+exhibition: False
+seed_time: 1:47.17
+prelim_time: None
+finals_time: 1:46.53M
+prelim_rank: None
+final_rank: 1
+
+Swimmer 2:
+name: Gagne, Matthew
+yr: SR
+school: Bates College
+exhibition: False
+seed_time: 1:51.11
+prelim_time: None
+finals_time: 1:54.01
+prelim_rank: None
+final_rank: 8
+
+Swimmer 3:
+name: Metcalfe, William
+yr: SO
+school: Tufts University
+exhibition: False
+seed_time: 1:54.05
+prelim_time: 1:54.05
+finals_time: 1:54.48
+prelim_rank: 12
+final_rank: 12
+
+Swimmer 4:
+name: Phillips, Matthew
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 1:54.77
+prelim_time: 1:54.77
+finals_time: 1:54.57
+prelim_rank: 14
+final_rank: 13
+
+Swimmer 5:
+name: Napolitano,
+yr: Mike
+school: SR Tufts University
+exhibition: False
+seed_time: 1:54.32
+prelim_time: 1:54.32
+finals_time: 1:54.93
+prelim_rank: 13
+final_rank: 14
+
+Swimmer 6:
+name: Spazzarini,
+yr: Neil
+school: FR Tufts University
+exhibition: False
+seed_time: 1:55.41
+prelim_time: 1:55.41
+finals_time: 1:55.11
+prelim_rank: 15
+final_rank: 15
+
+Swimmer 7:
+name: Deardorff, Peter
+yr: SR
+school: Bowdoin College
+exhibition: False
+seed_time: 1:56.07
+prelim_time: 1:56.07
+finals_time: 1:58.25
+prelim_rank: 16
+final_rank: 16
+
+Swimmer 8:
+name: Bullis, Grant
+yr: FR
+school: Connecticut College
+exhibition: False
+seed_time: 1:58.13
+prelim_time: 1:58.13
+finals_time: 1:56.51
+prelim_rank: 19
+final_rank: 17
+
+Swimmer 9:
+name: Lis, Chase
+yr: SO
+school: Bates College
+exhibition: False
+seed_time: 1:57.56
+prelim_time: 1:57.56
+finals_time: 1:57.34
+prelim_rank: 17
+final_rank: 18
+
+Swimmer 10:
+name: Flynn, Chris
+yr: FR
+school: Tufts University
+exhibition: False
+seed_time: 1:58.90
+prelim_time: 1:58.90
+finals_time: 1:57.47
+prelim_rank: 21
+final_rank: 19
+
+Swimmer 11:
+name: Pite,
+yr: AJ
+school: FR Connecticut College
+exhibition: False
+seed_time: 1:59.12
+prelim_time: 1:59.12
+finals_time: 1:57.54
+prelim_rank: 22
+final_rank: 20
+
+Swimmer 12:
+name: Jones,
+yr: Alex
+school: JR Hamilton College
+exhibition: False
+seed_time: 1:59.72
+prelim_time: 1:59.72
+finals_time: 1:57.68
+prelim_rank: 24
+final_rank: 21
+
+Swimmer 13:
+name: Distler,
+yr: Max
+school: FR Wesleyan University
+exhibition: False
+seed_time: 1:58.76
+prelim_time: 1:58.76
+finals_time: 1:58.06
+prelim_rank: 20
+final_rank: 22
+
+Swimmer 14:
+name: Kuo, Theodore
+yr: SR
+school: Middlebury College
+exhibition: False
+seed_time: 1:57.90
+prelim_time: 1:57.90
+finals_time: 1:58.29
+prelim_rank: 18
+final_rank: 23
+
+Swimmer 15:
+name: Berson,
+yr: Marc
+school: FR Bowdoin College
+exhibition: False
+seed_time: 1:59.32
+prelim_time: 1:59.32
+finals_time: 1:58.84
+prelim_rank: 23
+final_rank: 24
+
+Swimmer 16:
+name: Lewtan, Tyler
+yr: JR
+school: Colby College
+exhibition: False
+seed_time: 2:07.10
+prelim_time: None
+finals_time: None
+prelim_rank: 25
+final_rank: None
+
+Swimmer 17:
+name: Jeton,
+yr: Luke
+school: SO Hamilton College
+exhibition: False
+seed_time: 2:07.69
+prelim_time: None
+finals_time: None
+prelim_rank: 26
+final_rank: None
+
+Swimmer 18:
+name: Smachlo,
+yr: Alex
+school: SR Bates College
+exhibition: False
+seed_time: 2:02.33
+prelim_time: None
+finals_time: None
+prelim_rank: 27
+final_rank: None
+
+Swimmer 19:
+name: Buchser, Andrew
+yr: FR
+school: Middlebury College
+exhibition: False
+seed_time: 2:03.90
+prelim_time: None
+finals_time: None
+prelim_rank: 28
+final_rank: None
+
+Swimmer 20:
+name: Fleisher, Andrew
+yr: JR
+school: Middlebury College
+exhibition: False
+seed_time: 2:09.36
+prelim_time: None
+finals_time: None
+prelim_rank: 29
+final_rank: None
+
+Swimmer 21:
+name: Ortegon,
+yr: Karl
+school: FR Wesleyan University
+exhibition: False
+seed_time: 2:09.01
+prelim_time: None
+finals_time: None
+prelim_rank: 30
+final_rank: None
+
+Swimmer 22:
+name: Brown, Frankie
+yr: FR
+school: Wesleyan University
+exhibition: False
+seed_time: 2:14.80
+prelim_time: None
+finals_time: None
+prelim_rank: 31
+final_rank: None
+
+Swimmer 23:
+name: Blake, Gavin
+yr: FR
+school: Colby College
+exhibition: False
+seed_time: 2:09.88
+prelim_time: None
+finals_time: None
+prelim_rank: 32
+final_rank: None
+
+Swimmer 24:
+name: Kim,
+yr: Nick
+school: JR Colby College
+exhibition: False
+seed_time: 2:17.64
+prelim_time: None
+finals_time: None
+prelim_rank: 33
+final_rank: None
+
+Swimmer 25:
+name: Celestin,
+yr: Joe
+school: SR Bowdoin College
+exhibition: False
+seed_time: 2:10.63
+prelim_time: None
+finals_time: None
+prelim_rank: 34
+final_rank: None
+--------------------------------------------------
+event: 24
+meet: 2015_Nescac_Msd_Results
+stroke: Freestyle Relay
+gender: Men
+distance: 400
+source_file: 2015_NESCAC_MSD_Results.pdf
+meet_category: pdfs
+event_type: relay
+Results:
+--------------------------------------------------

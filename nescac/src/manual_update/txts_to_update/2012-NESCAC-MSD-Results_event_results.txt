@@ -1,0 +1,220 @@
+event: 1
+meet: 2012_Nescac_Msd_Results
+stroke: Freestyle Relay
+gender: Men
+distance: 200
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: relay
+Results:
+--------------------------------------------------
+event: 2
+meet: 2012_Nescac_Msd_Results
+stroke: Breaststroke
+gender: Men
+distance: 50
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 3
+meet: 2012_Nescac_Msd_Results
+stroke: Butterfly
+gender: Men
+distance: 50
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 4
+meet: 2012_Nescac_Msd_Results
+stroke: Freestyle
+gender: Men
+distance: 500
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 5
+meet: 2012_Nescac_Msd_Results
+stroke: Backstroke
+gender: Men
+distance: 50
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 6
+meet: 2012_Nescac_Msd_Results
+stroke: IM
+gender: Men
+distance: 200
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 7
+meet: 2012_Nescac_Msd_Results
+stroke: Freestyle
+gender: Men
+distance: 50
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 9
+meet: 2012_Nescac_Msd_Results
+stroke: Medley Relay
+gender: Men
+distance: 400
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: relay
+Results:
+--------------------------------------------------
+event: 10
+meet: 2012_Nescac_Msd_Results
+stroke: Medley Relay
+gender: Men
+distance: 200
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: relay
+Results:
+--------------------------------------------------
+event: 11
+meet: 2012_Nescac_Msd_Results
+stroke: Freestyle
+gender: Men
+distance: 1000
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 12
+meet: 2012_Nescac_Msd_Results
+stroke: IM
+gender: Men
+distance: 400
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 13
+meet: 2012_Nescac_Msd_Results
+stroke: Butterfly
+gender: Men
+distance: 100
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 14
+meet: 2012_Nescac_Msd_Results
+stroke: Freestyle
+gender: Men
+distance: 200
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 15
+meet: 2012_Nescac_Msd_Results
+stroke: Breaststroke
+gender: Men
+distance: 100
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 16
+meet: 2012_Nescac_Msd_Results
+stroke: Backstroke
+gender: Men
+distance: 100
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 17
+meet: 2012_Nescac_Msd_Results
+stroke: Freestyle Relay
+gender: Men
+distance: 800
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: relay
+Results:
+--------------------------------------------------
+event: 18
+meet: 2012_Nescac_Msd_Results
+stroke: Freestyle
+gender: Men
+distance: 1650
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 19
+meet: 2012_Nescac_Msd_Results
+stroke: Backstroke
+gender: Men
+distance: 200
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 20
+meet: 2012_Nescac_Msd_Results
+stroke: Freestyle
+gender: Men
+distance: 100
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 21
+meet: 2012_Nescac_Msd_Results
+stroke: Breaststroke
+gender: Men
+distance: 200
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 22
+meet: 2012_Nescac_Msd_Results
+stroke: Butterfly
+gender: Men
+distance: 200
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: individual
+Results:
+--------------------------------------------------
+event: 24
+meet: 2012_Nescac_Msd_Results
+stroke: Freestyle Relay
+gender: Men
+distance: 400
+source_file: 2012_NESCAC_MSD_Results.txt
+meet_category: txts
+event_type: relay
+Results:
+--------------------------------------------------

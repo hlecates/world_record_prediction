@@ -115,13 +115,23 @@ class DataFormatter:
         return cleaned_entries
 
 
-    def sort_entries_by_time(self, entries: List[Dict]) -> List[Dict]:
+    def sort_entries_by_time(self, entries: List[Dict], time_field: str = 'time_sec') -> List[Dict]:
         # Add original index to preserve tie order
         for i, entry in enumerate(entries):
             entry['_original_index'] = i
         
-        # Sort by time_sec, then by original index
-        sorted_entries = sorted(entries, key=lambda x: (x['time_sec'], x['_original_index']))
+        # Sort by the specified time field, then by original index
+        # Handle None values by treating them as infinity
+        def get_sort_key(entry):
+            time_value = entry.get(time_field)
+            if time_value is None:
+                return float('inf')
+            # Convert to seconds if it's a string time
+            if isinstance(time_value, str):
+                return self.parse_time_to_seconds(time_value) or float('inf')
+            return time_value
+        
+        sorted_entries = sorted(entries, key=lambda x: (get_sort_key(x), x['_original_index']))
         
         # Remove the temporary index
         for entry in sorted_entries:
@@ -130,15 +140,21 @@ class DataFormatter:
         return sorted_entries
 
 
-    def get_cutoff_time(self, entries: List[Dict], rank: int) -> Optional[float]:
+    def get_cutoff_time(self, entries: List[Dict], rank: int, time_field: str = 'time_sec') -> Optional[float]:
         if rank <= len(entries):
-            return entries[rank - 1]['time_sec']
+            return entries[rank - 1].get(time_field)
         return None
 
 
     def impute_missing_cutoff(self, cutoffs: Dict[str, Optional[float]], rank: int, 
                             all_cutoffs: List[Optional[float]]) -> Optional[float]:
+        # DEBUG: Log input
+        logging.debug(f"impute_missing_cutoff called for rank {rank}")
+        logging.debug(f"  Current cutoffs: {cutoffs}")
+        logging.debug(f"  Value for rank_{rank}: {cutoffs.get(f'rank_{rank}')}")
+        
         if cutoffs[f'rank_{rank}'] is not None:
+            logging.debug(f"  Returning existing value: {cutoffs[f'rank_{rank}']}")
             return cutoffs[f'rank_{rank}']
         
         # Find nearest lower and upper existing cutoffs
@@ -149,22 +165,29 @@ class DataFormatter:
         for r in range(rank - 1, 0, -1):
             if r in [8, 16, 24] and cutoffs.get(f'rank_{r}') is not None:
                 lower_cutoff = cutoffs[f'rank_{r}']
+                logging.debug(f"  Found lower cutoff at rank {r}: {lower_cutoff}")
                 break
         
         # Look for upper cutoff
         for r in range(rank + 1, 25):
             if r in [8, 16, 24] and cutoffs.get(f'rank_{r}') is not None:
                 upper_cutoff = cutoffs[f'rank_{r}']
+                logging.debug(f"  Found upper cutoff at rank {r}: {upper_cutoff}")
                 break
         
         # Average if both exist
         if lower_cutoff is not None and upper_cutoff is not None:
-            return (lower_cutoff + upper_cutoff) / 2
+            result = (lower_cutoff + upper_cutoff) / 2
+            logging.debug(f"  Returning average: {result}")
+            return result
         elif lower_cutoff is not None:
+            logging.debug(f"  Returning lower cutoff: {lower_cutoff}")
             return lower_cutoff
         elif upper_cutoff is not None:
+            logging.debug(f"  Returning upper cutoff: {upper_cutoff}")
             return upper_cutoff
         
+        logging.debug(f"  Returning None")
         return None
 
 
@@ -194,6 +217,12 @@ class DataFormatter:
         for group_key, group_df in grouped:
             meet, event_name, gender, distance, year, stroke = group_key
             
+            # DEBUG: Log event being processed
+            if event_name == "50 Backstroke" and gender == "Men" and year == 2006:
+                logging.info(f"\n{'='*60}")
+                logging.info(f"DEBUGGING: {year} {gender} {event_name}")
+                logging.info(f"{'='*60}")
+            
             # Get the first row for this group
             row = group_df.iloc[0]
             
@@ -201,28 +230,63 @@ class DataFormatter:
             prelims = self.process_entries_list(row['prelims'], 'prelim_time')
             finals = self.process_entries_list(row['finals'], 'finals_time')
             
+            # DEBUG: Log finals count for target event
+            if event_name == "50 Backstroke" and gender == "Men" and year == 2006:
+                logging.info(f"Number of finals entries parsed: {len(finals)}")
+                if len(finals) > 0:
+                    logging.info(f"First finals entry: {finals[0].get('name')} - {finals[0].get('seed_time_sec')}")
+                    logging.info(f"Last finals entry: {finals[-1].get('name')} - {finals[-1].get('seed_time_sec')}")
 
-            # Sort prelims by time
-            prelims_sorted = self.sort_entries_by_time(prelims)
-            if len(prelims) == 0:
+            # Sort finals by seed time (not finals time) for cutoff calculation
+            finals_sorted_by_seed = self.sort_entries_by_time(finals, time_field='seed_time')
+            if len(finals_sorted_by_seed) == 0:
                 continue
             
-            # Split into A, B, C entries
-            A_entries = prelims_sorted[0:8]
-            B_entries = prelims_sorted[8:16]
-            C_entries = prelims_sorted[16:24]
+            # DEBUG: Log sorted finals by seed time for target event
+            if event_name == "50 Backstroke" and gender == "Men" and year == 2006:
+                logging.info(f"\nSorted finals by seed time ({len(finals_sorted_by_seed)} entries):")
+                for i, entry in enumerate(finals_sorted_by_seed[:25]):  # Show first 25
+                    logging.info(f"  Rank {i+1}: {entry.get('name')} - {entry.get('seed_time_sec')}s")
             
-            # Get cutoff times
+            # Split into A, B, C entries based on seed time ranking
+            A_entries = finals_sorted_by_seed[0:8]
+            B_entries = finals_sorted_by_seed[8:16]
+            C_entries = finals_sorted_by_seed[16:24]
+            
+            # Get cutoff times from seed time rankings
             cutoffs = {
-                'rank_8': self.get_cutoff_time(prelims_sorted, 8),
-                'rank_16': self.get_cutoff_time(prelims_sorted, 16),
-                'rank_24': self.get_cutoff_time(prelims_sorted, 24)
+                'rank_8': self.get_cutoff_time(finals_sorted_by_seed, 8, time_field='seed_time'),
+                'rank_16': self.get_cutoff_time(finals_sorted_by_seed, 16, time_field='seed_time'),
+                'rank_24': self.get_cutoff_time(finals_sorted_by_seed, 24, time_field='seed_time')
             }
+            
+            # DEBUG: Log raw cutoffs for target event
+            if event_name == "50 Backstroke" and gender == "Men" and year == 2006:
+                logging.info(f"\nRaw cutoffs before imputation:")
+                logging.info(f"  rank_8: {cutoffs['rank_8']}")
+                logging.info(f"  rank_16: {cutoffs['rank_16']}")
+                logging.info(f"  rank_24: {cutoffs['rank_24']}")
+                
+                # Show who is at each cutoff position
+                if len(finals_sorted_by_seed) >= 8:
+                    logging.info(f"  8th place: {finals_sorted_by_seed[7].get('name')} - {finals_sorted_by_seed[7].get('seed_time_sec')}")
+                if len(finals_sorted_by_seed) >= 16:
+                    logging.info(f"  16th place: {finals_sorted_by_seed[15].get('name')} - {finals_sorted_by_seed[15].get('seed_time_sec')}")
+                if len(finals_sorted_by_seed) >= 24:
+                    logging.info(f"  24th place: {finals_sorted_by_seed[23].get('name')} - {finals_sorted_by_seed[23].get('seed_time_sec')}")
             
             # Impute missing cutoffs
             A_cutoff = self.impute_missing_cutoff(cutoffs, 8, list(cutoffs.values()))
             B_cutoff = self.impute_missing_cutoff(cutoffs, 16, list(cutoffs.values()))
             C_cutoff = self.impute_missing_cutoff(cutoffs, 24, list(cutoffs.values()))
+            
+            # DEBUG: Log final cutoffs for target event
+            if event_name == "50 Backstroke" and gender == "Men" and year == 2006:
+                logging.info(f"\nFinal cutoffs after imputation:")
+                logging.info(f"  A_cutoff: {A_cutoff}")
+                logging.info(f"  B_cutoff: {B_cutoff}")
+                logging.info(f"  C_cutoff: {C_cutoff}")
+                logging.info(f"{'='*60}\n")
             
             # Create result row
             result = {
@@ -238,7 +302,7 @@ class DataFormatter:
                 'B_entries': B_entries,
                 'C_entries': C_entries,
                 'finals': finals,
-                'prelims': prelims_sorted
+                'prelims': self.sort_entries_by_time(prelims, 'prelim_time_sec')  # Sort prelims by prelim time
             }
             
             results.append(result)
