@@ -85,9 +85,11 @@ class PDFParser(BaseParser):
         if len(year_str) == 2 and year_str.isalpha() and year_str.isupper():
             return year_str
         
-        # If it's exactly 2 characters and both are digits, it's likely a year code (e.g., '05', '06')
+        # If it's exactly 2 characters and both are digits, it's likely NOT a year
+        # In swimming results, 2-digit numbers like "04", "05", "06" are typically
+        # missing year data, not actual years
         if len(year_str) == 2 and year_str.isdigit():
-            return year_str
+            return 'NONE'
         
         # If it's 3-4 characters and contains numbers, it's likely not a year
         if len(year_str) >= 3 and any(c.isdigit() for c in year_str):

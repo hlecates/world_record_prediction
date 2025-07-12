@@ -30,6 +30,28 @@ prelim_rank: 6
 final_rank: 1
 
 Swimmer 2:
+name: Lux, Tim
+yr: SR
+school: Middlebury
+exhibition: False
+seed_time: None
+prelim_time: 27.03
+finals_time: 26.89
+prelim_rank: 4
+final_rank: 2
+
+Swimmer 3:
+name: Bonewell, Tyler
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 26.93
+finals_time: 26.89
+prelim_rank: 1
+final_rank: 2
+
+Swimmer 4:
 name: Longhurst, James
 yr: SO
 school: Tufts
@@ -40,7 +62,7 @@ finals_time: 26.95
 prelim_rank: 3
 final_rank: 4
 
-Swimmer 3:
+Swimmer 5:
 name: Bell, Peter
 yr: JR
 school: Middlebury
@@ -51,10 +73,10 @@ finals_time: 26.96
 prelim_rank: 2
 final_rank: 5
 
-Swimmer 4:
-name: Ancona,
-yr: John
-school: SR Amherst
+Swimmer 6:
+name: Ancona, John
+yr: SR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 27.07
@@ -62,7 +84,7 @@ finals_time: 26.97
 prelim_rank: 5
 final_rank: 6
 
-Swimmer 5:
+Swimmer 7:
 name: Mereness, Jared
 yr: FR
 school: Hamilton
@@ -73,9 +95,9 @@ finals_time: 27.37
 prelim_rank: 7
 final_rank: 7
 
-Swimmer 6:
+Swimmer 8:
 name: Hyde, Nate
-yr: 07
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -84,7 +106,7 @@ finals_time: 28.12
 prelim_rank: 8
 final_rank: 8
 
-Swimmer 7:
+Swimmer 9:
 name: Prill, Derek
 yr: JR
 school: Amherst
@@ -95,9 +117,9 @@ finals_time: 27.27
 prelim_rank: 10
 final_rank: 9
 
-Swimmer 8:
+Swimmer 10:
 name: Stanley, Austin
-yr: 10
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -106,9 +128,9 @@ finals_time: 27.75
 prelim_rank: 12
 final_rank: 10
 
-Swimmer 9:
+Swimmer 11:
 name: Swanson, David
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -117,9 +139,9 @@ finals_time: 27.76
 prelim_rank: 13
 final_rank: 11
 
-Swimmer 10:
+Swimmer 12:
 name: Peterson, Andrew
-yr: 08
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -128,7 +150,7 @@ finals_time: 27.79
 prelim_rank: 14
 final_rank: 12
 
-Swimmer 11:
+Swimmer 13:
 name: Stanton, James
 yr: JR
 school: Amherst
@@ -139,10 +161,10 @@ finals_time: 27.94
 prelim_rank: 9
 final_rank: 13
 
-Swimmer 12:
-name: Perley,
-yr: Sam
-school: FR Conn
+Swimmer 14:
+name: Perley, Sam
+yr: FR
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 27.98
@@ -150,10 +172,10 @@ finals_time: 28.00
 prelim_rank: 11
 final_rank: 14
 
-Swimmer 13:
-name: Stein,
-yr: Jeff
-school: JR Wesleyan
+Swimmer 15:
+name: Stein, Jeff
+yr: JR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 28.50
@@ -161,7 +183,7 @@ finals_time: 28.54
 prelim_rank: 15
 final_rank: 15
 
-Swimmer 14:
+Swimmer 16:
 name: Jacob, Carlo
 yr: SR
 school: Tufts
@@ -172,7 +194,7 @@ finals_time: 28.96
 prelim_rank: 16
 final_rank: 16
 
-Swimmer 15:
+Swimmer 17:
 name: Sung, Peter
 yr: SR
 school: Middlebury
@@ -183,7 +205,7 @@ finals_time: 28.52
 prelim_rank: 20
 final_rank: 17
 
-Swimmer 16:
+Swimmer 18:
 name: Swanson, Peter
 yr: SO
 school: Middlebury
@@ -194,9 +216,9 @@ finals_time: 28.66
 prelim_rank: 19
 final_rank: 18
 
-Swimmer 17:
+Swimmer 19:
 name: Taylor, Reilly
-yr: 10
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -205,10 +227,10 @@ finals_time: 28.68
 prelim_rank: 17
 final_rank: 19
 
-Swimmer 18:
-name: Peterson,
-yr: Dan
-school: SO Amherst
+Swimmer 20:
+name: Peterson, Dan
+yr: SO
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 29.08
@@ -216,10 +238,10 @@ finals_time: 28.78
 prelim_rank: 23
 final_rank: 20
 
-Swimmer 19:
-name: Altneu,
-yr: Eric
-school: SR Wesleyan
+Swimmer 21:
+name: Altneu, Eric
+yr: SR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 29.25
@@ -227,7 +249,7 @@ finals_time: 28.88
 prelim_rank: 24
 final_rank: 21
 
-Swimmer 20:
+Swimmer 22:
 name: McVeety, Brian
 yr: JR
 school: Conn
@@ -238,7 +260,7 @@ finals_time: 28.91
 prelim_rank: 21
 final_rank: 22
 
-Swimmer 21:
+Swimmer 23:
 name: Frankel, Rowan
 yr: FR
 school: Tufts
@@ -249,7 +271,7 @@ finals_time: 29.11
 prelim_rank: 21
 final_rank: 23
 
-Swimmer 22:
+Swimmer 24:
 name: Schoeneck, Jacob
 yr: SO
 school: Hamilton
@@ -260,32 +282,10 @@ finals_time: 30.43
 prelim_rank: 18
 final_rank: 24
 
-Swimmer 23:
-name: Bonewell, Tyler
-yr: 09
-school: Williams
-exhibition: False
-seed_time: None
-prelim_time: 27.35
-finals_time: None
-prelim_rank: 1
-final_rank: None
-
-Swimmer 24:
-name: Lux,
-yr: Tim
-school: SR Middlebury
-exhibition: False
-seed_time: None
-prelim_time: 28.17
-finals_time: None
-prelim_rank: 4
-final_rank: None
-
 Swimmer 25:
-name: Bookman,
-yr: Adam
-school: JR Amherst
+name: Bookman, Adam
+yr: JR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: NT
@@ -295,7 +295,7 @@ final_rank: None
 
 Swimmer 26:
 name: Walsh, Bill
-yr: 09
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -305,9 +305,9 @@ prelim_rank: 26
 final_rank: None
 
 Swimmer 27:
-name: Mostyn,
-yr: Pat
-school: JR Trinity
+name: Mostyn, Pat
+yr: JR
+school: Trinity
 exhibition: False
 seed_time: None
 prelim_time: 34.49
@@ -316,9 +316,9 @@ prelim_rank: 27
 final_rank: None
 
 Swimmer 28:
-name: Havlicek,
-yr: Matt
-school: SO Trinity
+name: Havlicek, Matt
+yr: SO
+school: Trinity
 exhibition: False
 seed_time: None
 prelim_time: 36.42
@@ -337,8 +337,52 @@ event_type: individual
 Results:
 
 Swimmer 1:
+name: Scott, Norman
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 23.24
+finals_time: 22.78
+prelim_rank: 3
+final_rank: 1
+
+Swimmer 2:
+name: Troy, Pat
+yr: FR
+school: Conn
+exhibition: False
+seed_time: None
+prelim_time: 23.26
+finals_time: 23.11
+prelim_rank: 4
+final_rank: 2
+
+Swimmer 3:
+name: Dillon, John
+yr: FR
+school: Middlebury
+exhibition: False
+seed_time: None
+prelim_time: 23.60
+finals_time: 23.11
+prelim_rank: 6
+final_rank: 2
+
+Swimmer 4:
+name: Wentworth-Ping, Al
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 22.95
+finals_time: 23.20
+prelim_rank: None
+final_rank: 4
+
+Swimmer 5:
 name: Ryan, Timothy
-yr: 09
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -347,10 +391,10 @@ finals_time: 23.22
 prelim_rank: 2
 final_rank: 5
 
-Swimmer 2:
-name: Bartro,
-yr: Kyle
-school: JR Conn
+Swimmer 6:
+name: Bartro, Kyle
+yr: JR
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 23.30
@@ -358,10 +402,10 @@ finals_time: 23.47
 prelim_rank: 5
 final_rank: 6
 
-Swimmer 3:
-name: Rayburn,
-yr: John
-school: SR Middlebury
+Swimmer 7:
+name: Rayburn, John
+yr: SR
+school: Middlebury
 exhibition: False
 seed_time: None
 prelim_time: 23.74
@@ -369,9 +413,9 @@ finals_time: 23.64
 prelim_rank: 7
 final_rank: 7
 
-Swimmer 4:
+Swimmer 8:
 name: Morris, Sean
-yr: 10
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -380,7 +424,7 @@ finals_time: 23.81
 prelim_rank: 8
 final_rank: 8
 
-Swimmer 5:
+Swimmer 9:
 name: Finnerty, Brian
 yr: FR
 school: Conn
@@ -391,10 +435,10 @@ finals_time: 23.93
 prelim_rank: 9
 final_rank: 9
 
-Swimmer 6:
-name: Lee,
-yr: Jae
-school: FR Wesleyan
+Swimmer 10:
+name: Lee, Jae
+yr: FR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 24.15
@@ -402,10 +446,10 @@ finals_time: 24.16
 prelim_rank: 11
 final_rank: 10
 
-Swimmer 7:
-name: Mitchell,
-yr: Ben
-school: SO Tufts
+Swimmer 11:
+name: Mitchell, Ben
+yr: SO
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 24.05
@@ -413,7 +457,18 @@ finals_time: 24.30
 prelim_rank: 10
 final_rank: 11
 
-Swimmer 8:
+Swimmer 12:
+name: Holmes, C.J.
+yr: SO
+school: Amherst
+exhibition: False
+seed_time: None
+prelim_time: 24.54
+finals_time: 24.46
+prelim_rank: 16
+final_rank: 12
+
+Swimmer 13:
 name: Chaponis, Stephen
 yr: FR
 school: Hamilton
@@ -424,9 +479,9 @@ finals_time: 24.52
 prelim_rank: 13
 final_rank: 13
 
-Swimmer 9:
+Swimmer 14:
 name: Adams, Ryan
-yr: 07
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -435,9 +490,9 @@ finals_time: 24.63
 prelim_rank: 12
 final_rank: 14
 
-Swimmer 10:
+Swimmer 15:
 name: Metcalf, David
-yr: 09
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -446,10 +501,10 @@ finals_time: 24.68
 prelim_rank: 15
 final_rank: 15
 
-Swimmer 11:
-name: Vey,
-yr: Alek
-school: SR Amherst
+Swimmer 16:
+name: Vey, Alek
+yr: SR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 24.50
@@ -457,10 +512,10 @@ finals_time: 24.76
 prelim_rank: 13
 final_rank: 16
 
-Swimmer 12:
-name: Moskowitz,
-yr: Ben
-school: SO Tufts
+Swimmer 17:
+name: Moskowitz, Ben
+yr: SO
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 24.63
@@ -468,7 +523,7 @@ finals_time: 24.16
 prelim_rank: 17
 final_rank: 17
 
-Swimmer 13:
+Swimmer 18:
 name: Gerli, Brooks
 yr: FR
 school: Trinity
@@ -479,7 +534,7 @@ finals_time: 24.66
 prelim_rank: 18
 final_rank: 18
 
-Swimmer 14:
+Swimmer 19:
 name: Salzberg, Matthew
 yr: FR
 school: Tufts
@@ -490,10 +545,10 @@ finals_time: 24.73
 prelim_rank: 19
 final_rank: 19
 
-Swimmer 15:
-name: Kaplan,
-yr: Adam
-school: SR Amherst
+Swimmer 20:
+name: Kaplan, Adam
+yr: SR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 24.92
@@ -501,9 +556,9 @@ finals_time: 24.98
 prelim_rank: 21
 final_rank: 20
 
-Swimmer 16:
+Swimmer 21:
 name: Sosnowski, Taylor
-yr: 10
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -512,7 +567,7 @@ finals_time: 25.06
 prelim_rank: 23
 final_rank: 21
 
-Swimmer 17:
+Swimmer 22:
 name: Arnoldi, Ryland
 yr: FR
 school: Wesleyan
@@ -523,7 +578,7 @@ finals_time: 25.08
 prelim_rank: 20
 final_rank: 22
 
-Swimmer 18:
+Swimmer 23:
 name: Bowers, David
 yr: FR
 school: Trinity
@@ -534,7 +589,7 @@ finals_time: 25.47
 prelim_rank: 22
 final_rank: 23
 
-Swimmer 19:
+Swimmer 24:
 name: Zuhusky, Andrew
 yr: FR
 school: Trinity
@@ -545,43 +600,21 @@ finals_time: 25.48
 prelim_rank: 24
 final_rank: 24
 
-Swimmer 20:
-name: Scott, Norman
-yr: 09
+Swimmer 25:
+name: Wentworth-Ping, Alex
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
-prelim_time: 23.28
+prelim_time: 24.32
 finals_time: None
-prelim_rank: 3
+prelim_rank: 1
 final_rank: None
 
-Swimmer 21:
-name: Troy,
-yr: Pat
-school: FR Conn
-exhibition: False
-seed_time: None
-prelim_time: 23.39
-finals_time: None
-prelim_rank: 4
-final_rank: None
-
-Swimmer 22:
-name: Dillon,
-yr: John
-school: FR Middlebury
-exhibition: False
-seed_time: None
-prelim_time: 24.07
-finals_time: None
-prelim_rank: 6
-final_rank: None
-
-Swimmer 23:
-name: Donne,
-yr: Matt
-school: SR Wesleyan
+Swimmer 26:
+name: Donne, Matt
+yr: SR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 25.59
@@ -589,9 +622,9 @@ finals_time: None
 prelim_rank: 25
 final_rank: None
 
-Swimmer 24:
+Swimmer 27:
 name: Rezvani, Rob
-yr: 08
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -600,7 +633,7 @@ finals_time: None
 prelim_rank: 26
 final_rank: None
 
-Swimmer 25:
+Swimmer 28:
 name: de Vries, Calvin
 yr: FR
 school: Tufts
@@ -611,9 +644,9 @@ finals_time: None
 prelim_rank: 27
 final_rank: None
 
-Swimmer 26:
+Swimmer 29:
 name: Wandner, Ian
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -622,10 +655,10 @@ finals_time: None
 prelim_rank: 28
 final_rank: None
 
-Swimmer 27:
-name: Clary,
-yr: Will
-school: SO Middlebury
+Swimmer 30:
+name: Clary, Will
+yr: SO
+school: Middlebury
 exhibition: False
 seed_time: None
 prelim_time: 27.49
@@ -633,9 +666,9 @@ finals_time: None
 prelim_rank: 29
 final_rank: None
 
-Swimmer 28:
+Swimmer 31:
 name: Cooper, Nate
-yr: 09
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -644,7 +677,7 @@ finals_time: None
 prelim_rank: 30
 final_rank: None
 
-Swimmer 29:
+Swimmer 32:
 name: Ullian, David
 yr: JR
 school: Amherst
@@ -655,10 +688,10 @@ finals_time: None
 prelim_rank: 31
 final_rank: None
 
-Swimmer 30:
-name: Schleusener,
-yr: Luke
-school: SR Wesleyan
+Swimmer 33:
+name: Schleusener, Luke
+yr: SR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 28.00
@@ -666,10 +699,10 @@ finals_time: None
 prelim_rank: 32
 final_rank: None
 
-Swimmer 31:
-name: Masters,
-yr: Clay
-school: FR Hamilton
+Swimmer 34:
+name: Masters, Clay
+yr: FR
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 27.77
@@ -677,10 +710,10 @@ finals_time: None
 prelim_rank: 33
 final_rank: None
 
-Swimmer 32:
-name: Gulbrandsen,
-yr: Erik
-school: SO Trinity
+Swimmer 35:
+name: Gulbrandsen, Erik
+yr: SO
+school: Trinity
 exhibition: False
 seed_time: None
 prelim_time: 30.16
@@ -699,8 +732,63 @@ event_type: individual
 Results:
 
 Swimmer 1:
+name: Spinelli, Steve
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 4:30.63
+finals_time: 4:30.29
+prelim_rank: 1
+final_rank: 1
+
+Swimmer 2:
+name: Witzke, Christian
+yr: SO
+school: Amherst
+exhibition: False
+seed_time: None
+prelim_time: 4:39.77
+finals_time: 4:37.59
+prelim_rank: 4
+final_rank: 2
+
+Swimmer 3:
+name: Kirwan, Michael
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 4:36.93
+finals_time: 4:37.68
+prelim_rank: 3
+final_rank: 3
+
+Swimmer 4:
+name: Bettencourt, Grego
+yr: SR
+school: Tufts
+exhibition: False
+seed_time: None
+prelim_time: 4:36.27
+finals_time: 4:38.31
+prelim_rank: None
+final_rank: 4
+
+Swimmer 5:
+name: Byers, Ben
+yr: SR
+school: Wesleyan
+exhibition: False
+seed_time: None
+prelim_time: 4:41.11
+finals_time: 4:38.96
+prelim_rank: 6
+final_rank: 5
+
+Swimmer 6:
 name: Bullitt, Ben
-yr: 08
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -709,9 +797,9 @@ finals_time: 4:41.72
 prelim_rank: 8
 final_rank: 6
 
-Swimmer 2:
+Swimmer 7:
 name: Mullin, Evan
-yr: 08
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -720,9 +808,20 @@ finals_time: 4:42.91
 prelim_rank: 5
 final_rank: 7
 
-Swimmer 3:
+Swimmer 8:
+name: O'Rourke, Kevin
+yr: SO
+school: Middlebury
+exhibition: False
+seed_time: None
+prelim_time: 4:41.74
+finals_time: 4:48.06
+prelim_rank: 7
+final_rank: 8
+
+Swimmer 9:
 name: Daub, Michael
-yr: 08
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -731,7 +830,7 @@ finals_time: 4:44.89
 prelim_rank: 14
 final_rank: 9
 
-Swimmer 4:
+Swimmer 10:
 name: Garcia, Guillermo
 yr: JR
 school: Middlebury
@@ -742,10 +841,10 @@ finals_time: 4:45.53
 prelim_rank: 9
 final_rank: 10
 
-Swimmer 5:
-name: Gundry,
-yr: Alex
-school: JR Conn
+Swimmer 11:
+name: Gundry, Alex
+yr: JR
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 4:46.44
@@ -753,9 +852,9 @@ finals_time: 4:46.97
 prelim_rank: 10
 final_rank: 11
 
-Swimmer 6:
+Swimmer 12:
 name: Goldstein, Jeremy
-yr: 09
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -764,10 +863,10 @@ finals_time: 4:47.35
 prelim_rank: 12
 final_rank: 12
 
-Swimmer 7:
-name: Wood,
-yr: Alex
-school: JR Conn
+Swimmer 13:
+name: Wood, Alex
+yr: JR
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 4:51.45
@@ -775,7 +874,7 @@ finals_time: 4:48.95
 prelim_rank: 16
 final_rank: 13
 
-Swimmer 8:
+Swimmer 14:
 name: Kinsella, Patrick
 yr: FR
 school: Tufts
@@ -786,10 +885,10 @@ finals_time: 4:49.52
 prelim_rank: 11
 final_rank: 14
 
-Swimmer 9:
-name: Lovett,
-yr: Tom
-school: JR Wesleyan
+Swimmer 15:
+name: Lovett, Tom
+yr: JR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 4:48.05
@@ -797,9 +896,9 @@ finals_time: 4:52.06
 prelim_rank: 13
 final_rank: 15
 
-Swimmer 10:
+Swimmer 16:
 name: Smith, Kevin
-yr: 10
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -808,9 +907,9 @@ finals_time: 4:52.54
 prelim_rank: 15
 final_rank: 16
 
-Swimmer 11:
+Swimmer 17:
 name: Simanek, Brian
-yr: 07
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -819,10 +918,10 @@ finals_time: 4:49.01
 prelim_rank: 22
 final_rank: 17
 
-Swimmer 12:
-name: Jones,
-yr: Kyle
-school: FR Tufts
+Swimmer 18:
+name: Jones, Kyle
+yr: FR
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 4:51.55
@@ -830,7 +929,7 @@ finals_time: 4:49.33
 prelim_rank: 17
 final_rank: 18
 
-Swimmer 13:
+Swimmer 19:
 name: Mims, Hunter
 yr: FR
 school: Amherst
@@ -841,10 +940,10 @@ finals_time: 4:52.38
 prelim_rank: 21
 final_rank: 19
 
-Swimmer 14:
-name: Garner,
-yr: Sam
-school: SR Conn
+Swimmer 20:
+name: Garner, Sam
+yr: SR
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 4:53.44
@@ -852,9 +951,9 @@ finals_time: 4:52.79
 prelim_rank: 20
 final_rank: 20
 
-Swimmer 15:
+Swimmer 21:
 name: Wells, David
-yr: 10
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -863,10 +962,10 @@ finals_time: 4:53.28
 prelim_rank: 18
 final_rank: 21
 
-Swimmer 16:
-name: Beck,
-yr: Ryan
-school: FR Wesleyan
+Swimmer 22:
+name: Beck, Ryan
+yr: FR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 4:52.69
@@ -874,9 +973,9 @@ finals_time: 4:54.19
 prelim_rank: 19
 final_rank: 22
 
-Swimmer 17:
+Swimmer 23:
 name: MacNaughton, Jake
-yr: 10
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -885,10 +984,10 @@ finals_time: 4:59.10
 prelim_rank: 24
 final_rank: 23
 
-Swimmer 18:
-name: Hodges,
-yr: Mark
-school: SR Hamilton
+Swimmer 24:
+name: Hodges, Mark
+yr: SR
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 4:56.67
@@ -896,18 +995,18 @@ finals_time: 4:59.43
 prelim_rank: 23
 final_rank: 24
 
-Swimmer 19:
-name: Byers,
-yr: Ben
-school: SR Wesleyan
+Swimmer 25:
+name: Bettencourt, Gregory
+yr: SR
+school: Tufts
 exhibition: False
 seed_time: None
-prelim_time: 4:44.06
+prelim_time: 4:41.22
 finals_time: None
-prelim_rank: 6
+prelim_rank: 2
 final_rank: None
 
-Swimmer 20:
+Swimmer 26:
 name: Brown, Jason
 yr: SO
 school: Hamilton
@@ -918,10 +1017,10 @@ finals_time: None
 prelim_rank: 25
 final_rank: None
 
-Swimmer 21:
-name: Goldberg,
-yr: Jeff
-school: JR Tufts
+Swimmer 27:
+name: Goldberg, Jeff
+yr: JR
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 4:59.13
@@ -929,9 +1028,9 @@ finals_time: None
 prelim_rank: 26
 final_rank: None
 
-Swimmer 22:
+Swimmer 28:
 name: Sighinolfi, Mike
-yr: 07
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -940,9 +1039,9 @@ finals_time: None
 prelim_rank: 27
 final_rank: None
 
-Swimmer 23:
+Swimmer 29:
 name: Swanson, Charles
-yr: 07
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -951,7 +1050,7 @@ finals_time: None
 prelim_rank: 28
 final_rank: None
 
-Swimmer 24:
+Swimmer 30:
 name: Nealon, Kevin
 yr: JR
 school: Middlebury
@@ -962,9 +1061,9 @@ finals_time: None
 prelim_rank: 29
 final_rank: None
 
-Swimmer 25:
+Swimmer 31:
 name: Hirsch, David
-yr: 10
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -973,7 +1072,7 @@ finals_time: None
 prelim_rank: 30
 final_rank: None
 
-Swimmer 26:
+Swimmer 32:
 name: Erickson, Bryan
 yr: FR
 school: Hamilton
@@ -984,9 +1083,9 @@ finals_time: None
 prelim_rank: 31
 final_rank: None
 
-Swimmer 27:
+Swimmer 33:
 name: McCulloch, Evan
-yr: 09
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -995,7 +1094,7 @@ finals_time: None
 prelim_rank: 32
 final_rank: None
 
-Swimmer 28:
+Swimmer 34:
 name: Burton, Patrick
 yr: FR
 school: Middlebury
@@ -1006,10 +1105,10 @@ finals_time: None
 prelim_rank: 33
 final_rank: None
 
-Swimmer 29:
-name: Bernstein,
-yr: Mike
-school: JR Amherst
+Swimmer 35:
+name: Bernstein, Mike
+yr: JR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 5:40.92
@@ -1017,7 +1116,7 @@ finals_time: None
 prelim_rank: 34
 final_rank: None
 
-Swimmer 30:
+Swimmer 36:
 name: Guevara, Mario
 yr: FR
 school: Middlebury
@@ -1028,9 +1127,9 @@ finals_time: None
 prelim_rank: 35
 final_rank: None
 
-Swimmer 31:
+Swimmer 37:
 name: Karl, Adam
-yr: 08
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -1039,9 +1138,9 @@ finals_time: None
 prelim_rank: 36
 final_rank: None
 
-Swimmer 32:
+Swimmer 38:
 name: Jacob, Chris
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -1050,10 +1149,10 @@ finals_time: None
 prelim_rank: 37
 final_rank: None
 
-Swimmer 33:
-name: Bernstein,
-yr: Ben
-school: FR Trinity
+Swimmer 39:
+name: Bernstein, Ben
+yr: FR
+school: Trinity
 exhibition: False
 seed_time: None
 prelim_time: 5:46.51
@@ -1073,7 +1172,7 @@ Results:
 
 Swimmer 1:
 name: Dewey, Jabez
-yr: 07
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -1083,9 +1182,9 @@ prelim_rank: 1
 final_rank: 1
 
 Swimmer 2:
-name: Johnson,
-yr: Todd
-school: JR Hamilton
+name: Johnson, Todd
+yr: JR
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 24.33
@@ -1105,9 +1204,9 @@ prelim_rank: 3
 final_rank: 3
 
 Swimmer 4:
-name: Woods,
-yr: Zach
-school: SO Middlebury
+name: Woods, Zach
+yr: SO
+school: Middlebury
 exhibition: False
 seed_time: None
 prelim_time: 24.60
@@ -1116,9 +1215,9 @@ prelim_rank: 4
 final_rank: 4
 
 Swimmer 5:
-name: Waskom,
-yr: Mike
-school: SO Amherst
+name: Waskom, Mike
+yr: SO
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 25.02
@@ -1128,7 +1227,7 @@ final_rank: 5
 
 Swimmer 6:
 name: Gallucci, Nick
-yr: 07
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -1139,7 +1238,7 @@ final_rank: 6
 
 Swimmer 7:
 name: Hollander, Adam
-yr: 10
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -1161,7 +1260,7 @@ final_rank: 8
 
 Swimmer 9:
 name: Rachlin, Ben
-yr: 08
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -1172,7 +1271,7 @@ final_rank: 9
 
 Swimmer 10:
 name: Berry, Chris
-yr: 09
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -1182,9 +1281,9 @@ prelim_rank: 9
 final_rank: 10
 
 Swimmer 11:
-name: Kearney,
-yr: Tim
-school: SR Hamilton
+name: Kearney, Tim
+yr: SR
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 25.75
@@ -1193,9 +1292,9 @@ prelim_rank: 12
 final_rank: 11
 
 Swimmer 12:
-name: Sullivan,
-yr: Sean
-school: JR Tufts
+name: Sullivan, Sean
+yr: JR
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 25.73
@@ -1227,7 +1326,7 @@ final_rank: 14
 
 Swimmer 15:
 name: Kimball, Josh
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -1238,7 +1337,7 @@ final_rank: 15
 
 Swimmer 16:
 name: Wampler, Sam
-yr: 09
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -1260,7 +1359,7 @@ final_rank: 17
 
 Swimmer 18:
 name: Townsend, Travis
-yr: 09
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -1281,9 +1380,9 @@ prelim_rank: 19
 final_rank: 19
 
 Swimmer 20:
-name: Lee,
-yr: Jae
-school: FR Wesleyan
+name: Lee, Jae
+yr: FR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 26.59
@@ -1314,9 +1413,9 @@ prelim_rank: 22
 final_rank: 22
 
 Swimmer 23:
-name: Moskowitz,
-yr: Ben
-school: SO Tufts
+name: Moskowitz, Ben
+yr: SO
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 26.98
@@ -1325,9 +1424,9 @@ prelim_rank: 23
 final_rank: 23
 
 Swimmer 24:
-name: Yoshida,
-yr: Jeff
-school: SR Trinity
+name: Yoshida, Jeff
+yr: SR
+school: Trinity
 exhibition: False
 seed_time: None
 prelim_time: 27.01
@@ -1347,9 +1446,9 @@ prelim_rank: 25
 final_rank: None
 
 Swimmer 26:
-name: Stadnyk,
-yr: Al
-school: FR Conn
+name: Stadnyk, Al
+yr: FR
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 27.95
@@ -1358,9 +1457,9 @@ prelim_rank: 26
 final_rank: None
 
 Swimmer 27:
-name: Chow,
-yr: Joe
-school: SR Amherst
+name: Chow, Joe
+yr: SR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 28.37
@@ -1370,7 +1469,7 @@ final_rank: None
 
 Swimmer 28:
 name: Ziemann, Marcus
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -1381,7 +1480,7 @@ final_rank: None
 
 Swimmer 29:
 name: Wheale, Blake
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -1391,9 +1490,9 @@ prelim_rank: 29
 final_rank: None
 
 Swimmer 30:
-name: Bernstein,
-yr: Ben
-school: FR Trinity
+name: Bernstein, Ben
+yr: FR
+school: Trinity
 exhibition: False
 seed_time: None
 prelim_time: 30.90
@@ -1412,6 +1511,61 @@ event_type: individual
 Results:
 
 Swimmer 1:
+name: Collier, Rob
+yr: SR
+school: Middlebury
+exhibition: False
+seed_time: None
+prelim_time: 1:53.67
+finals_time: 1:52.81
+prelim_rank: 1
+final_rank: 1
+
+Swimmer 2:
+name: Millen, Chris
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 1:57.53
+finals_time: 1:52.93
+prelim_rank: 8
+final_rank: 2
+
+Swimmer 3:
+name: Treat, Ethan
+yr: SR
+school: Amherst
+exhibition: False
+seed_time: None
+prelim_time: 1:53.95
+finals_time: 1:53.61
+prelim_rank: 2
+final_rank: 3
+
+Swimmer 4:
+name: McManic, Dave
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 1:56.53
+finals_time: 1:53.86
+prelim_rank: 5
+final_rank: 4
+
+Swimmer 5:
+name: Felker, Henry
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 1:55.31
+finals_time: 1:55.00
+prelim_rank: 3
+final_rank: 5
+
+Swimmer 6:
 name: Maslan, Andrew
 yr: JR
 school: Amherst
@@ -1422,9 +1576,9 @@ finals_time: 1:55.53
 prelim_rank: 4
 final_rank: 6
 
-Swimmer 2:
+Swimmer 7:
 name: Heumann, Thatcher
-yr: 09
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -1433,9 +1587,9 @@ finals_time: 1:56.20
 prelim_rank: 6
 final_rank: 7
 
-Swimmer 3:
+Swimmer 8:
 name: Goldstein, Max
-yr: 07
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -1444,7 +1598,7 @@ finals_time: 1:57.66
 prelim_rank: 7
 final_rank: 8
 
-Swimmer 4:
+Swimmer 9:
 name: Prill, Derek
 yr: JR
 school: Amherst
@@ -1455,10 +1609,10 @@ finals_time: 1:58.01
 prelim_rank: 9
 final_rank: 9
 
-Swimmer 5:
-name: Lenihan,
-yr: Mike
-school: SR Trinity
+Swimmer 10:
+name: Lenihan, Mike
+yr: SR
+school: Trinity
 exhibition: False
 seed_time: None
 prelim_time: 1:59.77
@@ -1466,9 +1620,9 @@ finals_time: 1:58.56
 prelim_rank: 11
 final_rank: 10
 
-Swimmer 6:
+Swimmer 11:
 name: Neuber, Matt
-yr: 08
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -1477,7 +1631,7 @@ finals_time: 1:58.71
 prelim_rank: 10
 final_rank: 11
 
-Swimmer 7:
+Swimmer 12:
 name: Cronin, Nathan
 yr: SR
 school: Tufts
@@ -1488,9 +1642,9 @@ finals_time: 1:59.18
 prelim_rank: 16
 final_rank: 12
 
-Swimmer 8:
+Swimmer 13:
 name: Hollander, Jordan
-yr: 10
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -1499,9 +1653,9 @@ finals_time: 1:59.85
 prelim_rank: 13
 final_rank: 13
 
-Swimmer 9:
+Swimmer 14:
 name: Bartkiewicz, Mitch
-yr: 07
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -1510,10 +1664,10 @@ finals_time: 2:00.22
 prelim_rank: 12
 final_rank: 14
 
-Swimmer 10:
-name: Radovich,
-yr: Ray
-school: SR Tufts
+Swimmer 15:
+name: Radovich, Ray
+yr: SR
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 2:00.04
@@ -1521,10 +1675,10 @@ finals_time: 2:01.50
 prelim_rank: 13
 final_rank: 15
 
-Swimmer 11:
-name: DeVore,
-yr: Zach
-school: FR Middlebury
+Swimmer 16:
+name: DeVore, Zach
+yr: FR
+school: Middlebury
 exhibition: False
 seed_time: None
 prelim_time: 2:00.07
@@ -1532,7 +1686,7 @@ finals_time: 2:01.89
 prelim_rank: 15
 final_rank: 16
 
-Swimmer 12:
+Swimmer 17:
 name: Bethards, Josiah
 yr: SO
 school: Amherst
@@ -1543,9 +1697,9 @@ finals_time: 2:01.25
 prelim_rank: 20
 final_rank: 17
 
-Swimmer 13:
+Swimmer 18:
 name: Sievers, Quinlan
-yr: 09
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -1554,7 +1708,7 @@ finals_time: 2:02.03
 prelim_rank: 17
 final_rank: 18
 
-Swimmer 14:
+Swimmer 19:
 name: Bhamla, Ayaas
 yr: FR
 school: Trinity
@@ -1565,9 +1719,9 @@ finals_time: 2:02.17
 prelim_rank: 22
 final_rank: 19
 
-Swimmer 15:
+Swimmer 20:
 name: Dean, Patrick
-yr: 07
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -1576,10 +1730,10 @@ finals_time: 2:02.56
 prelim_rank: 23
 final_rank: 20
 
-Swimmer 16:
-name: Goldfield,
-yr: Alec
-school: SO Amherst
+Swimmer 21:
+name: Goldfield, Alec
+yr: SO
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 2:02.66
@@ -1587,7 +1741,7 @@ finals_time: 2:02.62
 prelim_rank: 19
 final_rank: 21
 
-Swimmer 17:
+Swimmer 22:
 name: Miller, Matthew
 yr: FR
 school: Tufts
@@ -1598,9 +1752,9 @@ finals_time: 2:02.98
 prelim_rank: 21
 final_rank: 22
 
-Swimmer 18:
+Swimmer 23:
 name: Swanson, Charles
-yr: 07
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -1609,10 +1763,10 @@ finals_time: 2:04.85
 prelim_rank: 18
 final_rank: 23
 
-Swimmer 19:
-name: Asztalos,
-yr: Ivor
-school: SO Tufts
+Swimmer 24:
+name: Asztalos, Ivor
+yr: SO
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 2:05.23
@@ -1620,40 +1774,7 @@ finals_time: 2:05.43
 prelim_rank: 24
 final_rank: 24
 
-Swimmer 20:
-name: Felker, Henry
-yr: 08
-school: Williams
-exhibition: False
-seed_time: None
-prelim_time: 2:01.24
-finals_time: None
-prelim_rank: 3
-final_rank: None
-
-Swimmer 21:
-name: McManic, Dave
-yr: 07
-school: Williams
-exhibition: False
-seed_time: None
-prelim_time: 1:57.96
-finals_time: None
-prelim_rank: 5
-final_rank: None
-
-Swimmer 22:
-name: Millen, Chris
-yr: 08
-school: Williams
-exhibition: False
-seed_time: None
-prelim_time: 1:56.61
-finals_time: None
-prelim_rank: 8
-final_rank: None
-
-Swimmer 23:
+Swimmer 25:
 name: Burwell, Tripp
 yr: SO
 school: Middlebury
@@ -1664,9 +1785,9 @@ finals_time: None
 prelim_rank: 25
 final_rank: None
 
-Swimmer 24:
+Swimmer 26:
 name: Beckman, Colin
-yr: 07
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -1675,7 +1796,7 @@ finals_time: None
 prelim_rank: 26
 final_rank: None
 
-Swimmer 25:
+Swimmer 27:
 name: Mussmann, Scott
 yr: SO
 school: Trinity
@@ -1697,8 +1818,52 @@ event_type: individual
 Results:
 
 Swimmer 1:
+name: Moryan, Grant
+yr: FR
+school: Conn
+exhibition: False
+seed_time: None
+prelim_time: 20.91
+finals_time: 20.97
+prelim_rank: 2
+final_rank: 1
+
+Swimmer 2:
+name: Beeman, Schuyler
+yr: FR
+school: Middlebury
+exhibition: False
+seed_time: None
+prelim_time: 20.90
+finals_time: 21.07
+prelim_rank: 1
+final_rank: 2
+
+Swimmer 3:
+name: Gallucci, Nick
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 21.13
+finals_time: 21.18
+prelim_rank: 3
+final_rank: 3
+
+Swimmer 4:
+name: Kinsella, Michael
+yr: SR
+school: Tufts
+exhibition: False
+seed_time: None
+prelim_time: 21.22
+finals_time: 21.24
+prelim_rank: 4
+final_rank: 4
+
+Swimmer 5:
 name: Hannigan, Rob
-yr: 10
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -1707,10 +1872,10 @@ finals_time: 21.34
 prelim_rank: 6
 final_rank: 5
 
-Swimmer 2:
-name: Homchick,
-yr: Tad
-school: FR Amherst
+Swimmer 6:
+name: Homchick, Tad
+yr: FR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 21.53
@@ -1718,7 +1883,7 @@ finals_time: 21.35
 prelim_rank: 7
 final_rank: 6
 
-Swimmer 3:
+Swimmer 7:
 name: Shields, Andrew
 yr: SO
 school: Tufts
@@ -1729,9 +1894,9 @@ finals_time: 21.56
 prelim_rank: 5
 final_rank: 7
 
-Swimmer 4:
+Swimmer 8:
 name: Wampler, Sam
-yr: 09
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -1740,10 +1905,10 @@ finals_time: 21.68
 prelim_rank: 7
 final_rank: 8
 
-Swimmer 5:
-name: Pepi,
-yr: Mike
-school: JR Wesleyan
+Swimmer 9:
+name: Pepi, Mike
+yr: JR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 21.62
@@ -1751,9 +1916,9 @@ finals_time: 21.57
 prelim_rank: 10
 final_rank: 9
 
-Swimmer 6:
+Swimmer 10:
 name: Marinelli, Brett
-yr: 07
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -1762,7 +1927,7 @@ finals_time: 21.63
 prelim_rank: 9
 final_rank: 10
 
-Swimmer 7:
+Swimmer 11:
 name: Becker, Chris
 yr: SO
 school: Wesleyan
@@ -1773,10 +1938,10 @@ finals_time: 21.76
 prelim_rank: 12
 final_rank: 11
 
-Swimmer 8:
-name: Rayburn,
-yr: John
-school: SR Middlebury
+Swimmer 12:
+name: Rayburn, John
+yr: SR
+school: Middlebury
 exhibition: False
 seed_time: None
 prelim_time: 21.62
@@ -1784,9 +1949,9 @@ finals_time: 21.82
 prelim_rank: 10
 final_rank: 12
 
-Swimmer 9:
+Swimmer 13:
 name: Swanson, David
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -1795,10 +1960,10 @@ finals_time: 21.94
 prelim_rank: 15
 final_rank: 13
 
-Swimmer 10:
-name: Murphy,
-yr: Matt
-school: SO Tufts
+Swimmer 14:
+name: Murphy, Matt
+yr: SO
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 21.84
@@ -1806,7 +1971,7 @@ finals_time: 21.99
 prelim_rank: 14
 final_rank: 14
 
-Swimmer 11:
+Swimmer 15:
 name: Finnerty, Brian
 yr: FR
 school: Conn
@@ -1817,10 +1982,10 @@ finals_time: 22.14
 prelim_rank: 16
 final_rank: 15
 
-Swimmer 12:
-name: Kaplan,
-yr: Adam
-school: SR Amherst
+Swimmer 16:
+name: Kaplan, Adam
+yr: SR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 21.81
@@ -1828,10 +1993,10 @@ finals_time: 22.16
 prelim_rank: 13
 final_rank: 16
 
-Swimmer 13:
-name: Mitchell,
-yr: Ben
-school: SO Tufts
+Swimmer 17:
+name: Mitchell, Ben
+yr: SO
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 21.98
@@ -1839,10 +2004,10 @@ finals_time: 22.00
 prelim_rank: 17
 final_rank: 17
 
-Swimmer 14:
-name: Kurtysh,
-yr: Gene
-school: FR Tufts
+Swimmer 18:
+name: Kurtysh, Gene
+yr: FR
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 22.17
@@ -1850,10 +2015,10 @@ finals_time: 22.22
 prelim_rank: 19
 final_rank: 18
 
-Swimmer 15:
-name: Paridon,
-yr: Alex
-school: SO Hamilton
+Swimmer 19:
+name: Paridon, Alex
+yr: SO
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 22.38
@@ -1861,10 +2026,10 @@ finals_time: 22.26
 prelim_rank: 24
 final_rank: 19
 
-Swimmer 16:
-name: Storms,
-yr: Dan
-school: FR Wesleyan
+Swimmer 20:
+name: Storms, Dan
+yr: FR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 22.21
@@ -1872,7 +2037,7 @@ finals_time: 22.36
 prelim_rank: 20
 final_rank: 20
 
-Swimmer 17:
+Swimmer 21:
 name: Resler, Chris
 yr: SO
 school: Amherst
@@ -1883,10 +2048,10 @@ finals_time: 22.42
 prelim_rank: 18
 final_rank: 21
 
-Swimmer 18:
-name: Stein,
-yr: Jeff
-school: JR Wesleyan
+Swimmer 22:
+name: Stein, Jeff
+yr: JR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 22.25
@@ -1894,10 +2059,10 @@ finals_time: 22.46
 prelim_rank: 21
 final_rank: 22
 
-Swimmer 19:
-name: Scala,
-yr: Joe
-school: SO Amherst
+Swimmer 23:
+name: Scala, Joe
+yr: SO
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 22.34
@@ -1905,9 +2070,9 @@ finals_time: 22.49
 prelim_rank: 23
 final_rank: 23
 
-Swimmer 20:
+Swimmer 24:
 name: Morris, Sean
-yr: 10
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -1916,7 +2081,7 @@ finals_time: 22.93
 prelim_rank: 22
 final_rank: 24
 
-Swimmer 21:
+Swimmer 25:
 name: Arnoldi, Ryland
 yr: FR
 school: Wesleyan
@@ -1927,10 +2092,10 @@ finals_time: None
 prelim_rank: 25
 final_rank: None
 
-Swimmer 22:
-name: Boardman,
-yr: Tom
-school: SR Middlebury
+Swimmer 26:
+name: Boardman, Tom
+yr: SR
+school: Middlebury
 exhibition: False
 seed_time: None
 prelim_time: 24.07
@@ -1938,10 +2103,10 @@ finals_time: None
 prelim_rank: 26
 final_rank: None
 
-Swimmer 23:
-name: Clary,
-yr: Will
-school: SO Middlebury
+Swimmer 27:
+name: Clary, Will
+yr: SO
+school: Middlebury
 exhibition: False
 seed_time: None
 prelim_time: 22.59
@@ -1949,7 +2114,7 @@ finals_time: None
 prelim_rank: 27
 final_rank: None
 
-Swimmer 24:
+Swimmer 28:
 name: Gerli, Brooks
 yr: FR
 school: Trinity
@@ -1960,9 +2125,9 @@ finals_time: None
 prelim_rank: 28
 final_rank: None
 
-Swimmer 25:
+Swimmer 29:
 name: Immerman, Jason
-yr: 10
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -1971,7 +2136,7 @@ finals_time: None
 prelim_rank: 29
 final_rank: None
 
-Swimmer 26:
+Swimmer 30:
 name: Zuhusky, Andrew
 yr: FR
 school: Trinity
@@ -1982,10 +2147,10 @@ finals_time: None
 prelim_rank: 30
 final_rank: None
 
-Swimmer 27:
-name: Haley,
-yr: John
-school: SR Wesleyan
+Swimmer 31:
+name: Haley, John
+yr: SR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 23.45
@@ -1993,9 +2158,9 @@ finals_time: None
 prelim_rank: 30
 final_rank: None
 
-Swimmer 28:
+Swimmer 32:
 name: Metcalf, David
-yr: 09
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -2004,9 +2169,9 @@ finals_time: None
 prelim_rank: 32
 final_rank: None
 
-Swimmer 29:
+Swimmer 33:
 name: Walsh, Bill
-yr: 09
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -2015,10 +2180,10 @@ finals_time: None
 prelim_rank: 33
 final_rank: None
 
-Swimmer 30:
-name: Campany,
-yr: Tim
-school: JR Hamilton
+Swimmer 34:
+name: Campany, Tim
+yr: JR
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 23.60
@@ -2026,7 +2191,7 @@ finals_time: None
 prelim_rank: 34
 final_rank: None
 
-Swimmer 31:
+Swimmer 35:
 name: Crowell, Christopher
 yr: FR
 school: Hamilton
@@ -2037,10 +2202,10 @@ finals_time: None
 prelim_rank: 35
 final_rank: None
 
-Swimmer 32:
-name: Emmons,
-yr: Nate
-school: SR Hamilton
+Swimmer 36:
+name: Emmons, Nate
+yr: SR
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 24.11
@@ -2048,9 +2213,9 @@ finals_time: None
 prelim_rank: 36
 final_rank: None
 
-Swimmer 33:
+Swimmer 37:
 name: Sanders, Patrick
-yr: 08
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -2059,9 +2224,9 @@ finals_time: None
 prelim_rank: 37
 final_rank: None
 
-Swimmer 34:
+Swimmer 38:
 name: Wheale, Blake
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -2070,9 +2235,9 @@ finals_time: None
 prelim_rank: 38
 final_rank: None
 
-Swimmer 35:
+Swimmer 39:
 name: Ziemann, Marcus
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -2081,10 +2246,10 @@ finals_time: None
 prelim_rank: 39
 final_rank: None
 
-Swimmer 36:
-name: Gulbrandsen,
-yr: Erik
-school: SO Trinity
+Swimmer 40:
+name: Gulbrandsen, Erik
+yr: SO
+school: Trinity
 exhibition: False
 seed_time: None
 prelim_time: 24.64
@@ -2092,7 +2257,7 @@ finals_time: None
 prelim_rank: 40
 final_rank: None
 
-Swimmer 37:
+Swimmer 41:
 name: Frederick, Steve
 yr: FR
 school: Hamilton
@@ -2103,7 +2268,7 @@ finals_time: None
 prelim_rank: 41
 final_rank: None
 
-Swimmer 38:
+Swimmer 42:
 name: Bowers, David
 yr: FR
 school: Trinity
@@ -2114,9 +2279,9 @@ finals_time: None
 prelim_rank: 42
 final_rank: None
 
-Swimmer 39:
+Swimmer 43:
 name: Flaherty, Pat
-yr: 08
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -2166,8 +2331,52 @@ event_type: individual
 Results:
 
 Swimmer 1:
+name: Millen, Chris
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 4:05.71
+finals_time: 3:58.60
+prelim_rank: 2
+final_rank: 1
+
+Swimmer 2:
+name: Treat, Ethan
+yr: SR
+school: Amherst
+exhibition: False
+seed_time: None
+prelim_time: 4:03.68
+finals_time: 4:00.41
+prelim_rank: 1
+final_rank: 2
+
+Swimmer 3:
+name: McManic, Dave
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 4:06.96
+finals_time: 4:04.96
+prelim_rank: 3
+final_rank: 3
+
+Swimmer 4:
+name: Maslan, Andrew
+yr: JR
+school: Amherst
+exhibition: False
+seed_time: None
+prelim_time: 4:12.82
+finals_time: 4:09.12
+prelim_rank: 5
+final_rank: 4
+
+Swimmer 5:
 name: Goldstein, Max
-yr: 07
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -2176,10 +2385,10 @@ finals_time: 4:15.40
 prelim_rank: 7
 final_rank: 5
 
-Swimmer 2:
-name: DeVore,
-yr: Zach
-school: FR Middlebury
+Swimmer 6:
+name: DeVore, Zach
+yr: FR
+school: Middlebury
 exhibition: False
 seed_time: None
 prelim_time: 4:16.22
@@ -2187,10 +2396,10 @@ finals_time: 4:17.49
 prelim_rank: 6
 final_rank: 6
 
-Swimmer 3:
-name: Murphy,
-yr: Seth
-school: SO Wesleyan
+Swimmer 7:
+name: Murphy, Seth
+yr: SO
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 4:16.56
@@ -2198,7 +2407,7 @@ finals_time: 4:23.08
 prelim_rank: 8
 final_rank: 7
 
-Swimmer 4:
+Swimmer 8:
 name: Cronin, Nathan
 yr: SR
 school: Tufts
@@ -2209,10 +2418,10 @@ finals_time: 4:12.96
 prelim_rank: 11
 final_rank: 9
 
-Swimmer 5:
-name: Jones,
-yr: Kyle
-school: FR Tufts
+Swimmer 9:
+name: Jones, Kyle
+yr: FR
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 4:18.41
@@ -2220,10 +2429,10 @@ finals_time: 4:18.23
 prelim_rank: 14
 final_rank: 10
 
-Swimmer 6:
-name: Barnes,
-yr: Ian
-school: SO Conn
+Swimmer 10:
+name: Barnes, Ian
+yr: SO
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 4:18.38
@@ -2231,9 +2440,9 @@ finals_time: 4:18.30
 prelim_rank: 13
 final_rank: 11
 
-Swimmer 7:
+Swimmer 11:
 name: Bartkiewicz, Mitch
-yr: 07
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -2242,9 +2451,9 @@ finals_time: 4:18.53
 prelim_rank: 9
 final_rank: 12
 
-Swimmer 8:
+Swimmer 12:
 name: Sievers, Quinlan
-yr: 09
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -2253,9 +2462,9 @@ finals_time: 4:19.16
 prelim_rank: 10
 final_rank: 13
 
-Swimmer 9:
+Swimmer 13:
 name: Finnerty, Mike
-yr: 08
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -2264,10 +2473,10 @@ finals_time: 4:20.83
 prelim_rank: 12
 final_rank: 14
 
-Swimmer 10:
-name: Asztalos,
-yr: Ivor
-school: SO Tufts
+Swimmer 14:
+name: Asztalos, Ivor
+yr: SO
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 4:24.65
@@ -2275,9 +2484,9 @@ finals_time: 4:24.47
 prelim_rank: 15
 final_rank: 15
 
-Swimmer 11:
+Swimmer 15:
 name: Sighinolfi, Mike
-yr: 07
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -2286,7 +2495,7 @@ finals_time: 4:29.37
 prelim_rank: 16
 final_rank: 16
 
-Swimmer 12:
+Swimmer 16:
 name: Burwell, Tripp
 yr: SO
 school: Middlebury
@@ -2297,7 +2506,7 @@ finals_time: 4:30.67
 prelim_rank: 17
 final_rank: 17
 
-Swimmer 13:
+Swimmer 17:
 name: Walker, Andrew
 yr: SO
 school: Wesleyan
@@ -2308,10 +2517,10 @@ finals_time: 4:33.79
 prelim_rank: 18
 final_rank: 18
 
-Swimmer 14:
-name: Schleusener,
-yr: Luke
-school: SR Wesleyan
+Swimmer 18:
+name: Schleusener, Luke
+yr: SR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 4:49.31
@@ -2319,15 +2528,15 @@ finals_time: 4:48.47
 prelim_rank: 19
 final_rank: 19
 
-Swimmer 15:
-name: Maslan, Andrew
-yr: JR
-school: Amherst
+Swimmer 19:
+name: Bullitt, Ben
+yr: NONE
+school: Williams
 exhibition: False
 seed_time: None
-prelim_time: 4:24.83
+prelim_time: 4:18.38
 finals_time: None
-prelim_rank: 5
+prelim_rank: 4
 final_rank: None
 --------------------------------------------------
 event: 13
@@ -2341,30 +2550,74 @@ event_type: individual
 Results:
 
 Swimmer 1:
-name: Collier,
-yr: Rob
-school: SR Middlebury
+name: Collier, Rob
+yr: SR
+school: Middlebury
 exhibition: False
 seed_time: None
 prelim_time: 50.91
 finals_time: 49.85&
-prelim_rank: None
+prelim_rank: 4
 final_rank: 1
 
 Swimmer 2:
-name: Bartro,
-yr: Kyle
-school: JR Conn
+name: Dillon, John
+yr: FR
+school: Middlebury
+exhibition: False
+seed_time: None
+prelim_time: 50.35
+finals_time: 49.95
+prelim_rank: 1
+final_rank: 2
+
+Swimmer 3:
+name: Wentworth-Ping, Al
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 50.60
+finals_time: 50.78
+prelim_rank: None
+final_rank: 3
+
+Swimmer 4:
+name: Troy, Pat
+yr: FR
+school: Conn
+exhibition: False
+seed_time: None
+prelim_time: 50.69
+finals_time: 50.86
+prelim_rank: 3
+final_rank: 4
+
+Swimmer 5:
+name: Scott, Norman
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 51.08
+finals_time: 51.11
+prelim_rank: 5
+final_rank: 5
+
+Swimmer 6:
+name: Bartro, Kyle
+yr: JR
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 51.37
 finals_time: 51.47
-prelim_rank: None
+prelim_rank: 6
 final_rank: 6
 
-Swimmer 3:
+Swimmer 7:
 name: Ryan, Timothy
-yr: 09
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -2373,7 +2626,7 @@ finals_time: 51.57
 prelim_rank: 7
 final_rank: 7
 
-Swimmer 4:
+Swimmer 8:
 name: Shields, Andrew
 yr: SO
 school: Tufts
@@ -2384,10 +2637,10 @@ finals_time: 52.21
 prelim_rank: 8
 final_rank: 8
 
-Swimmer 5:
-name: Homchick,
-yr: Tad
-school: FR Amherst
+Swimmer 9:
+name: Homchick, Tad
+yr: FR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 52.69
@@ -2395,9 +2648,9 @@ finals_time: 52.33
 prelim_rank: 10
 final_rank: 9
 
-Swimmer 6:
+Swimmer 10:
 name: Morris, Sean
-yr: 10
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -2406,7 +2659,18 @@ finals_time: 52.44
 prelim_rank: 9
 final_rank: 10
 
-Swimmer 7:
+Swimmer 11:
+name: Holmes, C.J.
+yr: SO
+school: Amherst
+exhibition: False
+seed_time: None
+prelim_time: 52.85
+finals_time: 52.90
+prelim_rank: 11
+final_rank: 11
+
+Swimmer 12:
 name: Finnerty, Brian
 yr: FR
 school: Conn
@@ -2417,10 +2681,10 @@ finals_time: 53.07
 prelim_rank: 12
 final_rank: 12
 
-Swimmer 8:
-name: Moskowitz,
-yr: Ben
-school: SO Tufts
+Swimmer 13:
+name: Moskowitz, Ben
+yr: SO
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 53.71
@@ -2428,7 +2692,7 @@ finals_time: 53.53
 prelim_rank: 13
 final_rank: 13
 
-Swimmer 9:
+Swimmer 14:
 name: de Vries, Calvin
 yr: FR
 school: Tufts
@@ -2439,9 +2703,9 @@ finals_time: 53.98
 prelim_rank: 15
 final_rank: 14
 
-Swimmer 10:
+Swimmer 15:
 name: Adams, Ryan
-yr: 07
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -2450,7 +2714,7 @@ finals_time: 54.40
 prelim_rank: 16
 final_rank: 15
 
-Swimmer 11:
+Swimmer 16:
 name: Weimer, Darryl
 yr: FR
 school: Amherst
@@ -2461,7 +2725,7 @@ finals_time: 54.82
 prelim_rank: 14
 final_rank: 16
 
-Swimmer 12:
+Swimmer 17:
 name: Chaponis, Stephen
 yr: FR
 school: Hamilton
@@ -2472,7 +2736,7 @@ finals_time: 54.17
 prelim_rank: 17
 final_rank: 17
 
-Swimmer 13:
+Swimmer 18:
 name: Salzberg, Matthew
 yr: FR
 school: Tufts
@@ -2483,9 +2747,9 @@ finals_time: 54.31
 prelim_rank: 18
 final_rank: 18
 
-Swimmer 14:
+Swimmer 19:
 name: Kwan, Matt
-yr: 10
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -2494,10 +2758,10 @@ finals_time: 54.60
 prelim_rank: 19
 final_rank: 19
 
-Swimmer 15:
-name: Vey,
-yr: Alek
-school: SR Amherst
+Swimmer 20:
+name: Vey, Alek
+yr: SR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 54.53
@@ -2505,9 +2769,9 @@ finals_time: 54.86
 prelim_rank: 22
 final_rank: 20
 
-Swimmer 16:
+Swimmer 21:
 name: Gross, Ben
-yr: 10
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -2516,9 +2780,9 @@ finals_time: 54.92
 prelim_rank: 20
 final_rank: 21
 
-Swimmer 17:
+Swimmer 22:
 name: Metcalf, David
-yr: 09
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -2527,10 +2791,10 @@ finals_time: 54.94
 prelim_rank: 23
 final_rank: 22
 
-Swimmer 18:
-name: Lee,
-yr: Jae
-school: FR Wesleyan
+Swimmer 23:
+name: Lee, Jae
+yr: FR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 54.97
@@ -2538,10 +2802,10 @@ finals_time: 55.00
 prelim_rank: 24
 final_rank: 23
 
-Swimmer 19:
-name: Goldfield,
-yr: Alec
-school: SO Amherst
+Swimmer 24:
+name: Goldfield, Alec
+yr: SO
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 54.42
@@ -2549,7 +2813,18 @@ finals_time: 55.03
 prelim_rank: 21
 final_rank: 24
 
-Swimmer 20:
+Swimmer 25:
+name: Wentworth-Ping, Alex
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 52.38
+finals_time: None
+prelim_rank: 2
+final_rank: None
+
+Swimmer 26:
 name: Bhamla, Ayaas
 yr: FR
 school: Trinity
@@ -2560,10 +2835,10 @@ finals_time: None
 prelim_rank: 25
 final_rank: None
 
-Swimmer 21:
-name: Donne,
-yr: Matt
-school: SR Wesleyan
+Swimmer 27:
+name: Donne, Matt
+yr: SR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 57.43
@@ -2571,9 +2846,9 @@ finals_time: None
 prelim_rank: 26
 final_rank: None
 
-Swimmer 22:
+Swimmer 28:
 name: Wandner, Ian
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -2582,9 +2857,9 @@ finals_time: None
 prelim_rank: 27
 final_rank: None
 
-Swimmer 23:
+Swimmer 29:
 name: Sosnowski, Taylor
-yr: 10
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -2593,7 +2868,7 @@ finals_time: None
 prelim_rank: 28
 final_rank: None
 
-Swimmer 24:
+Swimmer 30:
 name: Ruff, Charlie
 yr: FR
 school: Hamilton
@@ -2604,9 +2879,9 @@ finals_time: None
 prelim_rank: 29
 final_rank: None
 
-Swimmer 25:
+Swimmer 31:
 name: Beckman, Colin
-yr: 07
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -2615,7 +2890,7 @@ finals_time: None
 prelim_rank: 30
 final_rank: None
 
-Swimmer 26:
+Swimmer 32:
 name: Zuhusky, Andrew
 yr: FR
 school: Trinity
@@ -2626,9 +2901,9 @@ finals_time: None
 prelim_rank: 31
 final_rank: None
 
-Swimmer 27:
+Swimmer 33:
 name: Rezvani, Rob
-yr: 08
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -2637,10 +2912,10 @@ finals_time: None
 prelim_rank: 32
 final_rank: None
 
-Swimmer 28:
-name: Paridon,
-yr: Alex
-school: SO Hamilton
+Swimmer 34:
+name: Paridon, Alex
+yr: SO
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 59.38
@@ -2648,10 +2923,10 @@ finals_time: None
 prelim_rank: 33
 final_rank: None
 
-Swimmer 29:
-name: Masters,
-yr: Clay
-school: FR Hamilton
+Swimmer 35:
+name: Masters, Clay
+yr: FR
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 1:00.55
@@ -2659,7 +2934,7 @@ finals_time: None
 prelim_rank: 34
 final_rank: None
 
-Swimmer 30:
+Swimmer 36:
 name: Bowers, David
 yr: FR
 school: Trinity
@@ -2681,6 +2956,61 @@ event_type: individual
 Results:
 
 Swimmer 1:
+name: Hannigan, Rob
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 1:42.82
+finals_time: 1:41.69
+prelim_rank: 3
+final_rank: 1
+
+Swimmer 2:
+name: Bettencourt, Grego
+yr: SR
+school: Tufts
+exhibition: False
+seed_time: None
+prelim_time: 1:42.49
+finals_time: 1:42.45
+prelim_rank: None
+final_rank: 2
+
+Swimmer 3:
+name: Witzke, Christian
+yr: SO
+school: Amherst
+exhibition: False
+seed_time: None
+prelim_time: 1:43.87
+finals_time: 1:42.47
+prelim_rank: 7
+final_rank: 3
+
+Swimmer 4:
+name: Kirwan, Michael
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 1:42.74
+finals_time: 1:42.77
+prelim_rank: 2
+final_rank: 4
+
+Swimmer 5:
+name: O'Rourke, Kevin
+yr: SO
+school: Middlebury
+exhibition: False
+seed_time: None
+prelim_time: 1:42.97
+finals_time: 1:42.96
+prelim_rank: 4
+final_rank: 5
+
+Swimmer 6:
 name: Moryan, Grant
 yr: FR
 school: Conn
@@ -2691,9 +3021,9 @@ finals_time: 1:43.34
 prelim_rank: 5
 final_rank: 6
 
-Swimmer 2:
+Swimmer 7:
 name: Mullin, Evan
-yr: 08
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -2702,7 +3032,7 @@ finals_time: 1:43.81
 prelim_rank: 6
 final_rank: 7
 
-Swimmer 3:
+Swimmer 8:
 name: Fanning, Justin
 yr: SR
 school: Tufts
@@ -2713,7 +3043,7 @@ finals_time: 1:45.95
 prelim_rank: 8
 final_rank: 8
 
-Swimmer 4:
+Swimmer 9:
 name: Warner, Christian
 yr: SR
 school: Hamilton
@@ -2724,9 +3054,9 @@ finals_time: 1:43.86
 prelim_rank: 9
 final_rank: 9
 
-Swimmer 5:
+Swimmer 10:
 name: Lebovitz, David
-yr: 09
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -2735,9 +3065,9 @@ finals_time: 1:45.02
 prelim_rank: 12
 final_rank: 10
 
-Swimmer 6:
+Swimmer 11:
 name: Neuber, Matt
-yr: 08
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -2746,9 +3076,9 @@ finals_time: 1:45.29
 prelim_rank: 11
 final_rank: 11
 
-Swimmer 7:
+Swimmer 12:
 name: Daub, Michael
-yr: 08
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -2757,10 +3087,10 @@ finals_time: 1:45.42
 prelim_rank: 14
 final_rank: 12
 
-Swimmer 8:
-name: Kurtysh,
-yr: Gene
-school: FR Tufts
+Swimmer 13:
+name: Kurtysh, Gene
+yr: FR
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 1:46.66
@@ -2768,9 +3098,9 @@ finals_time: 1:45.47
 prelim_rank: 16
 final_rank: 13
 
-Swimmer 9:
+Swimmer 14:
 name: Heumann, Thatcher
-yr: 09
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -2779,10 +3109,10 @@ finals_time: 1:45.75
 prelim_rank: 10
 final_rank: 14
 
-Swimmer 10:
-name: Pepi,
-yr: Mike
-school: JR Wesleyan
+Swimmer 15:
+name: Pepi, Mike
+yr: JR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 1:45.63
@@ -2790,10 +3120,10 @@ finals_time: 1:47.25
 prelim_rank: 13
 final_rank: 15
 
-Swimmer 11:
-name: Gundry,
-yr: Alex
-school: JR Conn
+Swimmer 16:
+name: Gundry, Alex
+yr: JR
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 1:46.34
@@ -2801,10 +3131,10 @@ finals_time: 1:47.26
 prelim_rank: 15
 final_rank: 16
 
-Swimmer 12:
-name: Storms,
-yr: Dan
-school: FR Wesleyan
+Swimmer 17:
+name: Storms, Dan
+yr: FR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 1:47.32
@@ -2812,10 +3142,10 @@ finals_time: 1:46.78
 prelim_rank: 17
 final_rank: 17
 
-Swimmer 13:
-name: Beck,
-yr: Ryan
-school: FR Wesleyan
+Swimmer 18:
+name: Beck, Ryan
+yr: FR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 1:47.65
@@ -2823,10 +3153,10 @@ finals_time: 1:46.80
 prelim_rank: 20
 final_rank: 18
 
-Swimmer 14:
-name: Scala,
-yr: Joe
-school: SO Amherst
+Swimmer 19:
+name: Scala, Joe
+yr: SO
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 1:47.54
@@ -2834,7 +3164,7 @@ finals_time: 1:47.23
 prelim_rank: 19
 final_rank: 19
 
-Swimmer 15:
+Swimmer 20:
 name: Kinsella, Michael
 yr: SR
 school: Tufts
@@ -2845,10 +3175,10 @@ finals_time: 1:47.77
 prelim_rank: 18
 final_rank: 20
 
-Swimmer 16:
-name: Murphy,
-yr: Matt
-school: SO Tufts
+Swimmer 21:
+name: Murphy, Matt
+yr: SO
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 1:49.80
@@ -2856,10 +3186,10 @@ finals_time: 1:48.35
 prelim_rank: 23
 final_rank: 21
 
-Swimmer 17:
-name: Boardman,
-yr: Tom
-school: SR Middlebury
+Swimmer 22:
+name: Boardman, Tom
+yr: SR
+school: Middlebury
 exhibition: False
 seed_time: None
 prelim_time: 1:48.62
@@ -2867,9 +3197,9 @@ finals_time: 1:48.52
 prelim_rank: 21
 final_rank: 22
 
-Swimmer 18:
+Swimmer 23:
 name: Marinelli, Brett
-yr: 07
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -2878,10 +3208,10 @@ finals_time: 1:48.78
 prelim_rank: 22
 final_rank: 23
 
-Swimmer 19:
-name: Campany,
-yr: Tim
-school: JR Hamilton
+Swimmer 24:
+name: Campany, Tim
+yr: JR
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 1:49.84
@@ -2889,18 +3219,18 @@ finals_time: 1:49.28
 prelim_rank: 24
 final_rank: 24
 
-Swimmer 20:
-name: Witzke, Christian
-yr: SO
-school: Amherst
+Swimmer 25:
+name: Bettencourt, Gregory
+yr: SR
+school: Tufts
 exhibition: False
 seed_time: None
-prelim_time: 1:44.26
+prelim_time: 1:43.28
 finals_time: None
-prelim_rank: 7
+prelim_rank: 1
 final_rank: None
 
-Swimmer 21:
+Swimmer 26:
 name: Erickson, Bryan
 yr: FR
 school: Hamilton
@@ -2911,9 +3241,9 @@ finals_time: None
 prelim_rank: 25
 final_rank: None
 
-Swimmer 22:
+Swimmer 27:
 name: MacNaughton, Jake
-yr: 10
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -2922,7 +3252,7 @@ finals_time: None
 prelim_rank: 26
 final_rank: None
 
-Swimmer 23:
+Swimmer 28:
 name: Resler, Chris
 yr: SO
 school: Amherst
@@ -2933,10 +3263,10 @@ finals_time: None
 prelim_rank: 27
 final_rank: None
 
-Swimmer 24:
-name: Emmons,
-yr: Nate
-school: SR Hamilton
+Swimmer 29:
+name: Emmons, Nate
+yr: SR
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 1:55.29
@@ -2944,9 +3274,9 @@ finals_time: None
 prelim_rank: 28
 final_rank: None
 
-Swimmer 25:
+Swimmer 30:
 name: Jacob, Chris
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -2955,9 +3285,9 @@ finals_time: None
 prelim_rank: 29
 final_rank: None
 
-Swimmer 26:
+Swimmer 31:
 name: Sanders, Patrick
-yr: 08
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -2966,7 +3296,7 @@ finals_time: None
 prelim_rank: 30
 final_rank: None
 
-Swimmer 27:
+Swimmer 32:
 name: Ruff, Charlie
 yr: FR
 school: Hamilton
@@ -2977,7 +3307,7 @@ finals_time: None
 prelim_rank: 31
 final_rank: None
 
-Swimmer 28:
+Swimmer 33:
 name: Burton, Patrick
 yr: FR
 school: Middlebury
@@ -2988,9 +3318,9 @@ finals_time: None
 prelim_rank: 32
 final_rank: None
 
-Swimmer 29:
+Swimmer 34:
 name: Karl, Adam
-yr: 08
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -2999,7 +3329,7 @@ finals_time: None
 prelim_rank: 33
 final_rank: None
 
-Swimmer 30:
+Swimmer 35:
 name: Frederick, Steve
 yr: FR
 school: Hamilton
@@ -3010,10 +3340,10 @@ finals_time: None
 prelim_rank: 34
 final_rank: None
 
-Swimmer 31:
-name: Bernstein,
-yr: Mike
-school: JR Amherst
+Swimmer 36:
+name: Bernstein, Mike
+yr: JR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 2:05.98
@@ -3021,9 +3351,9 @@ finals_time: None
 prelim_rank: 35
 final_rank: None
 
-Swimmer 32:
+Swimmer 37:
 name: Beckman, Colin
-yr: 07
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -3043,9 +3373,31 @@ event_type: individual
 Results:
 
 Swimmer 1:
-name: Lux,
-yr: Tim
-school: SR Middlebury
+name: Bonewell, Tyler
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 58.98
+finals_time: 58.22
+prelim_rank: 1
+final_rank: 1
+
+Swimmer 2:
+name: Ancona, John
+yr: SR
+school: Amherst
+exhibition: False
+seed_time: None
+prelim_time: 59.34
+finals_time: 58.71
+prelim_rank: 4
+final_rank: 2
+
+Swimmer 3:
+name: Lux, Tim
+yr: SR
+school: Middlebury
 exhibition: False
 seed_time: None
 prelim_time: 59.48
@@ -3053,7 +3405,7 @@ finals_time: 58.94
 prelim_rank: 5
 final_rank: 3
 
-Swimmer 2:
+Swimmer 4:
 name: Mereness, Jared
 yr: FR
 school: Hamilton
@@ -3064,7 +3416,7 @@ finals_time: 59.15
 prelim_rank: 2
 final_rank: 4
 
-Swimmer 3:
+Swimmer 5:
 name: Bell, Peter
 yr: JR
 school: Middlebury
@@ -3075,9 +3427,9 @@ finals_time: 59.49
 prelim_rank: 3
 final_rank: 5
 
-Swimmer 4:
+Swimmer 6:
 name: Felker, Henry
-yr: 08
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -3086,7 +3438,7 @@ finals_time: 59.68
 prelim_rank: 7
 final_rank: 6
 
-Swimmer 5:
+Swimmer 7:
 name: Prill, Derek
 yr: JR
 school: Amherst
@@ -3097,10 +3449,10 @@ finals_time: 59.83
 prelim_rank: 8
 final_rank: 7
 
-Swimmer 6:
-name: Lenihan,
-yr: Mike
-school: SR Trinity
+Swimmer 8:
+name: Lenihan, Mike
+yr: SR
+school: Trinity
 exhibition: False
 seed_time: None
 prelim_time: 59.87
@@ -3108,7 +3460,7 @@ finals_time: 1:00.70
 prelim_rank: 6
 final_rank: 8
 
-Swimmer 7:
+Swimmer 9:
 name: Chan, Lawrence
 yr: FR
 school: Tufts
@@ -3119,7 +3471,7 @@ finals_time: 59.35
 prelim_rank: 9
 final_rank: 9
 
-Swimmer 8:
+Swimmer 10:
 name: Longhurst, James
 yr: SO
 school: Tufts
@@ -3130,10 +3482,10 @@ finals_time: 1:00.20
 prelim_rank: 11
 final_rank: 10
 
-Swimmer 9:
-name: Barnes,
-yr: Ian
-school: SO Conn
+Swimmer 11:
+name: Barnes, Ian
+yr: SO
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 1:01.54
@@ -3141,9 +3493,9 @@ finals_time: 1:00.77
 prelim_rank: 15
 final_rank: 11
 
-Swimmer 10:
+Swimmer 12:
 name: Peterson, Andrew
-yr: 08
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -3152,7 +3504,7 @@ finals_time: 1:00.81
 prelim_rank: 10
 final_rank: 12
 
-Swimmer 11:
+Swimmer 13:
 name: Stanton, James
 yr: JR
 school: Amherst
@@ -3163,10 +3515,10 @@ finals_time: 1:00.85
 prelim_rank: 12
 final_rank: 13
 
-Swimmer 12:
-name: Perley,
-yr: Sam
-school: FR Conn
+Swimmer 14:
+name: Perley, Sam
+yr: FR
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 1:01.61
@@ -3174,9 +3526,9 @@ finals_time: 1:00.91
 prelim_rank: 16
 final_rank: 14
 
-Swimmer 13:
+Swimmer 15:
 name: Swanson, David
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -3185,9 +3537,9 @@ finals_time: 1:01.71
 prelim_rank: 13
 final_rank: 15
 
-Swimmer 14:
+Swimmer 16:
 name: Dean, Patrick
-yr: 07
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -3196,10 +3548,10 @@ finals_time: 1:03.32
 prelim_rank: 14
 final_rank: 16
 
-Swimmer 15:
-name: Stein,
-yr: Jeff
-school: JR Wesleyan
+Swimmer 17:
+name: Stein, Jeff
+yr: JR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 1:03.59
@@ -3207,9 +3559,9 @@ finals_time: 1:01.57
 prelim_rank: 24
 final_rank: 17
 
-Swimmer 16:
+Swimmer 18:
 name: Hyde, Nate
-yr: 07
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -3218,9 +3570,9 @@ finals_time: 1:02.28
 prelim_rank: 19
 final_rank: 18
 
-Swimmer 17:
+Swimmer 19:
 name: Stanley, Austin
-yr: 10
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -3229,7 +3581,7 @@ finals_time: 1:02.32
 prelim_rank: 17
 final_rank: 19
 
-Swimmer 18:
+Swimmer 20:
 name: Sung, Peter
 yr: SR
 school: Middlebury
@@ -3240,9 +3592,9 @@ finals_time: 1:02.68
 prelim_rank: 18
 final_rank: 20
 
-Swimmer 19:
+Swimmer 21:
 name: Taylor, Reilly
-yr: 10
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -3251,10 +3603,10 @@ finals_time: 1:02.77
 prelim_rank: 20
 final_rank: 21
 
-Swimmer 20:
-name: Peterson,
-yr: Dan
-school: SO Amherst
+Swimmer 22:
+name: Peterson, Dan
+yr: SO
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 1:02.84
@@ -3262,7 +3614,7 @@ finals_time: 1:02.80
 prelim_rank: 22
 final_rank: 22
 
-Swimmer 21:
+Swimmer 23:
 name: Frankel, Rowan
 yr: FR
 school: Tufts
@@ -3273,7 +3625,7 @@ finals_time: 1:03.23
 prelim_rank: 21
 final_rank: 23
 
-Swimmer 22:
+Swimmer 24:
 name: Schoeneck, Jacob
 yr: SO
 school: Hamilton
@@ -3283,28 +3635,6 @@ prelim_time: 1:03.49
 finals_time: 1:03.40
 prelim_rank: 23
 final_rank: 24
-
-Swimmer 23:
-name: Bonewell, Tyler
-yr: 09
-school: Williams
-exhibition: False
-seed_time: None
-prelim_time: 1:00.27
-finals_time: None
-prelim_rank: 1
-final_rank: None
-
-Swimmer 24:
-name: Ancona,
-yr: John
-school: SR Amherst
-exhibition: False
-seed_time: None
-prelim_time: 1:01.56
-finals_time: None
-prelim_rank: 4
-final_rank: None
 
 Swimmer 25:
 name: Jacob, Carlo
@@ -3340,9 +3670,9 @@ prelim_rank: 27
 final_rank: None
 
 Swimmer 28:
-name: Altneu,
-yr: Eric
-school: SR Wesleyan
+name: Altneu, Eric
+yr: SR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 1:08.80
@@ -3351,9 +3681,9 @@ prelim_rank: 28
 final_rank: None
 
 Swimmer 29:
-name: Mostyn,
-yr: Pat
-school: JR Trinity
+name: Mostyn, Pat
+yr: JR
+school: Trinity
 exhibition: False
 seed_time: None
 prelim_time: 1:15.24
@@ -3362,9 +3692,9 @@ prelim_rank: 29
 final_rank: None
 
 Swimmer 30:
-name: Havlicek,
-yr: Matt
-school: SO Trinity
+name: Havlicek, Matt
+yr: SO
+school: Trinity
 exhibition: False
 seed_time: None
 prelim_time: 1:19.74
@@ -3383,8 +3713,63 @@ event_type: individual
 Results:
 
 Swimmer 1:
+name: Johnson, Todd
+yr: JR
+school: Hamilton
+exhibition: False
+seed_time: None
+prelim_time: 52.46
+finals_time: 51.82
+prelim_rank: 2
+final_rank: 1
+
+Swimmer 2:
+name: Dewey, Jabez
+yr: NONE
+school: Colby
+exhibition: False
+seed_time: None
+prelim_time: 51.41
+finals_time: 51.95
+prelim_rank: 1
+final_rank: 2
+
+Swimmer 3:
+name: Woods, Zach
+yr: SO
+school: Middlebury
+exhibition: False
+seed_time: None
+prelim_time: 52.56
+finals_time: 52.50
+prelim_rank: 3
+final_rank: 3
+
+Swimmer 4:
+name: Beeman, Schuyler
+yr: FR
+school: Middlebury
+exhibition: False
+seed_time: None
+prelim_time: 53.25
+finals_time: 52.60
+prelim_rank: 4
+final_rank: 4
+
+Swimmer 5:
+name: Waskom, Mike
+yr: SO
+school: Amherst
+exhibition: False
+seed_time: None
+prelim_time: 53.83
+finals_time: 52.76
+prelim_rank: 6
+final_rank: 5
+
+Swimmer 6:
 name: Hollander, Adam
-yr: 10
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -3393,10 +3778,10 @@ finals_time: 53.41
 prelim_rank: 5
 final_rank: 6
 
-Swimmer 2:
-name: Bartro,
-yr: Kyle
-school: JR Conn
+Swimmer 7:
+name: Bartro, Kyle
+yr: JR
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 54.36
@@ -3404,9 +3789,9 @@ finals_time: 54.06
 prelim_rank: 7
 final_rank: 7
 
-Swimmer 3:
+Swimmer 8:
 name: Finnerty, Mike
-yr: 08
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -3415,9 +3800,9 @@ finals_time: 54.53
 prelim_rank: 8
 final_rank: 8
 
-Swimmer 4:
+Swimmer 9:
 name: Hollander, Jordan
-yr: 10
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -3426,9 +3811,9 @@ finals_time: 54.05
 prelim_rank: 11
 final_rank: 9
 
-Swimmer 5:
+Swimmer 10:
 name: Berry, Chris
-yr: 09
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -3437,7 +3822,7 @@ finals_time: 54.70
 prelim_rank: 14
 final_rank: 10
 
-Swimmer 6:
+Swimmer 11:
 name: Froehlich, William
 yr: SO
 school: Tufts
@@ -3448,7 +3833,7 @@ finals_time: 54.96
 prelim_rank: 9
 final_rank: 11
 
-Swimmer 7:
+Swimmer 12:
 name: Bethards, Josiah
 yr: SO
 school: Amherst
@@ -3459,10 +3844,10 @@ finals_time: 55.00
 prelim_rank: 13
 final_rank: 12
 
-Swimmer 8:
-name: Radovich,
-yr: Ray
-school: SR Tufts
+Swimmer 13:
+name: Radovich, Ray
+yr: SR
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 55.35
@@ -3470,7 +3855,7 @@ finals_time: 55.36
 prelim_rank: 16
 final_rank: 13
 
-Swimmer 9:
+Swimmer 14:
 name: Vasta, Andrew
 yr: JR
 school: Amherst
@@ -3481,9 +3866,9 @@ finals_time: 55.42
 prelim_rank: 15
 final_rank: 14
 
-Swimmer 10:
+Swimmer 15:
 name: Townsend, Travis
-yr: 09
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -3492,9 +3877,9 @@ finals_time: 55.78
 prelim_rank: 12
 final_rank: 15
 
-Swimmer 11:
+Swimmer 16:
 name: Rachlin, Ben
-yr: 08
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -3503,7 +3888,7 @@ finals_time: 55.89
 prelim_rank: 10
 final_rank: 16
 
-Swimmer 12:
+Swimmer 17:
 name: Weimer, Darryl
 yr: FR
 school: Amherst
@@ -3514,9 +3899,9 @@ finals_time: 55.02
 prelim_rank: 17
 final_rank: 17
 
-Swimmer 13:
+Swimmer 18:
 name: Kimball, Josh
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -3525,10 +3910,10 @@ finals_time: 55.61
 prelim_rank: 18
 final_rank: 18
 
-Swimmer 14:
-name: Sullivan,
-yr: Sean
-school: JR Tufts
+Swimmer 19:
+name: Sullivan, Sean
+yr: JR
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 55.90
@@ -3536,10 +3921,10 @@ finals_time: 55.72
 prelim_rank: 20
 final_rank: 19
 
-Swimmer 15:
-name: Kearney,
-yr: Tim
-school: SR Hamilton
+Swimmer 20:
+name: Kearney, Tim
+yr: SR
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 55.65
@@ -3547,7 +3932,7 @@ finals_time: 55.84
 prelim_rank: 19
 final_rank: 20
 
-Swimmer 16:
+Swimmer 21:
 name: Brown, Jordan
 yr: FR
 school: Wesleyan
@@ -3558,7 +3943,7 @@ finals_time: 56.76
 prelim_rank: 21
 final_rank: 21
 
-Swimmer 17:
+Swimmer 22:
 name: Smith, Jamie
 yr: SO
 school: Conn
@@ -3569,9 +3954,9 @@ finals_time: 56.91
 prelim_rank: 22
 final_rank: 22
 
-Swimmer 18:
+Swimmer 23:
 name: Immerman, Jason
-yr: 10
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -3580,10 +3965,10 @@ finals_time: 57.67
 prelim_rank: 23
 final_rank: 23
 
-Swimmer 19:
-name: Stadnyk,
-yr: Al
-school: FR Conn
+Swimmer 24:
+name: Stadnyk, Al
+yr: FR
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 59.09
@@ -3591,29 +3976,7 @@ finals_time: 58.79
 prelim_rank: 24
 final_rank: 24
 
-Swimmer 20:
-name: Beeman, Schuyler
-yr: FR
-school: Middlebury
-exhibition: False
-seed_time: None
-prelim_time: 55.31
-finals_time: None
-prelim_rank: 4
-final_rank: None
-
-Swimmer 21:
-name: Waskom,
-yr: Mike
-school: SO Amherst
-exhibition: False
-seed_time: None
-prelim_time: 54.93
-finals_time: None
-prelim_rank: 6
-final_rank: None
-
-Swimmer 22:
+Swimmer 25:
 name: Kates, Stephen
 yr: SO
 school: Trinity
@@ -3624,10 +3987,10 @@ finals_time: None
 prelim_rank: 25
 final_rank: None
 
-Swimmer 23:
-name: Chow,
-yr: Joe
-school: SR Amherst
+Swimmer 26:
+name: Chow, Joe
+yr: SR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 1:01.99
@@ -3635,7 +3998,7 @@ finals_time: None
 prelim_rank: 26
 final_rank: None
 
-Swimmer 24:
+Swimmer 27:
 name: Mussmann, Scott
 yr: SO
 school: Trinity
@@ -3677,9 +4040,53 @@ event_type: individual
 Results:
 
 Swimmer 1:
-name: Johnson,
-yr: Todd
-school: JR Hamilton
+name: McManic, Dave
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 1:54.01
+finals_time: 1:51.95
+prelim_rank: 3
+final_rank: 1
+
+Swimmer 2:
+name: Woods, Zach
+yr: SO
+school: Middlebury
+exhibition: False
+seed_time: None
+prelim_time: 1:54.00
+finals_time: 1:53.24
+prelim_rank: 2
+final_rank: 2
+
+Swimmer 3:
+name: Dewey, Jabez
+yr: NONE
+school: Colby
+exhibition: False
+seed_time: None
+prelim_time: 1:54.37
+finals_time: 1:53.73
+prelim_rank: 4
+final_rank: 3
+
+Swimmer 4:
+name: Bullitt, Ben
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 1:53.29
+finals_time: 1:54.23
+prelim_rank: 1
+final_rank: 4
+
+Swimmer 5:
+name: Johnson, Todd
+yr: JR
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 1:55.72
@@ -3687,9 +4094,9 @@ finals_time: 1:55.60
 prelim_rank: 6
 final_rank: 5
 
-Swimmer 2:
+Swimmer 6:
 name: Hollander, Adam
-yr: 10
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -3698,9 +4105,9 @@ finals_time: 1:55.79
 prelim_rank: 5
 final_rank: 6
 
-Swimmer 3:
+Swimmer 7:
 name: Finnerty, Mike
-yr: 08
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -3709,7 +4116,7 @@ finals_time: 1:56.60
 prelim_rank: 8
 final_rank: 7
 
-Swimmer 4:
+Swimmer 8:
 name: Froehlich, William
 yr: SO
 school: Tufts
@@ -3720,9 +4127,9 @@ finals_time: 1:59.50
 prelim_rank: 7
 final_rank: 8
 
-Swimmer 5:
+Swimmer 9:
 name: Lebovitz, David
-yr: 09
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -3731,9 +4138,9 @@ finals_time: 1:56.11
 prelim_rank: 10
 final_rank: 9
 
-Swimmer 6:
+Swimmer 10:
 name: Hollander, Jordan
-yr: 10
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -3742,7 +4149,7 @@ finals_time: 1:56.32
 prelim_rank: 9
 final_rank: 10
 
-Swimmer 7:
+Swimmer 11:
 name: Vasta, Andrew
 yr: JR
 school: Amherst
@@ -3753,9 +4160,9 @@ finals_time: 1:58.11
 prelim_rank: 13
 final_rank: 11
 
-Swimmer 8:
+Swimmer 12:
 name: Berry, Chris
-yr: 09
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -3764,10 +4171,10 @@ finals_time: 1:59.01
 prelim_rank: 14
 final_rank: 12
 
-Swimmer 9:
-name: Radovich,
-yr: Ray
-school: SR Tufts
+Swimmer 13:
+name: Radovich, Ray
+yr: SR
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 1:59.10
@@ -3775,10 +4182,10 @@ finals_time: 1:59.68
 prelim_rank: 12
 final_rank: 13
 
-Swimmer 10:
-name: Sullivan,
-yr: Sean
-school: JR Tufts
+Swimmer 14:
+name: Sullivan, Sean
+yr: JR
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 1:58.58
@@ -3786,9 +4193,9 @@ finals_time: 2:00.15
 prelim_rank: 11
 final_rank: 14
 
-Swimmer 11:
+Swimmer 15:
 name: Townsend, Travis
-yr: 09
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -3797,10 +4204,10 @@ finals_time: 2:01.19
 prelim_rank: 16
 final_rank: 15
 
-Swimmer 12:
-name: Waskom,
-yr: Mike
-school: SO Amherst
+Swimmer 16:
+name: Waskom, Mike
+yr: SO
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 1:59.49
@@ -3808,7 +4215,7 @@ finals_time: 2:03.62
 prelim_rank: 15
 final_rank: 16
 
-Swimmer 13:
+Swimmer 17:
 name: Bethards, Josiah
 yr: SO
 school: Amherst
@@ -3819,10 +4226,10 @@ finals_time: 1:56.81
 prelim_rank: 17
 final_rank: 17
 
-Swimmer 14:
-name: Kearney,
-yr: Tim
-school: SR Hamilton
+Swimmer 18:
+name: Kearney, Tim
+yr: SR
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 2:02.11
@@ -3830,7 +4237,7 @@ finals_time: 2:01.16
 prelim_rank: 20
 final_rank: 18
 
-Swimmer 15:
+Swimmer 19:
 name: Miller, Matthew
 yr: FR
 school: Tufts
@@ -3841,9 +4248,9 @@ finals_time: 2:01.79
 prelim_rank: 19
 final_rank: 19
 
-Swimmer 16:
+Swimmer 20:
 name: Kimball, Josh
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -3852,9 +4259,9 @@ finals_time: 2:02.15
 prelim_rank: 18
 final_rank: 20
 
-Swimmer 17:
+Swimmer 21:
 name: Kwan, Matt
-yr: 10
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -3863,9 +4270,9 @@ finals_time: 2:03.47
 prelim_rank: 21
 final_rank: 21
 
-Swimmer 18:
+Swimmer 22:
 name: Rachlin, Ben
-yr: 08
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -3874,7 +4281,7 @@ finals_time: 2:05.04
 prelim_rank: 22
 final_rank: 22
 
-Swimmer 19:
+Swimmer 23:
 name: Smith, Jamie
 yr: SO
 school: Conn
@@ -3885,7 +4292,7 @@ finals_time: 2:05.97
 prelim_rank: 24
 final_rank: 23
 
-Swimmer 20:
+Swimmer 24:
 name: Ranta, Brian
 yr: SO
 school: Conn
@@ -3896,10 +4303,10 @@ finals_time: 2:08.18
 prelim_rank: 23
 final_rank: 24
 
-Swimmer 21:
-name: Stadnyk,
-yr: Al
-school: FR Conn
+Swimmer 25:
+name: Stadnyk, Al
+yr: FR
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 2:10.12
@@ -3907,7 +4314,7 @@ finals_time: None
 prelim_rank: 25
 final_rank: None
 
-Swimmer 22:
+Swimmer 26:
 name: Walker, Andrew
 yr: SO
 school: Wesleyan
@@ -3918,7 +4325,7 @@ finals_time: None
 prelim_rank: 26
 final_rank: None
 
-Swimmer 23:
+Swimmer 27:
 name: Brown, Jordan
 yr: FR
 school: Wesleyan
@@ -3929,10 +4336,10 @@ finals_time: None
 prelim_rank: 27
 final_rank: None
 
-Swimmer 24:
-name: Chow,
-yr: Joe
-school: SR Amherst
+Swimmer 28:
+name: Chow, Joe
+yr: SR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 2:18.68
@@ -3940,7 +4347,7 @@ finals_time: None
 prelim_rank: 28
 final_rank: None
 
-Swimmer 25:
+Swimmer 29:
 name: Kates, Stephen
 yr: SO
 school: Trinity
@@ -3951,7 +4358,7 @@ finals_time: None
 prelim_rank: 29
 final_rank: None
 
-Swimmer 26:
+Swimmer 30:
 name: Mussmann, Scott
 yr: SO
 school: Trinity
@@ -3973,6 +4380,39 @@ event_type: individual
 Results:
 
 Swimmer 1:
+name: Hannigan, Rob
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 46.44
+finals_time: 45.70
+prelim_rank: 2
+final_rank: 1
+
+Swimmer 2:
+name: Moryan, Grant
+yr: FR
+school: Conn
+exhibition: False
+seed_time: None
+prelim_time: 45.89
+finals_time: 45.88
+prelim_rank: 1
+final_rank: 2
+
+Swimmer 3:
+name: Beeman, Schuyler
+yr: FR
+school: Middlebury
+exhibition: False
+seed_time: None
+prelim_time: 46.52
+finals_time: 46.39
+prelim_rank: 3
+final_rank: 3
+
+Swimmer 4:
 name: Shields, Andrew
 yr: SO
 school: Tufts
@@ -3983,9 +4423,9 @@ finals_time: 47.21
 prelim_rank: 4
 final_rank: 4
 
-Swimmer 2:
+Swimmer 5:
 name: Mullin, Evan
-yr: 08
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -3994,9 +4434,9 @@ finals_time: 47.35
 prelim_rank: 8
 final_rank: 5
 
-Swimmer 3:
+Swimmer 6:
 name: Marinelli, Brett
-yr: 07
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -4005,9 +4445,9 @@ finals_time: 47.40
 prelim_rank: 5
 final_rank: 6
 
-Swimmer 4:
+Swimmer 7:
 name: Wampler, Sam
-yr: 09
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -4016,9 +4456,9 @@ finals_time: 47.42
 prelim_rank: 6
 final_rank: 7
 
-Swimmer 5:
+Swimmer 8:
 name: Gallucci, Nick
-yr: 07
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -4027,7 +4467,7 @@ finals_time: 47.73
 prelim_rank: 6
 final_rank: 8
 
-Swimmer 6:
+Swimmer 9:
 name: Becker, Chris
 yr: SO
 school: Wesleyan
@@ -4038,7 +4478,7 @@ finals_time: 47.54
 prelim_rank: 9
 final_rank: 9
 
-Swimmer 7:
+Swimmer 10:
 name: Warner, Christian
 yr: SR
 school: Hamilton
@@ -4049,10 +4489,10 @@ finals_time: 47.70
 prelim_rank: 12
 final_rank: 10
 
-Swimmer 8:
-name: Homchick,
-yr: Tad
-school: FR Amherst
+Swimmer 11:
+name: Homchick, Tad
+yr: FR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 47.85
@@ -4060,10 +4500,10 @@ finals_time: 47.78
 prelim_rank: 11
 final_rank: 11
 
-Swimmer 9:
-name: Pepi,
-yr: Mike
-school: JR Wesleyan
+Swimmer 12:
+name: Pepi, Mike
+yr: JR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 47.76
@@ -4071,7 +4511,18 @@ finals_time: 47.85
 prelim_rank: 10
 final_rank: 12
 
-Swimmer 10:
+Swimmer 13:
+name: O'Rourke, Kevin
+yr: SO
+school: Middlebury
+exhibition: False
+seed_time: None
+prelim_time: 47.97
+finals_time: 48.15
+prelim_rank: 12
+final_rank: 13
+
+Swimmer 14:
 name: Fanning, Justin
 yr: SR
 school: Tufts
@@ -4082,7 +4533,7 @@ finals_time: 48.38
 prelim_rank: 16
 final_rank: 14
 
-Swimmer 11:
+Swimmer 15:
 name: Kinsella, Michael
 yr: SR
 school: Tufts
@@ -4093,10 +4544,10 @@ finals_time: 48.87
 prelim_rank: 14
 final_rank: 15
 
-Swimmer 12:
-name: Murphy,
-yr: Matt
-school: SO Tufts
+Swimmer 16:
+name: Murphy, Matt
+yr: SO
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 48.05
@@ -4104,7 +4555,7 @@ finals_time: 49.04
 prelim_rank: 14
 final_rank: 16
 
-Swimmer 13:
+Swimmer 17:
 name: Maslan, Andrew
 yr: JR
 school: Amherst
@@ -4115,9 +4566,9 @@ finals_time: 48.20
 prelim_rank: 20
 final_rank: 17
 
-Swimmer 14:
+Swimmer 18:
 name: Neuber, Matt
-yr: 08
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -4126,10 +4577,10 @@ finals_time: 48.30
 prelim_rank: 22
 final_rank: 18
 
-Swimmer 15:
-name: Rayburn,
-yr: John
-school: SR Middlebury
+Swimmer 19:
+name: Rayburn, John
+yr: SR
+school: Middlebury
 exhibition: False
 seed_time: None
 prelim_time: 48.47
@@ -4137,10 +4588,10 @@ finals_time: 48.43
 prelim_rank: 18
 final_rank: 19
 
-Swimmer 16:
-name: Kurtysh,
-yr: Gene
-school: FR Tufts
+Swimmer 20:
+name: Kurtysh, Gene
+yr: FR
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 48.57
@@ -4148,10 +4599,10 @@ finals_time: 48.49
 prelim_rank: 20
 final_rank: 20
 
-Swimmer 17:
-name: Storms,
-yr: Dan
-school: FR Wesleyan
+Swimmer 21:
+name: Storms, Dan
+yr: FR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 48.43
@@ -4159,10 +4610,10 @@ finals_time: 48.57
 prelim_rank: 17
 final_rank: 21
 
-Swimmer 18:
-name: Mitchell,
-yr: Ben
-school: SO Tufts
+Swimmer 22:
+name: Mitchell, Ben
+yr: SO
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 48.53
@@ -4170,10 +4621,10 @@ finals_time: 48.71
 prelim_rank: 19
 final_rank: 22
 
-Swimmer 19:
-name: Scala,
-yr: Joe
-school: SO Amherst
+Swimmer 23:
+name: Scala, Joe
+yr: SO
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 49.05
@@ -4181,10 +4632,10 @@ finals_time: 48.99
 prelim_rank: 23
 final_rank: 23
 
-Swimmer 20:
-name: Boardman,
-yr: Tom
-school: SR Middlebury
+Swimmer 24:
+name: Boardman, Tom
+yr: SR
+school: Middlebury
 exhibition: False
 seed_time: None
 prelim_time: 49.20
@@ -4192,10 +4643,10 @@ finals_time: 49.16
 prelim_rank: 24
 final_rank: 24
 
-Swimmer 21:
-name: Kaplan,
-yr: Adam
-school: SR Amherst
+Swimmer 25:
+name: Kaplan, Adam
+yr: SR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 51.04
@@ -4203,7 +4654,7 @@ finals_time: None
 prelim_rank: 25
 final_rank: None
 
-Swimmer 22:
+Swimmer 26:
 name: Arnoldi, Ryland
 yr: FR
 school: Wesleyan
@@ -4214,9 +4665,9 @@ finals_time: None
 prelim_rank: 26
 final_rank: None
 
-Swimmer 23:
+Swimmer 27:
 name: Gross, Ben
-yr: 10
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -4225,7 +4676,7 @@ finals_time: None
 prelim_rank: 27
 final_rank: None
 
-Swimmer 24:
+Swimmer 28:
 name: Resler, Chris
 yr: SO
 school: Amherst
@@ -4236,10 +4687,10 @@ finals_time: None
 prelim_rank: 28
 final_rank: None
 
-Swimmer 25:
-name: Paridon,
-yr: Alex
-school: SO Hamilton
+Swimmer 29:
+name: Paridon, Alex
+yr: SO
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 50.85
@@ -4247,9 +4698,9 @@ finals_time: None
 prelim_rank: 29
 final_rank: None
 
-Swimmer 26:
+Swimmer 30:
 name: Immerman, Jason
-yr: 10
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -4258,10 +4709,10 @@ finals_time: None
 prelim_rank: 30
 final_rank: None
 
-Swimmer 27:
-name: Campany,
-yr: Tim
-school: JR Hamilton
+Swimmer 31:
+name: Campany, Tim
+yr: JR
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 50.74
@@ -4269,10 +4720,10 @@ finals_time: None
 prelim_rank: 31
 final_rank: None
 
-Swimmer 28:
-name: Beck,
-yr: Ryan
-school: FR Wesleyan
+Swimmer 32:
+name: Beck, Ryan
+yr: FR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 50.60
@@ -4280,10 +4731,10 @@ finals_time: None
 prelim_rank: 32
 final_rank: None
 
-Swimmer 29:
-name: Clary,
-yr: Will
-school: SO Middlebury
+Swimmer 33:
+name: Clary, Will
+yr: SO
+school: Middlebury
 exhibition: False
 seed_time: None
 prelim_time: 51.87
@@ -4291,7 +4742,7 @@ finals_time: None
 prelim_rank: 33
 final_rank: None
 
-Swimmer 30:
+Swimmer 34:
 name: Gerli, Brooks
 yr: FR
 school: Trinity
@@ -4302,9 +4753,9 @@ finals_time: None
 prelim_rank: 34
 final_rank: None
 
-Swimmer 31:
+Swimmer 35:
 name: Walsh, Bill
-yr: 09
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -4313,7 +4764,7 @@ finals_time: None
 prelim_rank: 35
 final_rank: None
 
-Swimmer 32:
+Swimmer 36:
 name: Ruff, Charlie
 yr: FR
 school: Hamilton
@@ -4324,7 +4775,7 @@ finals_time: None
 prelim_rank: 36
 final_rank: None
 
-Swimmer 33:
+Swimmer 37:
 name: Crowell, Christopher
 yr: FR
 school: Hamilton
@@ -4335,9 +4786,9 @@ finals_time: None
 prelim_rank: 37
 final_rank: None
 
-Swimmer 34:
+Swimmer 38:
 name: Jacob, Chris
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -4346,9 +4797,9 @@ finals_time: None
 prelim_rank: 38
 final_rank: None
 
-Swimmer 35:
+Swimmer 39:
 name: Cooper, Nate
-yr: 09
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -4357,10 +4808,10 @@ finals_time: None
 prelim_rank: 39
 final_rank: None
 
-Swimmer 36:
-name: Haley,
-yr: John
-school: SR Wesleyan
+Swimmer 40:
+name: Haley, John
+yr: SR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 51.98
@@ -4368,10 +4819,10 @@ finals_time: None
 prelim_rank: 40
 final_rank: None
 
-Swimmer 37:
-name: Emmons,
-yr: Nate
-school: SR Hamilton
+Swimmer 41:
+name: Emmons, Nate
+yr: SR
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 52.26
@@ -4379,9 +4830,9 @@ finals_time: None
 prelim_rank: 41
 final_rank: None
 
-Swimmer 38:
+Swimmer 42:
 name: Sanders, Patrick
-yr: 08
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -4390,9 +4841,9 @@ finals_time: None
 prelim_rank: 42
 final_rank: None
 
-Swimmer 39:
+Swimmer 43:
 name: Rezvani, Rob
-yr: 08
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -4401,9 +4852,9 @@ finals_time: None
 prelim_rank: 43
 final_rank: None
 
-Swimmer 40:
+Swimmer 44:
 name: MacNaughton, Jake
-yr: 10
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -4412,7 +4863,7 @@ finals_time: None
 prelim_rank: 44
 final_rank: None
 
-Swimmer 41:
+Swimmer 45:
 name: Frederick, Steve
 yr: FR
 school: Hamilton
@@ -4423,10 +4874,10 @@ finals_time: None
 prelim_rank: 45
 final_rank: None
 
-Swimmer 42:
-name: Gulbrandsen,
-yr: Erik
-school: SO Trinity
+Swimmer 46:
+name: Gulbrandsen, Erik
+yr: SO
+school: Trinity
 exhibition: False
 seed_time: None
 prelim_time: 54.13
@@ -4434,9 +4885,9 @@ finals_time: None
 prelim_rank: 46
 final_rank: None
 
-Swimmer 43:
+Swimmer 47:
 name: Flaherty, Pat
-yr: 08
+yr: NONE
 school: Bates
 exhibition: False
 seed_time: None
@@ -4445,9 +4896,9 @@ finals_time: None
 prelim_rank: 47
 final_rank: None
 
-Swimmer 44:
+Swimmer 48:
 name: Wheale, Blake
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -4456,9 +4907,9 @@ finals_time: None
 prelim_rank: 48
 final_rank: None
 
-Swimmer 45:
+Swimmer 49:
 name: Ziemann, Marcus
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -4478,9 +4929,20 @@ event_type: individual
 Results:
 
 Swimmer 1:
-name: Ancona,
-yr: John
-school: SR Amherst
+name: Bonewell, Tyler
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 2:05.05
+finals_time: 2:05.29
+prelim_rank: 1
+final_rank: 1
+
+Swimmer 2:
+name: Ancona, John
+yr: SR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 2:09.24
@@ -4488,9 +4950,9 @@ finals_time: 2:08.89
 prelim_rank: 2
 final_rank: 2
 
-Swimmer 2:
+Swimmer 3:
 name: Felker, Henry
-yr: 08
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -4499,9 +4961,9 @@ finals_time: 2:09.74
 prelim_rank: 3
 final_rank: 3
 
-Swimmer 3:
+Swimmer 4:
 name: Dean, Patrick
-yr: 07
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -4510,7 +4972,7 @@ finals_time: 2:10.35
 prelim_rank: 4
 final_rank: 4
 
-Swimmer 4:
+Swimmer 5:
 name: Stanton, James
 yr: JR
 school: Amherst
@@ -4521,10 +4983,10 @@ finals_time: 2:10.88
 prelim_rank: 5
 final_rank: 5
 
-Swimmer 5:
-name: Barnes,
-yr: Ian
-school: SO Conn
+Swimmer 6:
+name: Barnes, Ian
+yr: SO
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 2:13.64
@@ -4532,10 +4994,10 @@ finals_time: 2:12.65
 prelim_rank: 8
 final_rank: 6
 
-Swimmer 6:
-name: Lenihan,
-yr: Mike
-school: SR Trinity
+Swimmer 7:
+name: Lenihan, Mike
+yr: SR
+school: Trinity
 exhibition: False
 seed_time: None
 prelim_time: 2:11.67
@@ -4543,10 +5005,10 @@ finals_time: 2:13.02
 prelim_rank: 6
 final_rank: 7
 
-Swimmer 7:
-name: Lux,
-yr: Tim
-school: SR Middlebury
+Swimmer 8:
+name: Lux, Tim
+yr: SR
+school: Middlebury
 exhibition: False
 seed_time: None
 prelim_time: 2:11.82
@@ -4554,7 +5016,7 @@ finals_time: 2:14.88
 prelim_rank: 7
 final_rank: 8
 
-Swimmer 8:
+Swimmer 9:
 name: Cronin, Nathan
 yr: SR
 school: Tufts
@@ -4565,7 +5027,7 @@ finals_time: 2:11.75
 prelim_rank: 9
 final_rank: 9
 
-Swimmer 9:
+Swimmer 10:
 name: Mereness, Jared
 yr: FR
 school: Hamilton
@@ -4576,10 +5038,10 @@ finals_time: 2:13.33
 prelim_rank: 11
 final_rank: 10
 
-Swimmer 10:
-name: Perley,
-yr: Sam
-school: FR Conn
+Swimmer 11:
+name: Perley, Sam
+yr: FR
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 2:16.08
@@ -4587,9 +5049,9 @@ finals_time: 2:14.73
 prelim_rank: 16
 final_rank: 11
 
-Swimmer 11:
+Swimmer 12:
 name: Hyde, Nate
-yr: 07
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -4598,7 +5060,7 @@ finals_time: 2:15.15
 prelim_rank: 12
 final_rank: 12
 
-Swimmer 12:
+Swimmer 13:
 name: Longhurst, James
 yr: SO
 school: Tufts
@@ -4609,7 +5071,7 @@ finals_time: 2:15.59
 prelim_rank: 14
 final_rank: 13
 
-Swimmer 13:
+Swimmer 14:
 name: Sung, Peter
 yr: SR
 school: Middlebury
@@ -4620,7 +5082,7 @@ finals_time: 2:15.70
 prelim_rank: 13
 final_rank: 14
 
-Swimmer 14:
+Swimmer 15:
 name: Chan, Lawrence
 yr: FR
 school: Tufts
@@ -4631,7 +5093,7 @@ finals_time: 2:16.52
 prelim_rank: 15
 final_rank: 15
 
-Swimmer 15:
+Swimmer 16:
 name: Bell, Peter
 yr: JR
 school: Middlebury
@@ -4642,9 +5104,9 @@ finals_time: 2:19.47
 prelim_rank: 9
 final_rank: 16
 
-Swimmer 16:
+Swimmer 17:
 name: Stanley, Austin
-yr: 10
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -4653,9 +5115,9 @@ finals_time: 2:16.47
 prelim_rank: 20
 final_rank: 17
 
-Swimmer 17:
+Swimmer 18:
 name: Goldstein, Max
-yr: 07
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -4664,10 +5126,10 @@ finals_time: 2:16.79
 prelim_rank: 18
 final_rank: 18
 
-Swimmer 18:
-name: Asztalos,
-yr: Ivor
-school: SO Tufts
+Swimmer 19:
+name: Asztalos, Ivor
+yr: SO
+school: Tufts
 exhibition: False
 seed_time: None
 prelim_time: 2:16.77
@@ -4675,9 +5137,9 @@ finals_time: 2:16.89
 prelim_rank: 19
 final_rank: 19
 
-Swimmer 19:
+Swimmer 20:
 name: Peterson, Andrew
-yr: 08
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -4686,7 +5148,7 @@ finals_time: 2:17.41
 prelim_rank: 17
 final_rank: 20
 
-Swimmer 20:
+Swimmer 21:
 name: Swanson, Peter
 yr: SO
 school: Middlebury
@@ -4697,10 +5159,10 @@ finals_time: 2:18.28
 prelim_rank: 21
 final_rank: 21
 
-Swimmer 21:
-name: Peterson,
-yr: Dan
-school: SO Amherst
+Swimmer 22:
+name: Peterson, Dan
+yr: SO
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 2:20.33
@@ -4708,7 +5170,7 @@ finals_time: 2:21.32
 prelim_rank: 23
 final_rank: 22
 
-Swimmer 22:
+Swimmer 23:
 name: Frankel, Rowan
 yr: FR
 school: Tufts
@@ -4719,9 +5181,9 @@ finals_time: 2:21.48
 prelim_rank: 22
 final_rank: 23
 
-Swimmer 23:
+Swimmer 24:
 name: Taylor, Reilly
-yr: 10
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -4730,10 +5192,10 @@ finals_time: 2:25.34
 prelim_rank: 24
 final_rank: 24
 
-Swimmer 24:
-name: Rode,
-yr: John
-school: SO Conn
+Swimmer 25:
+name: Rode, John
+yr: SO
+school: Conn
 exhibition: False
 seed_time: None
 prelim_time: 2:25.90
@@ -4741,7 +5203,7 @@ finals_time: None
 prelim_rank: 25
 final_rank: None
 
-Swimmer 25:
+Swimmer 26:
 name: Jacob, Carlo
 yr: SR
 school: Tufts
@@ -4752,7 +5214,7 @@ finals_time: None
 prelim_rank: 26
 final_rank: None
 
-Swimmer 26:
+Swimmer 27:
 name: Schoeneck, Jacob
 yr: SO
 school: Hamilton
@@ -4763,10 +5225,10 @@ finals_time: None
 prelim_rank: 27
 final_rank: None
 
-Swimmer 27:
-name: Mostyn,
-yr: Pat
-school: JR Trinity
+Swimmer 28:
+name: Mostyn, Pat
+yr: JR
+school: Trinity
 exhibition: False
 seed_time: None
 prelim_time: 2:46.17
@@ -4774,10 +5236,10 @@ finals_time: None
 prelim_rank: 28
 final_rank: None
 
-Swimmer 28:
-name: Havlicek,
-yr: Matt
-school: SO Trinity
+Swimmer 29:
+name: Havlicek, Matt
+yr: SO
+school: Trinity
 exhibition: False
 seed_time: None
 prelim_time: 2:56.67
@@ -4796,8 +5258,96 @@ event_type: individual
 Results:
 
 Swimmer 1:
+name: Collier, Rob
+yr: SR
+school: Middlebury
+exhibition: False
+seed_time: None
+prelim_time: 1:54.82
+finals_time: 1:50.39
+prelim_rank: 5
+final_rank: 1
+
+Swimmer 2:
+name: Dillon, John
+yr: FR
+school: Middlebury
+exhibition: False
+seed_time: None
+prelim_time: 1:51.69
+finals_time: 1:50.66
+prelim_rank: 1
+final_rank: 2
+
+Swimmer 3:
+name: Millen, Chris
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 1:56.44
+finals_time: 1:51.29
+prelim_rank: 8
+final_rank: 3
+
+Swimmer 4:
+name: Wentworth-Ping, Al
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 1:52.79
+finals_time: 1:53.03
+prelim_rank: None
+final_rank: 4
+
+Swimmer 5:
+name: Treat, Ethan
+yr: SR
+school: Amherst
+exhibition: False
+seed_time: None
+prelim_time: 1:54.08
+finals_time: 1:53.14
+prelim_rank: 3
+final_rank: 5
+
+Swimmer 6:
+name: Scott, Norman
+yr: NONE
+school: Williams
+exhibition: False
+seed_time: None
+prelim_time: 1:54.98
+finals_time: 1:53.80
+prelim_rank: 6
+final_rank: 6
+
+Swimmer 7:
+name: Troy, Pat
+yr: FR
+school: Conn
+exhibition: False
+seed_time: None
+prelim_time: 1:54.42
+finals_time: 1:54.61
+prelim_rank: 4
+final_rank: 7
+
+Swimmer 8:
+name: Holmes, C.J.
+yr: SO
+school: Amherst
+exhibition: False
+seed_time: None
+prelim_time: 1:55.45
+finals_time: 1:55.36
+prelim_rank: 7
+final_rank: 8
+
+Swimmer 9:
 name: Ryan, Timothy
-yr: 09
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -4806,7 +5356,7 @@ finals_time: 1:55.80
 prelim_rank: 9
 final_rank: 9
 
-Swimmer 2:
+Swimmer 10:
 name: Mims, Hunter
 yr: FR
 school: Amherst
@@ -4817,9 +5367,9 @@ finals_time: 1:57.27
 prelim_rank: 11
 final_rank: 10
 
-Swimmer 3:
+Swimmer 11:
 name: Heumann, Thatcher
-yr: 09
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -4828,7 +5378,7 @@ finals_time: 1:57.65
 prelim_rank: 10
 final_rank: 11
 
-Swimmer 4:
+Swimmer 12:
 name: de Vries, Calvin
 yr: FR
 school: Tufts
@@ -4839,9 +5389,9 @@ finals_time: 2:00.14
 prelim_rank: 12
 final_rank: 12
 
-Swimmer 5:
+Swimmer 13:
 name: Sievers, Quinlan
-yr: 09
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
@@ -4850,10 +5400,10 @@ finals_time: 2:01.09
 prelim_rank: 13
 final_rank: 13
 
-Swimmer 6:
-name: DeVore,
-yr: Zach
-school: FR Middlebury
+Swimmer 14:
+name: DeVore, Zach
+yr: FR
+school: Middlebury
 exhibition: False
 seed_time: None
 prelim_time: 2:01.16
@@ -4861,9 +5411,9 @@ finals_time: 2:01.65
 prelim_rank: 14
 final_rank: 14
 
-Swimmer 7:
+Swimmer 15:
 name: Bartkiewicz, Mitch
-yr: 07
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -4872,10 +5422,10 @@ finals_time: 2:02.16
 prelim_rank: 16
 final_rank: 15
 
-Swimmer 8:
-name: Vey,
-yr: Alek
-school: SR Amherst
+Swimmer 16:
+name: Vey, Alek
+yr: SR
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 2:01.39
@@ -4883,10 +5433,10 @@ finals_time: 2:02.42
 prelim_rank: 15
 final_rank: 16
 
-Swimmer 9:
-name: Murphy,
-yr: Seth
-school: SO Wesleyan
+Swimmer 17:
+name: Murphy, Seth
+yr: SO
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 2:02.03
@@ -4894,7 +5444,7 @@ finals_time: 2:01.30
 prelim_rank: 18
 final_rank: 17
 
-Swimmer 10:
+Swimmer 18:
 name: Bhamla, Ayaas
 yr: FR
 school: Trinity
@@ -4905,10 +5455,10 @@ finals_time: 2:01.41
 prelim_rank: 20
 final_rank: 18
 
-Swimmer 11:
-name: Goldfield,
-yr: Alec
-school: SO Amherst
+Swimmer 19:
+name: Goldfield, Alec
+yr: SO
+school: Amherst
 exhibition: False
 seed_time: None
 prelim_time: 2:02.32
@@ -4916,7 +5466,7 @@ finals_time: 2:02.30
 prelim_rank: 19
 final_rank: 19
 
-Swimmer 12:
+Swimmer 20:
 name: Salzberg, Matthew
 yr: FR
 school: Tufts
@@ -4927,7 +5477,7 @@ finals_time: 2:02.81
 prelim_rank: 22
 final_rank: 20
 
-Swimmer 13:
+Swimmer 21:
 name: Ullian, David
 yr: JR
 school: Amherst
@@ -4938,9 +5488,9 @@ finals_time: 2:03.07
 prelim_rank: 24
 final_rank: 21
 
-Swimmer 14:
+Swimmer 22:
 name: Adams, Ryan
-yr: 07
+yr: NONE
 school: Colby
 exhibition: False
 seed_time: None
@@ -4949,9 +5499,9 @@ finals_time: 2:03.26
 prelim_rank: 21
 final_rank: 22
 
-Swimmer 15:
+Swimmer 23:
 name: Wandner, Ian
-yr: 09
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -4960,9 +5510,9 @@ finals_time: 2:04.69
 prelim_rank: 17
 final_rank: 23
 
-Swimmer 16:
+Swimmer 24:
 name: Kwan, Matt
-yr: 10
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -4971,18 +5521,18 @@ finals_time: 2:06.07
 prelim_rank: 23
 final_rank: 24
 
-Swimmer 17:
-name: Millen, Chris
-yr: 08
+Swimmer 25:
+name: Wentworth-Ping, Alex
+yr: NONE
 school: Williams
 exhibition: False
 seed_time: None
-prelim_time: 1:54.22
+prelim_time: 1:57.31
 finals_time: None
-prelim_rank: 8
+prelim_rank: 2
 final_rank: None
 
-Swimmer 18:
+Swimmer 26:
 name: Chaponis, Stephen
 yr: FR
 school: Hamilton
@@ -4993,7 +5543,7 @@ finals_time: None
 prelim_rank: 25
 final_rank: None
 
-Swimmer 19:
+Swimmer 27:
 name: Burwell, Tripp
 yr: SO
 school: Middlebury
@@ -5004,10 +5554,10 @@ finals_time: None
 prelim_rank: 26
 final_rank: None
 
-Swimmer 20:
-name: Schleusener,
-yr: Luke
-school: SR Wesleyan
+Swimmer 28:
+name: Schleusener, Luke
+yr: SR
+school: Wesleyan
 exhibition: False
 seed_time: None
 prelim_time: 2:14.41
@@ -5015,9 +5565,9 @@ finals_time: None
 prelim_rank: 27
 final_rank: None
 
-Swimmer 21:
+Swimmer 29:
 name: Sighinolfi, Mike
-yr: 07
+yr: NONE
 school: Bowdoin
 exhibition: False
 seed_time: None
@@ -5026,10 +5576,10 @@ finals_time: None
 prelim_rank: 28
 final_rank: None
 
-Swimmer 22:
-name: Masters,
-yr: Clay
-school: FR Hamilton
+Swimmer 30:
+name: Masters, Clay
+yr: FR
+school: Hamilton
 exhibition: False
 seed_time: None
 prelim_time: 2:17.14
@@ -5037,7 +5587,7 @@ finals_time: None
 prelim_rank: 29
 final_rank: None
 
-Swimmer 23:
+Swimmer 31:
 name: Walker, Andrew
 yr: SO
 school: Wesleyan

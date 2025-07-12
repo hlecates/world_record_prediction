@@ -8,30 +8,28 @@ class TXTParser(BaseParser):
     """Parser for TXT format swimming meet results with unified results list."""
     def __init__(self):
         super().__init__()
-        # Pattern for prelims entries (rank, name, year, school, seed, prelim) - updated for robust year parsing
-        # Year field is now optional and can handle missing years, two-digit years, etc.
-        # Improved to better handle field boundaries when year is missing
+        # Improved pattern for prelims entries (rank, name, year, school, seed, prelim)
+        # Name: allow for multiple spaces, initials, etc. Year: FR, SR, 04, etc. School: flexible
         self.txt_prelims_re = re.compile(
-            r'^\s*(\d+)\s+([A-Za-z\s,]+?)\s+([A-Za-z0-9]{1,4})\s+([A-Za-z\s]+?)\s+([\d:.NTXb#&]+)(?:\s+([\d:.NTXb#&]+))?\s*$'
+            r'^\s*(\d+)\s+([A-Za-z.,\'\- ]+?)\s{2,}([A-Za-z0-9]{2}|[A-Za-z]{2,4}|\d{2}|)\s+([A-Za-z.\'\- ]+?)\s+([\d:.NTXb#&]+)(?:\s+([\d:.NTXb#&A-Z!]+))?'
         )
-        # Pattern for finals entries (rank, name, year, school, prelim, final, points) - updated for robust year parsing
+        # Improved pattern for finals entries (rank, name, year, school, prelim, final, points)
         self.txt_finals_re = re.compile(
-            r'^\s*(\d+)\s+([A-Za-z\s,]+?)\s+([A-Za-z0-9]{1,4})\s+([A-Za-z\s]+?)\s+([\d:.NTXb#&]+)\s+([\d:.NTXb#&A-Z!]+)(?:\s+(\d+))?\s*$'
+            r'^\s*(\d+)\s+([A-Za-z.,\'\- ]+?)\s{2,}([A-Za-z0-9]{2}|[A-Za-z]{2,4}|\d{2}|)\s+([A-Za-z.\'\- ]+?)\s+([\d:.NTXb#&]+)\s+([\d:.NTXb#&A-Z!]+)(?:\s+(\d+))?'
         )
-        # Pattern for entries with only one time field - updated for robust year parsing
+        # Improved pattern for single time entries (rank, name, year, school, time)
         self.txt_single_time_re = re.compile(
-            r'^\s*(\d+)\s+([A-Za-z\s,]+?)\s+([A-Za-z0-9]{1,4})\s+([A-Za-z\s]+?)\s+([\d:.NTXb#&]+)\s*$'
+            r'^\s*(\d+)\s+([A-Za-z.,\'\- ]+?)\s{2,}([A-Za-z0-9]{2}|[A-Za-z]{2,4}|\d{2}|)\s+([A-Za-z.\'\- ]+?)\s+([\d:.NTXb#&]+)'
         )
-        # Fallback patterns for lines with NO year field - these are more specific to handle missing years
-        # These patterns look for specific spacing patterns that indicate no year field
+        # Fallback patterns for lines with NO year field
         self.txt_prelims_no_year_re = re.compile(
-            r'^\s*(\d+)\s+([A-Za-z\s,]+?)\s{2,}([A-Za-z\s]+?)\s+([\d:.NTXb#&]+)(?:\s+([\d:.NTXb#&]+))?\s*$'
+            r'^\s*(\d+)\s+([A-Za-z.,\'\- ]+?)\s{2,}([A-Za-z.\'\- ]+?)\s+([\d:.NTXb#&]+)(?:\s+([\d:.NTXb#&A-Z!]+))?\s*$'
         )
         self.txt_finals_no_year_re = re.compile(
-            r'^\s*(\d+)\s+([A-Za-z\s,]+?)\s{2,}([A-Za-z\s]+?)\s+([\d:.NTXb#&]+)\s+([\d:.NTXb#&A-Z!]+)(?:\s+(\d+))?\s*$'
+            r'^\s*(\d+)\s+([A-Za-z.,\'\- ]+?)\s{2,}([A-Za-z.\'\- ]+?)\s+([\d:.NTXb#&]+)\s+([\d:.NTXb#&A-Z!]+)(?:\s+(\d+))?\s*$'
         )
         self.txt_single_time_no_year_re = re.compile(
-            r'^\s*(\d+)\s+([A-Za-z\s,]+?)\s{2,}([A-Za-z\s]+?)\s+([\d:.NTXb#&]+)\s*$'
+            r'^\s*(\d+)\s+([A-Za-z.,\'\- ]+?)\s{2,}([A-Za-z.\'\- ]+?)\s+([\d:.NTXb#&]+)\s*$'
         )
 
     def preprocess_text(self, text: str) -> str:
@@ -151,9 +149,11 @@ class TXTParser(BaseParser):
         if len(year_str) == 2 and year_str.isalpha() and year_str.isupper():
             return year_str
         
-        # If it's exactly 2 characters and both are digits, it's likely a year code (e.g., '05', '06')
+        # If it's exactly 2 characters and both are digits, it's likely NOT a year
+        # In swimming results, 2-digit numbers like "04", "05", "06" are typically
+        # missing year data, not actual years
         if len(year_str) == 2 and year_str.isdigit():
-            return year_str
+            return 'NONE'
         
         # If it's 3-4 characters and contains numbers, it's likely not a year
         if len(year_str) >= 3 and any(c.isdigit() for c in year_str):
@@ -175,7 +175,6 @@ class TXTParser(BaseParser):
         return year_str
 
     def _parse_individual_entry(self, line: str, current_section: str, is_exhibition: bool) -> Optional[Dict]:
-        """Parse a single individual entry line."""
         clean = line.strip()
         # Try finals pattern first (with year)
         m = self.txt_finals_re.match(clean)
@@ -183,6 +182,9 @@ class TXTParser(BaseParser):
             groups = m.groups()
             rank, name, yr, school, prelim, final, pts = groups
             parsed_yr = self._parse_year_field(yr) if yr else 'NONE'
+            # SKIP: If school is empty and prelim or final is a 2-digit number
+            if (not school.strip()) and ((prelim and len(prelim.strip()) == 2 and prelim.strip().isdigit()) or (final and len(final.strip()) == 2 and final.strip().isdigit())):
+                return None
             result = {
                 'name': name.strip(),
                 'yr': parsed_yr,
@@ -200,6 +202,9 @@ class TXTParser(BaseParser):
         m = self.txt_finals_no_year_re.match(clean)
         if m:
             rank, name, school, prelim, final, pts = m.groups()
+            # SKIP: If school is empty and prelim or final is a 2-digit number
+            if (not school.strip()) and ((prelim and len(prelim.strip()) == 2 and prelim.strip().isdigit()) or (final and len(final.strip()) == 2 and final.strip().isdigit())):
+                return None
             result = {
                 'name': name.strip(),
                 'yr': 'NONE',
@@ -219,6 +224,9 @@ class TXTParser(BaseParser):
             groups = m.groups()
             rank, name, yr, school, time1, time2 = groups
             parsed_yr = self._parse_year_field(yr) if yr else 'NONE'
+            # SKIP: If school is empty and time1 or time2 is a 2-digit number
+            if (not school.strip()) and ((time1 and len(time1.strip()) == 2 and time1.strip().isdigit()) or (time2 and len(time2.strip()) == 2 and time2.strip().isdigit())):
+                return None
             if time2:
                 seed_time = self._clean_time_string(time1)
                 prelim_time = self._clean_time_string(time2)
@@ -242,6 +250,9 @@ class TXTParser(BaseParser):
         m = self.txt_prelims_no_year_re.match(clean)
         if m:
             rank, name, school, time1, time2 = m.groups()
+            # SKIP: If school is empty and time1 or time2 is a 2-digit number
+            if (not school.strip()) and ((time1 and len(time1.strip()) == 2 and time1.strip().isdigit()) or (time2 and len(time2.strip()) == 2 and time2.strip().isdigit())):
+                return None
             if time2:
                 seed_time = self._clean_time_string(time1)
                 prelim_time = self._clean_time_string(time2)
@@ -267,6 +278,9 @@ class TXTParser(BaseParser):
             groups = m.groups()
             rank, name, yr, school, time = groups
             parsed_yr = self._parse_year_field(yr) if yr else 'NONE'
+            # SKIP: If school is empty and time is a 2-digit number
+            if (not school.strip()) and (time and len(time.strip()) == 2 and time.strip().isdigit()):
+                return None
             if current_section == 'prelims':
                 prelim_time = self._clean_time_string(time)
                 seed_time = None
@@ -292,6 +306,9 @@ class TXTParser(BaseParser):
         m = self.txt_single_time_no_year_re.match(clean)
         if m:
             rank, name, school, time = m.groups()
+            # SKIP: If school is empty and time is a 2-digit number
+            if (not school.strip()) and (time and len(time.strip()) == 2 and time.strip().isdigit()):
+                return None
             if current_section == 'prelims':
                 prelim_time = self._clean_time_string(time)
                 seed_time = None
